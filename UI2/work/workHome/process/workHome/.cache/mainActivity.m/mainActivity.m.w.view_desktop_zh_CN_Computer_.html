@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<div xmlns="http://www.w3.org/1999/xhtml" xid="window" class="window cNZbUju" component="$model/UI2/system/components/justep/window/window" design="device:m;" data-bind="component:{name:'$model/UI2/system/components/justep/window/window'}" __cid="cNZbUju" components="$model/UI2/system/components/justep/model/model,$model/UI2/system/components/justep/loadingBar/loadingBar,$model/UI2/system/components/justep/button/button,$model/UI2/system/components/justep/row/row,$model/UI2/chat/wex5/funcsDialog/funcsDialog,$model/UI2/system/components/justep/list/list,$model/UI2/system/components/justep/panel/child,$model/UI2/system/components/justep/data/data,$model/UI2/system/components/justep/window/window,$model/UI2/system/components/justep/data/baasData,$model/UI2/system/components/justep/panel/panel,">  
+  <style xmlns="" xmlns:xhtml="http://www.w3.org/1999/xhtml">.img_p.cNZbUju{text-align: left; color: rgb(255, 255, 255); font-size: small; margin-top: -25%; padding-left: 10px} .listRow_btn.cNZbUju{font-size: large; color: rgb(255, 255, 255); display: inline-block; width: 30px; height: 30px; background-color: blue; border-radius: 6px; line-height: 30px} .btn.cNZbUju{padding: 4px 12px}</style>  
+  <span xmlns="" component="$model/UI2/chat/wex5/funcsDialog/funcsDialog" xid="funcsDialog" data-bind="component:{name:'$model/UI2/chat/wex5/funcsDialog/funcsDialog'}" data-events="onReceive:funcsDialogReceive" data-config="{&quot;filter&quot;:&quot;$model.labelStr.get().indexOf($row.val(\&quot;fTitle\&quot;)) == -1&quot;,&quot;forceRefreshOnOpen&quot;:true,&quot;mode&quot;:&quot;selectFunc&quot;}" __cid="cNZbUju" class="cNZbUju"> 
+    <div xmlns:xhtml="http://www.w3.org/1999/xhtml" class="x-dialog-overlay cNZbUju" __cid="cNZbUju"></div>  
+    <div xmlns:xhtml="http://www.w3.org/1999/xhtml" class="x-dialog cNZbUju" style="display:none;" __cid="cNZbUju">  
+      <div class="x-dialog-title cNZbUju" __cid="cNZbUju"> 
+        <button class="close cNZbUju" __cid="cNZbUju"> 
+          <span __cid="cNZbUju" class="cNZbUju">×</span> 
+        </button>  
+        <div class="x-dialog-title-text cNZbUju" __cid="cNZbUju"/> 
+      </div>  
+      <div class="x-dialog-body cNZbUju" __cid="cNZbUju"/> 
+    </div> 
+  </span>  
+  <div xmlns="" component="$model/UI2/system/components/justep/model/model" xid="model" style="display:none" data-bind="component:{name:'$model/UI2/system/components/justep/model/model'}" data-events="onLoad:modelLoad" __cid="cNZbUju" class="cNZbUju"/>  
+  <div xmlns="" xid="waitDiv" style="position:relative;height:200px;" __cid="cNZbUju" class="cNZbUju"> 
+    <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-only-icon cNZbUju" xid="button2" style="position:absolute;font-size:30px;top:42%;left:42%;" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-config="{&quot;icon&quot;:&quot;icon-loading-a&quot;,&quot;label&quot;:&quot;button&quot;}" __cid="cNZbUju"> 
+      <i xid="i4" class="icon-loading-a cNZbUju" __cid="cNZbUju"/>  
+      <span xid="span3" __cid="cNZbUju" class="cNZbUju"/> 
+    </a> 
+  </div>  
+  <div xmlns="" component="$model/UI2/system/components/justep/panel/panel" class="x-panel x-full pcNZbUju-iosstatusbar cNZbUju" xid="panel2" data-bind="component:{name:'$model/UI2/system/components/justep/panel/panel'}" __cid="cNZbUju"> 
+    <div class="x-panel-content x-cards cNZbUju" xid="content3" style="height:100%;" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="cNZbUju"> 
+      <div xid="div6" style="margin-top:-10px;background-color:white;position:relative;" class="clearfix cNZbUju" __cid="cNZbUju"> 
+        <img alt="" xid="image6" style="width:100%;z-index:10;" src="@justepContextPath@/v_cee1c1c9afc5452788ffc07d3c3eaf67l_zh_CNs_desktopd_pc/work/workHome/process/workHome/img/workHomeBig-03.png" __cid="cNZbUju" class="cNZbUju"/>  
+        <div class="img_p hide cNZbUju" xid="div7" style="animation-duration:1s;position:absolute;z-index:15;width:100%;" __cid="cNZbUju"> 
+          <p xid="p3" __cid="cNZbUju" class="cNZbUju">移动IM协同App</p> 
+        </div>  
+        <div xid="div1" style="position:absolute;z-index:15;width:100%;" class="img_p hide cNZbUju" __cid="cNZbUju"> 
+          <p xid="p8" __cid="cNZbUju" class="cNZbUju">铛铛 – 属于开发商和企业</p>  
+          <p xid="p4" __cid="cNZbUju" class="cNZbUju">自己的移动IM协同App</p> 
+        </div> 
+      </div>  
+      <div xid="div5" style="background-color:white;margin-top:-10px;" class="clearfix cNZbUju" __cid="cNZbUju"> 
+        <div xid="contentDiv" __cid="cNZbUju" class="cNZbUju"> 
+          <div component="$model/UI2/system/components/justep/row/row" class="x-row cNZbUju" xid="row13" style="padding:0px 0px 0px 0px;margin-top:10px;background-color:white;" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="cNZbUju"> 
+            <div class="x-col col-xs-12 cNZbUju" xid="moreBtn" style="padding:0px 0px 0px 0px;margin:3px 0px 3px 0px;background-color:white;border-bottom:1px solid #808080;" __cid="cNZbUju"> 
+              <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link pull-right btn-defult cNZbUju" xid="compileBtn" style="color:#808080;font-size:medium;" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:compileBtnClick" data-config="{&quot;icon&quot;:&quot;dataControl dataControl-pencill&quot;,&quot;label&quot;:&quot;编辑&quot;}" __cid="cNZbUju"> 
+                <i xid="i15" class="dataControl dataControl-pencill cNZbUju" __cid="cNZbUju"/>  
+                <span xid="span25" __cid="cNZbUju" class="cNZbUju">编辑</span> 
+              </a>  
+              <p xid="p6" __cid="cNZbUju" class="cNZbUju"/> 
+            </div> 
+          </div>  
+          <div component="$model/UI2/system/components/justep/list/list" class="x-list cNZbUju" xid="list1" style="height:100%;padding-top:0px;background-color:white;" data-bind="component:{name:'$model/UI2/system/components/justep/list/list'}" data-config="{&quot;data&quot;:&quot;regularData&quot;}" __cid="cNZbUju"> 
+            <ul class="x-list-template hide cNZbUju" xid="listTemplateUl1" __cid="cNZbUju" data-bind="foreach:{data:$model.foreach_list1($element),afterRender:$model.foreach_afterRender_list1.bind($model,$element)}"> 
+              <li xid="li1" class="col-xs-4 cNZbUju" style="text-align:center;background-color:white;padding-top:10px;" __cid="cNZbUju" data-bind="event:{click:$model._callModelFn.bind($model, 'applyListClick')}"> 
+                <i xid="i5" style="font-size:28px;padding:5px 5px 5px 5px;border-radius:10px;color:#FFFFFF;height:35px;width:35px;" __cid="cNZbUju" class="cNZbUju" data-bind="css:val(&quot;fIcon&quot;),style:{backgroundColor:val(&quot;fColor&quot;)}"/>  
+                <span xid="span4" style="color:#888888;display:block;margin-top:5px;" __cid="cNZbUju" class="cNZbUju" data-bind="text:val(&quot;fLabel&quot;)"/> 
+              </li> 
+            </ul> 
+          </div>  
+          <div component="$model/UI2/system/components/justep/list/list" class="x-list cNZbUju" xid="ShowItemList" style="height:100%;padding-top:0px;background-color:white;" data-bind="component:{name:'$model/UI2/system/components/justep/list/list'}" data-config="{&quot;data&quot;:&quot;applyBizData&quot;}" __cid="cNZbUju"> 
+            <ul class="x-list-template clearfix hide cNZbUju" xid="listTemplateUl4" style="background-color:white;padding-top:10px;" __cid="cNZbUju" data-bind="foreach:{data:$model.foreach_ShowItemList($element),afterRender:$model.foreach_afterRender_ShowItemList.bind($model,$element)}"> 
+              <li class="col-xs-4 cNZbUju" style="text-align:center;background-color:white;padding-top:10px;" xid="applyList" __cid="cNZbUju" data-bind="event:{click:$model._callModelFn.bind($model, 'applyListClick')}"> 
+                <i xid="icon" style="font-size:28px;padding:5px 5px 5px 5px;border-radius:10px;color:#FFFFFF;height:35px;width:35px;" __cid="cNZbUju" class="cNZbUju" data-bind="css:val(&quot;fIcon&quot;),style:{backgroundColor:val(&quot;fColor&quot;)}"/>  
+                <span xid="span22" style="color:#888888;display:block;margin-top:5px;" __cid="cNZbUju" class="cNZbUju" data-bind="text:val(&quot;fLabel&quot;)"/>  
+                <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-only-icon cNZbUju" xid="removeBtn" style="position:absolute;top:-5px;right:5px;color:red;font-size:large;display:none;" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:removeBtnClick" data-config="{&quot;icon&quot;:&quot;glyphicon glyphicon-remove-circle&quot;,&quot;label&quot;:&quot;button&quot;}" __cid="cNZbUju"> 
+                  <i xid="i1" class="glyphicon glyphicon-remove-circle cNZbUju" __cid="cNZbUju"/>  
+                  <span xid="span2" __cid="cNZbUju" class="cNZbUju"/> 
+                </a> 
+              </li> 
+            </ul> 
+          </div> 
+        </div> 
+      </div>  
+      <div xid="addMoreDiv" style="background-color:white;margin-top:10px;" class="clearfix cNZbUju" __cid="cNZbUju" data-bind="event:{click:$model._callModelFn.bind($model, 'addMoreDivClick')}"> 
+        <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-only-icon pull-right cNZbUju" xid="addMoreBtn" style="color:#808080;font-size:large;" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-config="{&quot;icon&quot;:&quot;glyphicon glyphicon-menu-right&quot;,&quot;label&quot;:&quot;button&quot;}" __cid="cNZbUju"> 
+          <i xid="i16" class="glyphicon glyphicon-menu-right cNZbUju" __cid="cNZbUju"/>  
+          <span xid="span26" __cid="cNZbUju" class="cNZbUju"/> 
+        </a>  
+        <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link cNZbUju" xid="button1" style="color:#808080;font-size:medium;" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-config="{&quot;icon&quot;:&quot;linear linear-bus&quot;,&quot;label&quot;:&quot;更多&quot;}" __cid="cNZbUju"> 
+          <i xid="i3" class="linear linear-bus cNZbUju" __cid="cNZbUju"/>  
+          <span xid="span1" __cid="cNZbUju" class="cNZbUju">更多</span> 
+        </a> 
+      </div>  
+      <i xid="i2" __cid="cNZbUju" class="cNZbUju"/> 
+    </div>  
+    <style __cid="cNZbUju" class="cNZbUju">.x-panel.pcNZbUju-iosstatusbar &gt;.x-panel-top {height: 0px;}.x-panel.pcNZbUju-iosstatusbar &gt;.x-panel-content { top: 0px;bottom: nullpx;}.x-panel.pcNZbUju-iosstatusbar &gt;.x-panel-bottom {height: nullpx;}.iosstatusbar .x-panel.pcNZbUju-iosstatusbar &gt;.x-panel-top,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pcNZbUju-iosstatusbar &gt;.x-panel-top {height: 0px;}.iosstatusbar .x-panel.pcNZbUju-iosstatusbar &gt;.x-panel-content,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pcNZbUju-iosstatusbar &gt;.x-panel-content { top: 0px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pcNZbUju-iosstatusbar &gt;.x-panel-top {height: 0px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pcNZbUju-iosstatusbar &gt;.x-panel-content {top: 0px;}</style> 
+  </div> 
+</div>

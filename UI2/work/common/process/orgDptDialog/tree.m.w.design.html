@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html style="height:100%;width:100%;padding:0px;margin:0px;">
+	<head>
+		<meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+		<link rel="stylesheet" href="http://localhost:47830/x5/UI2/system/designer/xui/base.css" />
+<!-- 		<script src="ComponentConfig.js" ></script> -->
+		<script>
+			//window.isInDesigner = true;
+			function executeMethod(params) {
+				if (params) {  
+					var oParams = typeof params=='string'?eval("(" + params + ")"):params;
+					var methodName = oParams.methodName;  
+					if(methodName == 'initData'){
+						initData = oParams;
+					}
+					if(window.designer){
+						initData = null;
+						return window.designer.executeMethod(methodName, oParams);			
+					}
+				}
+			}
+	
+        </script>
+		<script src="http://localhost:47830/x5/UI2/system/lib/require/require.2.1.10.debug.js" ></script>
+</head>
+	<body tabindex=0 class="border-box-sizing" style="padding:6px;margin:0;height:100%;width:100%;overflow:hidden;" onselectstart="return false">
+		<div class='pc-ui' style="overflow:hidden;height:100%">
+			<div class='pc-ui-title'>
+<!-- 				<img src='http://localhost:47830/x5/UI2/system/designer/xui/images/left.gif' style='height:100%;position:absolute;left:2px;' /> -->
+<!-- 				<img src='http://localhost:47830/x5/UI2/system/designer/xui/images/right.gif' style='height:100%;position:absolute;right:2px;' /> -->
+			</div>
+			<div class='pc-ui-content' id="designerContainer" >
+
+			</div>
+		</div>
+	</body>
+	<script src="http://localhost:47830/x5/UI2/system/designer/xui/main.js" ></script>
+</html>

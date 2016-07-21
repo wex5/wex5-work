@@ -1,0 +1,13 @@
+.panel-body{
+	padding:0px;
+}
+.x-label{
+	padding:0px;
+}
+.progress{
+	margin-bottom:0px;
+	box-shadow:none;
+}
+.btn{
+	border-radius:0;	
+}

@@ -1,0 +1,8 @@
+.btn i{ font-size:15px;}
+.btn span{ font-size:12px;}
+
+/*底部*/
+.x-panel-bottom .btn-group{ background-color:#fff;}
+.x-panel-bottom .btn-group .btn{ padding:2px 10px;}
+.x-panel-bottom .btn-group .btn.btn-link{ color:rgb(128,128,128);}
+.x-panel-bottom .btn-group .btn.active{ color:#00C957;}

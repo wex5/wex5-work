@@ -1,0 +1,39 @@
+.no-padding{
+	padding:0;
+}
+.x-dialog.x-dialog-normal .x-dialog-body{
+	padding:0;
+}
+.btnCheck{
+	text-align:center;padding-top:30px;box-shadow:0 0 10px;position:relative;height:100px;width:100px;margin:auto;border-radius:50%;background:#00C2FF;margin-bottom:10px;
+}
+.atten_row{
+	margin:0;margin-top:15px;
+}
+.lateText{
+	font-size:1.2em;
+}
+.tipRow{
+	color:#999;text-align:center;display:none;
+}
+.stateText{
+	display:block;color:#FFFFFF;font-size:medium;font-weight:bold;
+}
+.timeText{
+	color:#FFFFFF;font-size:medium;
+}
+.check_listText{
+	font-weight: bold;font-size:1.1em;
+}
+.locaBtn{
+	padding-left:0px;padding-right:0px;
+}
+.tipOutText{
+	font-size:1.2em;
+}
+.x-card.btn-group .btn.active{
+	border-top:2px solid #ecca3e;
+}
+.x-card.btn-group .btn{
+	border-top:1px solid #ddd;
+}

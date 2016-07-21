@@ -1,0 +1,161 @@
+/**
+   @name $UI/work/common/js/common
+   @class
+   @model UI2
+   @category javascript
+   @description 通用函数
+*/
+
+/**
+	@name $UI/work/common/js/common.personFID
+	@property
+	@type String
+	@see  "获取当前人员的全路径"
+*/
+
+/**
+	@name $UI/work/common/js/common.personFName
+	@property
+	@type String
+	@see String
+*/
+
+/**
+	@name $UI/work/common/js/common.personID
+	@property
+	@type String
+	@see String
+*/
+
+/**
+	@name $UI/work/common/js/common.personName
+	@property
+	@type String
+	@see String
+*/
+
+/**
+	@name $UI/work/common/js/common.deptFID
+	@property
+	@type String
+	@see String
+*/
+
+/**
+	@name $UI/work/common/js/common.deptFName
+	@property
+	@type String
+	@see String
+*/
+
+/**
+	@name $UI/work/common/js/common.deptID
+	@property
+	@type String
+	@see String
+*/
+
+/**
+	@name $UI/work/common/js/common.deptName
+	@property
+	@type String
+	@see String
+*/
+
+/**
+	@name $UI/work/common/js/common.ognFID
+	@property
+	@type String
+	@see String
+*/
+
+/**
+	@name $UI/work/common/js/common.ognFName
+	@property
+	@type String
+	@see String
+*/
+
+/**
+	@name $UI/work/common/js/common.ognID
+	@property
+	@type String
+	@see String
+*/
+
+/**
+	@name $UI/work/common/js/common.ognName
+	@property
+	@type String
+	@see String
+*/
+
+/**
+	@name $UI/work/common/js/common.funRole
+	@property
+	@type String
+	@see String
+*/
+
+/**
+   @name $UI/work/common/js/common.getSysDate
+   @function
+   @description 获取服务器时间
+   @returns {Date} 当前服务器时间
+*/
+
+/**
+   @name $UI/work/common/js/common.getSysDateStr
+   @function
+   @description 获取服务器时间
+   @param {String} format 日期格式
+   @returns {String} 返回日期格式化后的字符串
+*/
+
+/**
+   @name $UI/work/common/js/common.transWeek
+   @function
+   @description 日期转换星期
+   @param {Date} 时间类型对象
+   @returns {String} 返回星期字符串 
+*/
+
+/**
+   @name $UI/work/common/js/common.baasRequest
+   @function
+   @description baas请求
+   @param {String,String,Object} 服务名，动作名，json类型参数
+   @returns {Object} 返回请求结果 
+*/
+
+/**
+   @name $UI/work/common/js/common.savePerson
+   @function
+   @description 保存用户人员相关信息
+   @param {data} data组件
+   @returns {void}  
+*/
+
+/**
+   @name $UI/work/common/js/common.saveDept
+   @function
+   @description 保存用户部门相关信息
+   @param {void} data组件
+   @returns {void}  
+*/
+
+/**
+   @name $UI/work/common/js/common.saveOgn
+   @function
+   @description 保存用户组织相关信息
+   @param {data} data组件
+   @returns {void} 
+*/
+
+/**
+   @name $UI/work/common/js/common.removeArrEle
+   @function
+   @description 删除数组中的元素
+   @param {arr,index} 原数组与要删除的下标
+   @returns {arr} 删除后的数组 
+*/

@@ -1,0 +1,22 @@
+.x-titlebar{ background-color:#00C957; font-size:15px;}
+.x-titlebar-left{ border-right:1px solid #fff; padding-left:0px;}
+.x-titlebar-left .btn{ padding:8px 12px;}
+.x-titlebar .x-titlebar-title{ font-weight: normal; text-align:left; padding:12px 10px;}
+.x-toggle input:checked + label{ background-color:#00C957;}
+
+/*园加减样式设置*/
+
+.circle-btn{ position: absolute;border-radius: 48px;border:0px;background-color:#00C957; border:none;margin:10px;}
+.o-add{ position: absolute;border-radius: 48px;border:0px;background-color:#00C957; border:none;margin:10px;}
+.o-add2{ position: absolute;border-radius: 48px;border:0px;background-color:#ccc; border:none;margin:10px;}
+.o-dateBtn{ background-color:#ccc; border-radius:20px; border:none;}
+.css{ background-color:#00C957;}
+
+/* .btn-default:hover, .btn-default:focus, .btn-default.focus, .btn-default:active, .btn-default.active, .open>.dropdown-toggle.btn-default{ */
+/* 	background-color:red; */
+/* } */
+/* .btn-default{ */
+/* 	background-color:red; */
+/* } */
+
+.o-pubBtn{ margin:20px 30px 0px 30px;border:none;}

@@ -1,0 +1,13 @@
+.x-titlebar{ background-color:#00C957;font-size:15px;}
+.x-titlebar-left{ border-right:1px solid #fff; padding-left:0px;}
+.x-titlebar-left .btn{ padding:8px 12px;}
+.x-titlebar .x-titlebar-title{ font-weight: normal; text-align:left;}
+.btn-sm, .btn-group-sm>.btn{padding:0px;}
+
+.o-img{ width:45px; height:60px;}
+.o-box{ background-color:red; border-radius:70px;width:60px;}
+.o-text{padding-top:5px; font-size:8px;text-align:center;}
+o-media{ width:45px; height:60px; }
+.o-start{ border-radius:25px;background-color:#00C957;border:none;}
+.linear{ margin-top:50px;}
+

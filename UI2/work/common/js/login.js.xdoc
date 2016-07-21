@@ -1,0 +1,26 @@
+/**
+   @name $UI/work_open/common/js/login
+   @class
+   @model UI2
+   @category javascript
+   @description 登陆相关
+*/
+
+
+
+/**
+   @name $UI/work_open/common/js/login.requestLogin
+   @function
+   @description  请求登陆
+   @param {}   不需要请求参数
+   @returns {void}  
+*/
+
+/**
+   @name $UI/work_open/common/js/login.loadLoginDataByStore
+   @function
+   @description  
+   @param {}   
+   @returns {void}  
+*/
+

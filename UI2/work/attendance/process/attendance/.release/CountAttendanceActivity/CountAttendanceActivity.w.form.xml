@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<div xmlns="http://www.w3.org/1999/xhtml" component="$model/UI2/system/components/justep/window/window" design="device:m;" xid="window" class="window ciimeAb" data-bind="component:{name:'$model/UI2/system/components/justep/window/window'}" __cid="ciimeAb" components="$model/UI2/system/components/justep/model/model,$model/UI2/system/components/justep/loadingBar/loadingBar,$model/UI2/system/components/justep/button/button,$model/UI2/system/components/justep/list/list,$model/UI2/system/components/justep/panel/child,$model/UI2/system/components/justep/windowDialog/windowDialog,$model/UI2/system/components/justep/labelEdit/labelEdit,$model/UI2/system/components/justep/panel/panel,$model/UI2/system/components/justep/contents/content,$model/UI2/system/components/justep/windowContainer/windowContainer,$model/UI2/system/components/justep/row/row,$model/UI2/system/components/justep/titleBar/titleBar,$model/UI2/system/components/justep/contents/contents,$model/UI2/system/components/justep/data/data,$model/UI2/system/components/justep/window/window,$model/UI2/system/components/justep/button/buttonGroup,$model/UI2/system/components/bootstrap/panel/panel,">
+  <xhtml:style xmlns:xhtml="http://www.w3.org/1999/xhtml">.panel-body.ciimeAb{padding: 0px} .x-label.ciimeAb{padding: 0px} .progress.ciimeAb{margin-bottom: 0px; box-shadow: none} .btn.ciimeAb{border-radius: 0} .x-card.btn-group.ciimeAb .btn.active.ciimeAb{background-color: rgb(14, 128, 229); color: rgb(255, 255, 255)} .x-card.btn-group.ciimeAb .btn.ciimeAb{background-color: rgb(255, 255, 255); color: rgb(14, 128, 229)} .x-titlebar.ciimeAb{color: rgb(114, 113, 113)}</xhtml:style>  
+  <div component="$model/UI2/system/components/justep/model/model" xid="model" style="display:none" data-bind="component:{name:'$model/UI2/system/components/justep/model/model'}" data-events="onLoad:modelLoad;onParamsReceive:modelParamsReceive" __cid="ciimeAb" class="ciimeAb"></div>  
+  <div component="$model/UI2/system/components/justep/panel/panel" class="x-panel x-full pciimeAb-iosstatusbar ciimeAb" xid="panel3" data-bind="component:{name:'$model/UI2/system/components/justep/panel/panel'}" __cid="ciimeAb"> 
+    <div class="x-panel-top ciimeAb" xid="top3" style="padding-top:5px;padding-right:15px;padding-left:15px;background-color:white;" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="ciimeAb">
+      <div component="$model/UI2/system/components/justep/button/buttonGroup" class="btn-group x-card btn-group-justified ciimeAb" xid="buttonGroup2" style="border-radius:15px;border-style:solid solid solid solid;border-width:1px 1px 1px 1px;border-color:#0E80E5 #0E80E5 #0E80E5 #0E80E5;height:30px;" data-bind="component:{name:'$model/UI2/system/components/justep/button/buttonGroup'}" data-config="{&quot;tabbed&quot;:false}" __cid="ciimeAb">
+        <a component="$model/UI2/system/components/justep/button/button" class="btn btn-default ciimeAb" xid="teamRecordBtn" style="font-size:medium;font-weight:bold;border-bottom-left-radius:15px;border-top-left-radius:15px;height:30px;padding-bottom:5px;" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-config="{&quot;label&quot;:&quot;团队考勤&quot;,&quot;target&quot;:&quot;teamRecord&quot;}" __cid="ciimeAb"> 
+          <i xid="i1" __cid="ciimeAb" class="ciimeAb"/>  
+          <span xid="span2" __cid="ciimeAb" class="ciimeAb">团队考勤</span> 
+        </a>
+        <a component="$model/UI2/system/components/justep/button/button" class="btn btn-default ciimeAb" xid="personRecordBtn" style="font-size:medium;font-weight:bold;border-top-right-radius:15px;border-bottom-right-radius:15px;height:30px;" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-config="{&quot;label&quot;:&quot;我的考勤&quot;,&quot;target&quot;:&quot;personRecord&quot;}" __cid="ciimeAb"> 
+          <i xid="i2" __cid="ciimeAb" class="ciimeAb"/>  
+          <span xid="span4" __cid="ciimeAb" class="ciimeAb">我的考勤</span> 
+        </a>
+      </div>
+    </div>  
+    <div class="x-panel-content ciimeAb" xid="content1" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="ciimeAb">
+      <div component="$model/UI2/system/components/justep/contents/contents" class="x-contents x-full ciimeAb" xid="contentsGP" data-bind="component:{name:'$model/UI2/system/components/justep/contents/contents'}" data-events="onActiveChange:contentsGPActiveChange" data-config="{&quot;active&quot;:0,&quot;slidable&quot;:false,&quot;swipe&quot;:false,&quot;wrap&quot;:false}" __cid="ciimeAb"> 
+        <div class="x-contents-content active ciimeAb" xid="teamRecord" style="height:100%;padding:5px 5px 5px 5px;" component="$model/UI2/system/components/justep/contents/content" data-bind="component:{name:'$model/UI2/system/components/justep/contents/content'}" __cid="ciimeAb"> 
+          <div xid="waitDiv" style="position:relative;height:200px;" __cid="ciimeAb" class="ciimeAb"> 
+            <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-only-icon ciimeAb" xid="button2" style="position:absolute;font-size:30px;top:42%;left:42%;" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-config="{&quot;icon&quot;:&quot;icon-loading-a&quot;,&quot;label&quot;:&quot;button&quot;}" __cid="ciimeAb"> 
+              <i xid="i6" class="icon-loading-a ciimeAb" __cid="ciimeAb"/>  
+              <span xid="span3" __cid="ciimeAb" class="ciimeAb"/>
+            </a> 
+          </div>
+          <div class="panel panel-default x-cards ciimeAb" component="$model/UI2/system/components/bootstrap/panel/panel" xid="panel1" style="padding:5px 5px 5px 5px;margin-top:5px;display:none;" data-bind="component:{name:'$model/UI2/system/components/bootstrap/panel/panel'}" __cid="ciimeAb"> 
+            <div xid="heading1" style="padding:0;background-color:white;border-radius:10px;height:38px;" __cid="ciimeAb" class="ciimeAb"> 
+              <div xid="div6" align="center" style="padding:0px 0px 0px 0px;margin:0px 0px 0px 0px;" __cid="ciimeAb" class="ciimeAb">
+                <div component="$model/UI2/system/components/justep/row/row" class="x-row ciimeAb" xid="row2" bind-click="selDeptBtnClick" style="padding:0px 0px 0px 0px;margin:0px 0px 0px 0px;" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="ciimeAb"> 
+                  <div class="x-col x-col-center x-col-fixed ciimeAb" xid="col4" bind-text=" $model.deptStatusData.val(&quot;fDeptName&quot;)" style="width:auto;font-weight:bold;font-size:1.1em;" __cid="ciimeAb"/>  
+                  <div class="x-col x-col-center ciimeAb" xid="col6" bind-text="&quot;应到：&quot;+ $model.deptStatusData.val(&quot;fOrgPersonCount&quot;)" style="text-align:right;" __cid="ciimeAb"/>  
+                  <div class="x-col x-col-center ciimeAb" xid="col7" bind-text="&quot;实到：&quot; +  $model.deptStatusData.val(&quot;fActualPersonCount&quot;)" __cid="ciimeAb"/>  
+                  <div class="x-col x-col-fixed ciimeAb" xid="col11" style="width:auto;" __cid="ciimeAb">
+                    <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-sm btn-only-icon ciimeAb" xid="selDeptBtn" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:selDeptBtnClick" data-config="{&quot;icon&quot;:&quot;glyphicon glyphicon-menu-down&quot;,&quot;label&quot;:&quot;button&quot;}" __cid="ciimeAb"> 
+                      <i xid="i5" class="glyphicon glyphicon-menu-down ciimeAb" __cid="ciimeAb"/>  
+                      <span xid="span11" __cid="ciimeAb" class="ciimeAb"/>
+                    </a>
+                  </div>
+                </div> 
+              </div>
+            </div>  
+            <div class="panel-body ciimeAb" xid="body1" style="margin-top:10px;background-color:white;border-radius:10px;border-style:solid solid solid solid;border-width:1px 1px 1px 1px;border-color:#FFFFFF #FFFFFF #FFFFFF #FFFFFF;" __cid="ciimeAb"> 
+              <div component="$model/UI2/system/components/justep/titleBar/titleBar" class="x-titlebar ciimeAb" xid="scheTitleBar" style="height:40px;background-color:white;border-radius:10px;" data-bind="component:{name:'$model/UI2/system/components/justep/titleBar/titleBar'}" __cid="ciimeAb"> 
+                <div class="x-titlebar-left  ciimeAb" xid="left1" style="text-align:right;" __cid="ciimeAb">
+                  <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-only-icon ciimeAb" xid="prevBtn" style="color:#0E80E5;" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:prevBtnClick" data-config="{&quot;icon&quot;:&quot;icon-chevron-left&quot;,&quot;label&quot;:&quot;button&quot;}" __cid="ciimeAb"> 
+                    <i xid="i3" class="icon-chevron-left ciimeAb" __cid="ciimeAb"/>  
+                    <span xid="span7" __cid="ciimeAb" class="ciimeAb"/>
+                  </a>
+                </div>  
+                <div class="x-titlebar-title ciimeAb" xid="title1" style="padding:0;line-height:40px;font-size:medium;" __cid="ciimeAb"/>  
+                <div class="x-titlebar-right  ciimeAb" xid="right1" style="text-align:left;" __cid="ciimeAb">
+                  <div class="empty ciimeAb" __cid="ciimeAb"/>
+                  <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-only-icon ciimeAb" xid="nextBtn" style="color:#0E80E5;" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:nextBtnClick" data-config="{&quot;icon&quot;:&quot;icon-chevron-right&quot;,&quot;label&quot;:&quot;button&quot;}" __cid="ciimeAb"> 
+                    <i xid="i4" class="icon-chevron-right ciimeAb" __cid="ciimeAb"/>  
+                    <span xid="span9" __cid="ciimeAb" class="ciimeAb"/>
+                  </a>
+                </div>
+              </div>
+              <div xid="div5" style="border-style:solid solid solid solid;border-width:1px 0px 0px 0px;border-color:#D0D0D0 #D0D0D0 #D0D0D0 #D0D0D0;" __cid="ciimeAb" class="ciimeAb"> 
+                <div component="$model/UI2/system/components/justep/list/list" class="x-list ciimeAb" xid="showCountList" style="text-align:center;" bind-click="showCountListClick" data-bind="component:{name:'$model/UI2/system/components/justep/list/list'}" data-config="{&quot;data&quot;:&quot;AllStatusData&quot;}" __cid="ciimeAb"> 
+                  <ul class="x-list-template hide ciimeAb" xid="listTemplateUl4" bind-foreach="{data:$model.foreach_showCountList($element),afterRender:$model.foreach_afterRender_showCountList.bind($model,$element)}" __cid="ciimeAb"> 
+                    <li xid="li4" class="col-xs-6 ciimeAb" style="padding:0;" __cid="ciimeAb">
+                      <div component="$model/UI2/system/components/justep/labelEdit/labelEdit" class="x-label-edit x-label30 ciimeAb" xid="labelEdit1" data-bind="component:{name:'$model/UI2/system/components/justep/labelEdit/labelEdit'}" __cid="ciimeAb"> 
+                        <label class="x-label ciimeAb" xid="label1" bind-text="ref(&quot;fStatus&quot;)" style="font-size:small;" __cid="ciimeAb"/>  
+                        <div class="x-edit ciimeAb" xid="div2" __cid="ciimeAb"> 
+                          <div component="$model/UI2/system/components/justep/row/row" class="x-row ciimeAb" xid="row1" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="ciimeAb"> 
+                            <div class="x-col x-col-center ciimeAb" xid="col1" __cid="ciimeAb"> 
+                              <div xid="div9" class="progress ciimeAb" __cid="ciimeAb"> 
+                                <div xid="progressBar1" class="progress-bar ciimeAb" role="progressbar" bind-style="{&quot;width&quot;:($model.comp(&quot;attenStatusData&quot;).count(function(e){var v = e.source.getValue(&quot;fStatus&quot;,e.row);         return v.indexOf(val(&quot;fStatus&quot;))==0;}))/$model.deptStatusData.val(&quot;fOrgPersonCount&quot;)*100+&quot;%&quot;}" __cid="ciimeAb"/>
+                              </div>
+                            </div>  
+                            <div class="x-col x-col-10 x-col-center ciimeAb" xid="col3" style="padding:0;" __cid="ciimeAb">
+                              <span xid="personCount" bind-text="$model.comp(&quot;attenStatusData&quot;).count(function(e){var v = e.source.getValue(&quot;fStatus&quot;,e.row);  return v.indexOf(val(&quot;fStatus&quot;))==0;})" __cid="ciimeAb" class="ciimeAb"/>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </li>
+                  </ul> 
+                </div>
+              </div> 
+            </div>  
+            <div xid="rankDiv" style="padding:0;background-color:white;border-radius:10px;margin-top:10px;display:none" __cid="ciimeAb" class="ciimeAb">
+              <div component="$model/UI2/system/components/justep/row/row" class="x-row ciimeAb" xid="rankRow" style="padding:0px 0px 0px 0px;margin:0px 0px 0px 0px;" bind-click="rankRowClick" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="ciimeAb"> 
+                <div class="x-col x-col-center ciimeAb" xid="col12" __cid="ciimeAb">
+                  <span xid="span12" __cid="ciimeAb" class="ciimeAb">排行榜</span>
+                </div>  
+                <div class="x-col x-col-fixed ciimeAb" xid="col9" style="width:auto;" __cid="ciimeAb"> 
+                  <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-sm btn-only-icon ciimeAb" xid="button5" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:selDeptBtnClick" data-config="{&quot;icon&quot;:&quot;icon-chevron-right&quot;,&quot;label&quot;:&quot;button&quot;}" __cid="ciimeAb"> 
+                    <i xid="i10" class="icon-chevron-right ciimeAb" __cid="ciimeAb"/>  
+                    <span xid="span10" __cid="ciimeAb" class="ciimeAb"/>
+                  </a> 
+                </div> 
+              </div>
+            </div>
+          </div> 
+        </div>
+        <div xid="personRecord" class="x-contents-content ciimeAb" component="$model/UI2/system/components/justep/contents/content" data-bind="component:{name:'$model/UI2/system/components/justep/contents/content'}" __cid="ciimeAb"> 
+          <div component="$model/UI2/system/components/justep/windowContainer/windowContainer" class="x-window-container ciimeAb" xid="personWindow" __component-context__="block" data-bind="component:{name:'$model/UI2/system/components/justep/windowContainer/windowContainer'}" data-config="{&quot;autoLoad&quot;:false,&quot;src&quot;:&quot;$model/UI2/work/attendance/process/attendance/personRecord.m.w&quot;}" __cid="ciimeAb"/>
+        </div>
+      </div>
+    </div>  
+    <style __cid="ciimeAb" class="ciimeAb">.x-panel.pciimeAb-iosstatusbar &gt;.x-panel-top {height: 48px;}.x-panel.pciimeAb-iosstatusbar &gt;.x-panel-content { top: 48px;bottom: nullpx;}.x-panel.pciimeAb-iosstatusbar &gt;.x-panel-bottom {height: nullpx;}.iosstatusbar .x-panel.pciimeAb-iosstatusbar &gt;.x-panel-top,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pciimeAb-iosstatusbar &gt;.x-panel-top {height: 68px;}.iosstatusbar .x-panel.pciimeAb-iosstatusbar &gt;.x-panel-content,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pciimeAb-iosstatusbar &gt;.x-panel-content { top: 68px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pciimeAb-iosstatusbar &gt;.x-panel-top {height: 48px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pciimeAb-iosstatusbar &gt;.x-panel-content {top: 48px;}</style>
+  </div>  
+  <span component="$model/UI2/system/components/justep/windowDialog/windowDialog" xid="selDeptDialog" data-bind="component:{name:'$model/UI2/system/components/justep/windowDialog/windowDialog'}" data-events="onReceive:selDeptDialogReceive" data-config="{&quot;forceRefreshOnOpen&quot;:true,&quot;showTitle&quot;:true,&quot;src&quot;:&quot;$model/UI2/work/attendance/process/attendance/selDeptDialog.m.w&quot;,&quot;status&quot;:&quot;normal&quot;,&quot;title&quot;:&quot;请选择部门&quot;}" __cid="ciimeAb" class="ciimeAb">
+    <xhtml:div xmlns:xhtml="http://www.w3.org/1999/xhtml" class="x-dialog-overlay ciimeAb" __cid="ciimeAb"/>
+    <xhtml:div xmlns:xhtml="http://www.w3.org/1999/xhtml" class="x-dialog ciimeAb" style="display:none;" showTitle="true" __cid="ciimeAb">
+      <xhtml:div class="x-dialog-title ciimeAb" __cid="ciimeAb">
+        <xhtml:button class="close ciimeAb" __cid="ciimeAb">
+          <xhtml:span __cid="ciimeAb" class="ciimeAb">×</xhtml:span>
+        </xhtml:button>
+        <xhtml:div class="x-dialog-title-text ciimeAb" __cid="ciimeAb">请选择部门</xhtml:div>
+      </xhtml:div>
+      <xhtml:div class="x-dialog-body ciimeAb" __cid="ciimeAb"/>
+    </xhtml:div>
+  </span>
+  <span component="$model/UI2/system/components/justep/windowDialog/windowDialog" xid="detailStatusDialog" style="top:10px;left:9px;" data-bind="component:{name:'$model/UI2/system/components/justep/windowDialog/windowDialog'}" data-config="{&quot;forceRefreshOnOpen&quot;:true,&quot;showTitle&quot;:false,&quot;src&quot;:&quot;$model/UI2/work/attendance/process/attendance/detailStatusDlg.m.w&quot;}" __cid="ciimeAb" class="ciimeAb">
+    <xhtml:div xmlns:xhtml="http://www.w3.org/1999/xhtml" class="x-dialog-overlay ciimeAb" __cid="ciimeAb"/>
+    <xhtml:div xmlns:xhtml="http://www.w3.org/1999/xhtml" class="x-dialog ciimeAb" style="display:none;" showTitle="false" __cid="ciimeAb">
+      <xhtml:div class="x-dialog-title ciimeAb" __cid="ciimeAb">
+        <xhtml:button class="close ciimeAb" __cid="ciimeAb">
+          <xhtml:span __cid="ciimeAb" class="ciimeAb">×</xhtml:span>
+        </xhtml:button>
+        <xhtml:div class="x-dialog-title-text ciimeAb" __cid="ciimeAb"/>
+      </xhtml:div>
+      <xhtml:div class="x-dialog-body ciimeAb" __cid="ciimeAb"/>
+    </xhtml:div>
+  </span>
+</div>

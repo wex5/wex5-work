@@ -1,0 +1,9 @@
+.sText{
+	text-align:right;
+}
+.x-radio input[type="radio"]:checked + label:before, .x-checkbox input[type="checkbox"]:checked + label:before{
+	background-color:#00C957;
+}
+.x-row{
+	padding:0px 0px 0px 5px;
+}

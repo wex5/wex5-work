@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<div xmlns="http://www.w3.org/1999/xhtml" component="$model/UI2/system/components/justep/window/window" design="device:m;" xid="window" class="window cy2Ib2u" data-bind="component:{name:'$model/UI2/system/components/justep/window/window'}" __cid="cy2Ib2u" components="$model/UI2/system/components/justep/model/model,$model/UI2/system/components/justep/loadingBar/loadingBar,$model/UI2/system/components/justep/button/button,$model/UI2/system/components/justep/list/list,$model/UI2/system/components/bootstrap/row/row,$model/UI2/system/components/justep/panel/child,$model/UI2/system/components/justep/windowDialog/windowDialog,$model/UI2/system/components/justep/messageDialog/messageDialog,$model/UI2/system/components/justep/panel/panel,$model/UI2/system/components/justep/contents/content,$model/UI2/system/components/justep/windowContainer/windowContainer,$model/UI2/system/components/justep/row/row,$model/UI2/system/components/justep/titleBar/titleBar,$model/UI2/system/components/justep/contents/contents,$model/UI2/system/components/justep/data/data,$model/UI2/system/components/justep/window/window,$model/UI2/system/components/justep/data/baasData,$model/UI2/system/components/justep/button/buttonGroup,$model/UI2/system/components/justep/datePicker/datePicker,">
+  <xhtml:style xmlns:xhtml="http://www.w3.org/1999/xhtml">.no-padding.cy2Ib2u{padding: 0} .x-dialog.x-dialog-normal.cy2Ib2u .x-dialog-body.cy2Ib2u{padding: 0} .btnCheck.cy2Ib2u{text-align: center; padding-top: 30px; box-shadow: 0 0 10px; position: relative; height: 100px; width: 100px; margin: auto; border-radius: 50%; background: rgb(0, 194, 255); margin-bottom: 10px} .atten_row.cy2Ib2u{margin: 0; margin-top: 15px} .lateText.cy2Ib2u{font-size: 1.2em} .tipRow.cy2Ib2u{color: rgb(153, 153, 153); text-align: center; display: none} .stateText.cy2Ib2u{display: block; color: rgb(255, 255, 255); font-size: medium; font-weight: bold} .timeText.cy2Ib2u{color: rgb(255, 255, 255); font-size: medium} .check_listText.cy2Ib2u{font-weight: bold; font-size: 1.1em} .locaBtn.cy2Ib2u{padding-left: 0px; padding-right: 0px} .tipOutText.cy2Ib2u{font-size: 1.2em} .x-card.btn-group.cy2Ib2u .btn.active.cy2Ib2u{border-top: 2px solid rgb(236, 202, 62)} .x-card.btn-group.cy2Ib2u .btn.cy2Ib2u{border-top: 1px solid rgb(221, 221, 221)}</xhtml:style>  
+  <div component="$model/UI2/system/components/justep/model/model" xid="model" style="display:none" data-bind="component:{name:'$model/UI2/system/components/justep/model/model'}" data-events="onModelConstruct:modelModelConstruct;onInactive:modelInactive;onLoad:modelLoad;onParamsReceive:modelParamsReceive" __cid="cy2Ib2u" class="cy2Ib2u"></div>  
+  <div component="$model/UI2/system/components/justep/panel/panel" class="x-panel x-full pcy2Ib2u-iosstatusbar cy2Ib2u" xid="panel1" data-bind="component:{name:'$model/UI2/system/components/justep/panel/panel'}" __cid="cy2Ib2u"> 
+    <div class="x-panel-top cy2Ib2u" xid="top1" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="cy2Ib2u"> 
+      <div component="$model/UI2/system/components/justep/titleBar/titleBar" class="x-titlebar cy2Ib2u" style="background-color:#3399F3;" data-bind="component:{name:'$model/UI2/system/components/justep/titleBar/titleBar'}" data-config="{&quot;title&quot;:&quot;考勤打卡&quot;}" __cid="cy2Ib2u"> 
+        <div class="x-titlebar-left cy2Ib2u" __cid="cy2Ib2u"> 
+          <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-only-icon cy2Ib2u" xid="backBtn" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:{operation:'window.close'}" data-config="{&quot;icon&quot;:&quot;icon-chevron-left&quot;,&quot;label&quot;:&quot;&quot;}" __cid="cy2Ib2u"> 
+            <i class="icon-chevron-left cy2Ib2u" __cid="cy2Ib2u"/>  
+            <span __cid="cy2Ib2u" class="cy2Ib2u"/> 
+          </a> 
+        </div>  
+        <div class="x-titlebar-title cy2Ib2u" __cid="cy2Ib2u">考勤打卡</div>  
+        <div class="x-titlebar-right  cy2Ib2u" __cid="cy2Ib2u">
+          <div class="empty cy2Ib2u" __cid="cy2Ib2u"/>
+          <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link cy2Ib2u" xid="AttendanceAdminBtn" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:AttendanceAdminBtnClick" data-config="{&quot;label&quot;:&quot;设置&quot;}" __cid="cy2Ib2u"> 
+            <i xid="i9" __cid="cy2Ib2u" class="cy2Ib2u"/>  
+            <span xid="span9" __cid="cy2Ib2u" class="cy2Ib2u">设置</span>
+          </a>
+        </div> 
+      </div> 
+    </div>  
+    <div class="x-panel-content x-cards no-padding cy2Ib2u" xid="content1" style="display:none;" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="cy2Ib2u"> 
+      <div component="$model/UI2/system/components/justep/contents/contents" class="x-contents x-full cy2Ib2u" xid="attenContents" data-bind="component:{name:'$model/UI2/system/components/justep/contents/contents'}" data-events="onActiveChange:attenContentsActiveChange" data-config="{&quot;active&quot;:0,&quot;slidable&quot;:false,&quot;swipe&quot;:false,&quot;wrap&quot;:false}" __cid="cy2Ib2u"> 
+        <div class="x-contents-content active cy2Ib2u" xid="check" component="$model/UI2/system/components/justep/contents/content" data-bind="component:{name:'$model/UI2/system/components/justep/contents/content'}" __cid="cy2Ib2u">
+          <div component="$model/UI2/system/components/justep/row/row" class="x-row cy2Ib2u" xid="selPicker" style="border-bottom:1px solid #ddd;" bind-click="selPickerClick" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="cy2Ib2u"> 
+            <div class="x-col x-col-fixed x-col-center cy2Ib2u" xid="col1" style="width:auto;" __cid="cy2Ib2u">
+              <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-only-icon no-padding cy2Ib2u" xid="button1" style="font-size:2em;" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-config="{&quot;icon&quot;:&quot;icon-ios7-calendar-outline&quot;,&quot;label&quot;:&quot;button&quot;}" __cid="cy2Ib2u"> 
+                <i xid="i1" class="icon-ios7-calendar-outline cy2Ib2u" __cid="cy2Ib2u"/>  
+                <span xid="span1" __cid="cy2Ib2u" class="cy2Ib2u"/>
+              </a>
+            </div>  
+            <div class="x-col x-col-center cy2Ib2u" xid="col2" __cid="cy2Ib2u">
+              <span xid="weekSpan" __cid="cy2Ib2u" class="cy2Ib2u"/>
+              <span xid="dateSpanc" __cid="cy2Ib2u" class="cy2Ib2u"/> 
+            </div>  
+            <div class="x-col x-col-fixed x-col-center cy2Ib2u" xid="col3" style="width:auto;" __cid="cy2Ib2u">
+              <a component="$model/UI2/system/components/justep/button/button" class="btn btn-default btn-link btn-only-icon cy2Ib2u" xid="button2" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-config="{&quot;icon&quot;:&quot;icon-chevron-down&quot;,&quot;label&quot;:&quot;button&quot;}" __cid="cy2Ib2u"> 
+                <i xid="i2" class="icon-chevron-down cy2Ib2u" __cid="cy2Ib2u"/>  
+                <span xid="span2" __cid="cy2Ib2u" class="cy2Ib2u"/>
+              </a>
+            </div>
+          </div>  
+          <div component="$model/UI2/system/components/bootstrap/row/row" class="row atten_row cy2Ib2u" xid="checkIn" bind-style=" $model.checkInOutData.val(&quot;fCheckInAM&quot;)?{'background':'white','border-bottom':'1px solid #ddd'}:{&quot;background&quot;:&quot;none&quot;,&quot;border&quot;:&quot;none&quot;}" data-bind="component:{name:'$model/UI2/system/components/bootstrap/row/row'}" __cid="cy2Ib2u"> 
+            <div class="col col-xs-12 cy2Ib2u" xid="col10" style="margin-bottom:25px;" __cid="cy2Ib2u">
+              <span xid="tipSpan" bind-visible=" !$model.checkInOutData.val(&quot;fCheckInAM&quot;)" bind-text="'上班时间'+$model.TimeData.val(&quot;fStartAM&quot;)" __cid="cy2Ib2u" class="cy2Ib2u"/>  
+              <div xid="div9" bind-visible=" $model.checkInOutData.val(&quot;fCheckInAM&quot;)" style="margin-top:15px;" __cid="cy2Ib2u" class="cy2Ib2u">
+                <div xid="div7" __cid="cy2Ib2u" class="cy2Ib2u"> 
+                  <p xid="p2" style="padding-boottom:10px;color:#999;" bind-text="&quot;调整心情，开启美好心情开始工作&quot;" __cid="cy2Ib2u" class="cy2Ib2u"/>
+                  <div component="$model/UI2/system/components/justep/list/list" class="x-list cy2Ib2u" xid="list2" data-bind="component:{name:'$model/UI2/system/components/justep/list/list'}" data-config="{&quot;data&quot;:&quot;checkInOutData&quot;}" __cid="cy2Ib2u"> 
+                    <ul class="x-list-template hide cy2Ib2u" xid="listTemplateUl2" bind-foreach="{data:$model.foreach_list2($element),afterRender:$model.foreach_afterRender_list2.bind($model,$element)}" __cid="cy2Ib2u"> 
+                      <li xid="li2" __cid="cy2Ib2u" class="cy2Ib2u">
+                        <span xid="span12" bind-text="$object.val(&quot;fCheckInAM&quot;)?&quot;打卡时间: &quot; + justep.Date.toString($object.val(&quot;fCheckInAM&quot;),&quot;hh:mm:ss&quot;):&quot;&quot;" class="check_listText cy2Ib2u" __cid="cy2Ib2u"/>
+                        <span xid="IntimeSpan" bind-text="$model.getStartTime($model.TimeData.val(&quot;fStartAM&quot;))" __cid="cy2Ib2u" class="cy2Ib2u"/>
+                      </li>
+                    </ul> 
+                  </div> 
+                </div>
+                <div xid="div4" __cid="cy2Ib2u" class="cy2Ib2u">
+                  <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link locaBtn cy2Ib2u" xid="button6" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-config="{&quot;icon&quot;:&quot;linear linear-bicycle&quot;}" __cid="cy2Ib2u"> 
+                    <i xid="i3" class="linear linear-bicycle cy2Ib2u" __cid="cy2Ib2u"/>  
+                    <span xid="span3" __cid="cy2Ib2u" class="cy2Ib2u"/>
+                  </a>
+                  <span xid="checkInArea" bind-text="$model.checkInOutData.val(&quot;fCheckAreaAM&quot;)" __cid="cy2Ib2u" class="cy2Ib2u"/>
+                </div>  
+                <div xid="div5" style="display:inline-block;" __cid="cy2Ib2u" class="cy2Ib2u">
+                  <span xid="statuSpanAM" bind-text=" $model.checkInOutData.val(&quot;fIsLate&quot;)? $model.checkInOutData.val(&quot;fIsLate&quot;):&quot;正常&quot;" bind-style=" $model.checkInOutData.val(&quot;fIsLate&quot;)?{&quot;color&quot;:&quot;orange&quot;}:{&quot;color&quot;:&quot;green&quot;}" __cid="cy2Ib2u" class="cy2Ib2u"/>
+                </div>
+              </div>
+            </div>  
+            <div class="col col-xs-4 col-xs-offset-4 cy2Ib2u" xid="col11" bind-visible="!$model.checkInOutData.val(&quot;fCheckInAM&quot;) " __cid="cy2Ib2u"> 
+              <div xid="buttonCheck" bind-click="buttonCheckInClick" class="btnCheck cy2Ib2u" __cid="cy2Ib2u">
+                <span xid="stateSpan" class="stateText cy2Ib2u" __cid="cy2Ib2u">上班打卡</span>
+                <span xid="systemTime" class="timeText cy2Ib2u" __cid="cy2Ib2u"/> 
+              </div> 
+            </div>  
+            <div component="$model/UI2/system/components/justep/row/row" class="x-row tipRow cy2Ib2u" xid="tipInfoRow" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="cy2Ib2u"> 
+              <div class="x-col cy2Ib2u" xid="col4" __cid="cy2Ib2u">
+                <span xid="span7" class="lateText cy2Ib2u" __cid="cy2Ib2u">对不起,暂无数据</span>
+              </div> 
+            </div>
+          </div>
+          <div component="$model/UI2/system/components/bootstrap/row/row" class="row cy2Ib2u" xid="checkOut" bind-visible=" $model.checkInOutData.val(&quot;fCheckInAM&quot;)" style="margin:0;margin-top:10px;background:rgb(255,255,255);display:none;" data-bind="component:{name:'$model/UI2/system/components/bootstrap/row/row'}" __cid="cy2Ib2u"> 
+            <div class="col col-xs-12 cy2Ib2u" xid="col23" style="padding-top:15px;" __cid="cy2Ib2u"> 
+              <span xid="EndTimeSpan" bind-visible=" !$model.checkInOutData.val(&quot;fCheckOutPM&quot;)" __cid="cy2Ib2u" class="cy2Ib2u"/>  
+              <div xid="div10" bind-visible=" $model.checkInOutData.val(&quot;fCheckOutPM&quot;)" style="margin-top:15px;" __cid="cy2Ib2u" class="cy2Ib2u">
+                <div xid="div11" __cid="cy2Ib2u" class="cy2Ib2u"> 
+                  <div component="$model/UI2/system/components/justep/list/list" class="x-list cy2Ib2u" xid="list3" data-bind="component:{name:'$model/UI2/system/components/justep/list/list'}" data-config="{&quot;data&quot;:&quot;checkInOutData&quot;}" __cid="cy2Ib2u"> 
+                    <ul class="x-list-template hide cy2Ib2u" xid="listTemplateUl3" bind-foreach="{data:$model.foreach_list3($element),afterRender:$model.foreach_afterRender_list3.bind($model,$element)}" __cid="cy2Ib2u"> 
+                      <li xid="li3" __cid="cy2Ib2u" class="cy2Ib2u">
+                        <span xid="span16" bind-text="$object.val(&quot;fCheckOutPM&quot;)?&quot;打卡时间: &quot; +  justep.Date.toString($object.val(&quot;fCheckOutPM&quot;),&quot;hh:mm:ss&quot;):&quot;&quot;" class="check_listText cy2Ib2u" __cid="cy2Ib2u"/>
+                        <span xid="span15" bind-text=" $model.getEndTime($model.TimeData.val(&quot;fEndPM&quot;))" __cid="cy2Ib2u" class="cy2Ib2u"/>
+                      </li>
+                    </ul> 
+                  </div>
+                </div>  
+                <div xid="div6" __cid="cy2Ib2u" class="cy2Ib2u">
+                  <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link locaBtn cy2Ib2u" xid="button8" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-config="{&quot;icon&quot;:&quot;linear linear-bicycle&quot;}" __cid="cy2Ib2u"> 
+                    <i xid="i7" class="linear linear-bicycle cy2Ib2u" __cid="cy2Ib2u"/>  
+                    <span xid="span10" __cid="cy2Ib2u" class="cy2Ib2u"/>
+                  </a>
+                  <span xid="checkOutArea" bind-text="$model.checkInOutData.val(&quot;fCheckAreaPM&quot;)" __cid="cy2Ib2u" class="cy2Ib2u"/> 
+                </div>  
+                <span xid="statuSpanPM" bind-text=" $model.checkInOutData.val(&quot;fIsLeaving&quot;)? $model.checkInOutData.val(&quot;fIsLeaving&quot;):&quot;正常&quot;" bind-style=" $model.checkInOutData.val(&quot;fIsLeaving&quot;)?{&quot;color&quot;:&quot;orange&quot;}:{&quot;color&quot;:&quot;green&quot;}" style="display:block;" __cid="cy2Ib2u" class="cy2Ib2u"/>
+                <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-sm btn-icon-left cy2Ib2u" xid="changeStatus" bind-click="changeStatusClick" style="padding-left:0;" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-config="{&quot;icon&quot;:&quot;linear linear-redo&quot;,&quot;label&quot;:&quot;更换打卡状态&quot;}" __cid="cy2Ib2u"> 
+                  <i xid="i6" class="linear linear-redo cy2Ib2u" __cid="cy2Ib2u"/>  
+                  <span xid="span8" __cid="cy2Ib2u" class="cy2Ib2u">更换打卡状态</span>
+                </a>
+                <div xid="div8" __cid="cy2Ib2u" class="cy2Ib2u"> 
+                  <p xid="p1" style="color:#999;" __cid="cy2Ib2u" class="cy2Ib2u">一天工作辛苦了，好好休息</p>
+                </div> 
+              </div>
+            </div>  
+            <div class="col col-xs-4 col-xs-offset-4 cy2Ib2u" xid="col22" bind-visible=" !$model.checkInOutData.val(&quot;fCheckOutPM&quot;)" __cid="cy2Ib2u"> 
+              <div xid="buttonCheckOut" bind-click="buttonCheckOutClick" class="btnCheck cy2Ib2u" __cid="cy2Ib2u"> 
+                <span xid="span4" style="display:block;" class="stateText cy2Ib2u" __cid="cy2Ib2u">下班打卡</span>
+                <span xid="systemTime2" class="timeText cy2Ib2u" __cid="cy2Ib2u"/> 
+              </div> 
+            </div> 
+          </div>  
+          <div component="$model/UI2/system/components/justep/row/row" class="x-row tipRow cy2Ib2u" xid="tipOutRow" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="cy2Ib2u"> 
+            <div class="x-col cy2Ib2u" xid="col5" __cid="cy2Ib2u">
+              <span xid="tipOutSpan" class="tipOutText cy2Ib2u" __cid="cy2Ib2u">对不起,暂无数据</span>
+            </div> 
+          </div>
+        </div>  
+        <div class="x-contents-content cy2Ib2u" xid="statistics" component="$model/UI2/system/components/justep/contents/content" data-bind="component:{name:'$model/UI2/system/components/justep/contents/content'}" __cid="cy2Ib2u">
+          <div component="$model/UI2/system/components/justep/windowContainer/windowContainer" class="x-window-container cy2Ib2u" xid="navContainer" __component-context__="block" data-bind="component:{name:'$model/UI2/system/components/justep/windowContainer/windowContainer'}" data-config="{&quot;autoLoad&quot;:false,&quot;src&quot;:&quot;$model/UI2/work/attendance/process/attendance/CountAttendanceActivity.w&quot;}" __cid="cy2Ib2u"/>
+        </div>
+      </div> 
+    </div>  
+    <div class="x-panel-bottom cy2Ib2u" xid="bottom1" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="cy2Ib2u">
+      <div component="$model/UI2/system/components/justep/button/buttonGroup" class="btn-group x-card btn-group-justified cy2Ib2u" xid="buttonGroup1" data-bind="component:{name:'$model/UI2/system/components/justep/button/buttonGroup'}" data-config="{&quot;selected&quot;:&quot;button4&quot;,&quot;tabbed&quot;:true}" __cid="cy2Ib2u">
+        <a component="$model/UI2/system/components/justep/button/button" class="btn btn-default btn-icon-top cy2Ib2u" xid="button4" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-config="{&quot;label&quot;:&quot;打卡&quot;,&quot;target&quot;:&quot;check&quot;}" __cid="cy2Ib2u"> 
+          <i xid="i4" class="icon-android-checkmark cy2Ib2u" __cid="cy2Ib2u"/>  
+          <span xid="span5" __cid="cy2Ib2u" class="cy2Ib2u">打卡</span>
+        </a>  
+        <a component="$model/UI2/system/components/justep/button/button" class="btn btn-default btn-icon-top cy2Ib2u" xid="button5" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-config="{&quot;icon&quot;:&quot;icon-android-note&quot;,&quot;label&quot;:&quot;统计&quot;,&quot;target&quot;:&quot;statistics&quot;}" __cid="cy2Ib2u"> 
+          <i xid="i5" class="icon-android-note cy2Ib2u" __cid="cy2Ib2u"/>  
+          <span xid="span6" __cid="cy2Ib2u" class="cy2Ib2u">统计</span>
+        </a>
+      </div>
+    </div>
+    <style __cid="cy2Ib2u" class="cy2Ib2u">.x-panel.pcy2Ib2u-iosstatusbar &gt;.x-panel-top {height: 48px;}.x-panel.pcy2Ib2u-iosstatusbar &gt;.x-panel-content { top: 48px;bottom: nullpx;}.x-panel.pcy2Ib2u-iosstatusbar &gt;.x-panel-bottom {height: nullpx;}.iosstatusbar .x-panel.pcy2Ib2u-iosstatusbar &gt;.x-panel-top,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pcy2Ib2u-iosstatusbar &gt;.x-panel-top {height: 68px;}.iosstatusbar .x-panel.pcy2Ib2u-iosstatusbar &gt;.x-panel-content,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pcy2Ib2u-iosstatusbar &gt;.x-panel-content { top: 68px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pcy2Ib2u-iosstatusbar &gt;.x-panel-top {height: 48px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pcy2Ib2u-iosstatusbar &gt;.x-panel-content {top: 48px;}</style>
+  </div>  
+  <div component="$model/UI2/system/components/justep/datePicker/datePicker" class="x-popPicker cy2Ib2u" xid="datePicker" style="top:13px;left:523px;" data-bind="component:{name:'$model/UI2/system/components/justep/datePicker/datePicker'}" data-events="onOK:datePickerOK" data-config="{&quot;type&quot;:&quot;date&quot;}" __cid="cy2Ib2u"> 
+    <div class="x-popPicker-overlay cy2Ib2u" xid="div1" __cid="cy2Ib2u"/>  
+    <div class="x-popPicker-content cy2Ib2u" xid="div2" __cid="cy2Ib2u"> 
+      <div class="x-poppicker-header cy2Ib2u" xid="div3" __cid="cy2Ib2u"> 
+        <button class="btn btn-default x-btn-ok cy2Ib2u" xid="button3" __cid="cy2Ib2u">确定</button>
+      </div> 
+    </div> 
+  </div>  
+  <span component="$model/UI2/system/components/justep/windowDialog/windowDialog" xid="remarkDialog" data-bind="component:{name:'$model/UI2/system/components/justep/windowDialog/windowDialog'}" data-events="onReceived:remarkDialogReceived" data-config="{&quot;forceRefreshOnOpen&quot;:true,&quot;height&quot;:&quot;60%&quot;,&quot;showTitle&quot;:true,&quot;src&quot;:&quot;$model/UI2/work/attendance/process/attendance/remarkActivity.m.w&quot;,&quot;status&quot;:&quot;normal&quot;,&quot;width&quot;:&quot;80%&quot;}" __cid="cy2Ib2u" class="cy2Ib2u">
+    <xhtml:div xmlns:xhtml="http://www.w3.org/1999/xhtml" class="x-dialog-overlay cy2Ib2u" __cid="cy2Ib2u"/>
+    <xhtml:div xmlns:xhtml="http://www.w3.org/1999/xhtml" class="x-dialog cy2Ib2u" style="display:none;" showTitle="true" __cid="cy2Ib2u">
+      <xhtml:div class="x-dialog-title cy2Ib2u" __cid="cy2Ib2u">
+        <xhtml:button class="close cy2Ib2u" __cid="cy2Ib2u">
+          <xhtml:span __cid="cy2Ib2u" class="cy2Ib2u">×</xhtml:span>
+        </xhtml:button>
+        <xhtml:div class="x-dialog-title-text cy2Ib2u" __cid="cy2Ib2u"/>
+      </xhtml:div>
+      <xhtml:div class="x-dialog-body cy2Ib2u" __cid="cy2Ib2u"/>
+    </xhtml:div>
+  </span>
+  <span component="$model/UI2/system/components/justep/windowDialog/windowDialog" xid="remarkOutDialog" data-bind="component:{name:'$model/UI2/system/components/justep/windowDialog/windowDialog'}" data-events="onReceived:remarkOutDialogReceived" data-config="{&quot;forceRefreshOnOpen&quot;:true,&quot;height&quot;:&quot;60%&quot;,&quot;showTitle&quot;:true,&quot;src&quot;:&quot;$model/UI2/work/attendance/process/attendance/remarkOutActivity.m.w&quot;,&quot;status&quot;:&quot;normal&quot;,&quot;width&quot;:&quot;80%&quot;}" __cid="cy2Ib2u" class="cy2Ib2u">
+    <xhtml:div xmlns:xhtml="http://www.w3.org/1999/xhtml" class="x-dialog-overlay cy2Ib2u" __cid="cy2Ib2u"/>
+    <xhtml:div xmlns:xhtml="http://www.w3.org/1999/xhtml" class="x-dialog cy2Ib2u" style="display:none;" showTitle="true" __cid="cy2Ib2u">
+      <xhtml:div class="x-dialog-title cy2Ib2u" __cid="cy2Ib2u">
+        <xhtml:button class="close cy2Ib2u" __cid="cy2Ib2u">
+          <xhtml:span __cid="cy2Ib2u" class="cy2Ib2u">×</xhtml:span>
+        </xhtml:button>
+        <xhtml:div class="x-dialog-title-text cy2Ib2u" __cid="cy2Ib2u"/>
+      </xhtml:div>
+      <xhtml:div class="x-dialog-body cy2Ib2u" __cid="cy2Ib2u"/>
+    </xhtml:div>
+  </span>  
+  <span component="$model/UI2/system/components/justep/messageDialog/messageDialog" xid="successDialog" data-bind="component:{name:'$model/UI2/system/components/justep/messageDialog/messageDialog'}" data-config="{&quot;message&quot;:&quot;打卡成功&quot;,&quot;type&quot;:&quot;OK&quot;}" __cid="cy2Ib2u" class="cy2Ib2u">
+    <xhtml:div xmlns:xhtml="http://www.w3.org/1999/xhtml" class="x-modal-overlay cy2Ib2u" __cid="cy2Ib2u"/>
+    <xhtml:div xmlns:xhtml="http://www.w3.org/1999/xhtml" class="x-modal cy2Ib2u" __cid="cy2Ib2u">
+      <xhtml:div class="x-modal-inner cy2Ib2u" __cid="cy2Ib2u">
+        <xhtml:div class="x-modal-title cy2Ib2u" __cid="cy2Ib2u"></xhtml:div>
+        <xhtml:div class="x-modal-text cy2Ib2u" __cid="cy2Ib2u">打卡成功</xhtml:div>
+        <xhtml:input class="x-modal-prompt-input cy2Ib2u" type="text" __cid="cy2Ib2u"/>
+      </xhtml:div>
+      <xhtml:div class="x-modal-buttons cy2Ib2u" __cid="cy2Ib2u">
+        <xhtml:a class="x-modal-button x-modal-button-bold OK cy2Ib2u" value="ok" __cid="cy2Ib2u">确定</xhtml:a>
+        <xhtml:a class="x-modal-button x-modal-button-bold Yes cy2Ib2u" value="yes" __cid="cy2Ib2u">是</xhtml:a>
+        <xhtml:a class="x-modal-button x-modal-button-bold No cy2Ib2u" value="no" __cid="cy2Ib2u">否</xhtml:a>
+        <xhtml:a class="x-modal-button x-modal-button-bold Cancel cy2Ib2u" value="cancel" __cid="cy2Ib2u">取消</xhtml:a>
+      </xhtml:div>
+    </xhtml:div>
+  </span>
+  <span component="$model/UI2/system/components/justep/messageDialog/messageDialog" xid="successOutDialog" data-bind="component:{name:'$model/UI2/system/components/justep/messageDialog/messageDialog'}" data-config="{&quot;message&quot;:&quot;打卡成功&quot;,&quot;type&quot;:&quot;OK&quot;}" __cid="cy2Ib2u" class="cy2Ib2u">
+    <xhtml:div xmlns:xhtml="http://www.w3.org/1999/xhtml" class="x-modal-overlay cy2Ib2u" __cid="cy2Ib2u"/>
+    <xhtml:div xmlns:xhtml="http://www.w3.org/1999/xhtml" class="x-modal cy2Ib2u" __cid="cy2Ib2u">
+      <xhtml:div class="x-modal-inner cy2Ib2u" __cid="cy2Ib2u">
+        <xhtml:div class="x-modal-title cy2Ib2u" __cid="cy2Ib2u"></xhtml:div>
+        <xhtml:div class="x-modal-text cy2Ib2u" __cid="cy2Ib2u">打卡成功</xhtml:div>
+        <xhtml:input class="x-modal-prompt-input cy2Ib2u" type="text" __cid="cy2Ib2u"/>
+      </xhtml:div>
+      <xhtml:div class="x-modal-buttons cy2Ib2u" __cid="cy2Ib2u">
+        <xhtml:a class="x-modal-button x-modal-button-bold OK cy2Ib2u" value="ok" __cid="cy2Ib2u">确定</xhtml:a>
+        <xhtml:a class="x-modal-button x-modal-button-bold Yes cy2Ib2u" value="yes" __cid="cy2Ib2u">是</xhtml:a>
+        <xhtml:a class="x-modal-button x-modal-button-bold No cy2Ib2u" value="no" __cid="cy2Ib2u">否</xhtml:a>
+        <xhtml:a class="x-modal-button x-modal-button-bold Cancel cy2Ib2u" value="cancel" __cid="cy2Ib2u">取消</xhtml:a>
+      </xhtml:div>
+    </xhtml:div>
+  </span>  
+  <span component="$model/UI2/system/components/justep/messageDialog/messageDialog" xid="warningDialog" data-bind="component:{name:'$model/UI2/system/components/justep/messageDialog/messageDialog'}" data-config="{&quot;message&quot;:&quot;你只能为今天打卡!!!!!&quot;,&quot;type&quot;:&quot;OK&quot;}" __cid="cy2Ib2u" class="cy2Ib2u">
+    <xhtml:div xmlns:xhtml="http://www.w3.org/1999/xhtml" class="x-modal-overlay cy2Ib2u" __cid="cy2Ib2u"/>
+    <xhtml:div xmlns:xhtml="http://www.w3.org/1999/xhtml" class="x-modal cy2Ib2u" __cid="cy2Ib2u">
+      <xhtml:div class="x-modal-inner cy2Ib2u" __cid="cy2Ib2u">
+        <xhtml:div class="x-modal-title cy2Ib2u" __cid="cy2Ib2u"></xhtml:div>
+        <xhtml:div class="x-modal-text cy2Ib2u" __cid="cy2Ib2u">你只能为今天打卡!!!!!</xhtml:div>
+        <xhtml:input class="x-modal-prompt-input cy2Ib2u" type="text" __cid="cy2Ib2u"/>
+      </xhtml:div>
+      <xhtml:div class="x-modal-buttons cy2Ib2u" __cid="cy2Ib2u">
+        <xhtml:a class="x-modal-button x-modal-button-bold OK cy2Ib2u" value="ok" __cid="cy2Ib2u">确定</xhtml:a>
+        <xhtml:a class="x-modal-button x-modal-button-bold Yes cy2Ib2u" value="yes" __cid="cy2Ib2u">是</xhtml:a>
+        <xhtml:a class="x-modal-button x-modal-button-bold No cy2Ib2u" value="no" __cid="cy2Ib2u">否</xhtml:a>
+        <xhtml:a class="x-modal-button x-modal-button-bold Cancel cy2Ib2u" value="cancel" __cid="cy2Ib2u">取消</xhtml:a>
+      </xhtml:div>
+    </xhtml:div>
+  </span>
+</div>

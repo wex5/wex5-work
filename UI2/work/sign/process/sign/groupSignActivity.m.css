@@ -1,0 +1,9 @@
+.x-card.btn-group .btn.active{
+	border-top:2px solid #ecca3e;
+}
+.x-card.btn-group .btn{
+	border-top:1px solid #ddd;
+}
+.no-padding{
+	padding:0;
+}

@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<div xmlns="http://www.w3.org/1999/xhtml" component="$model/UI2/system/components/justep/window/window" design="device:m;" xid="window" data-bind="component:{name:'$model/UI2/system/components/justep/window/window'}" __cid="cayMf2i" class="cayMf2i" components="$model/UI2/system/components/justep/model/model,$model/UI2/system/components/justep/loadingBar/loadingBar,$model/UI2/system/components/justep/button/button,$model/UI2/system/components/justep/controlGroup/controlGroup,$model/UI2/system/components/justep/panel/child,$model/UI2/system/components/justep/attachment/attachmentSimple,$model/UI2/system/components/justep/windowDialog/windowDialog,$model/UI2/system/components/justep/labelEdit/labelEdit,$model/UI2/system/components/justep/textarea/textarea,$model/UI2/system/components/justep/panel/panel,$model/UI2/system/components/justep/output/output,$model/UI2/system/components/justep/titleBar/titleBar,$model/UI2/system/components/justep/window/window,$model/UI2/system/components/justep/data/baasData,">
+  <xhtml:style xmlns:xhtml="http://www.w3.org/1999/xhtml">.x-label.cayMf2i{font-weight: bold} .x-label20.x-label-edit.cayMf2i &gt; .x-label.cayMf2i{width: 30%}</xhtml:style>  
+  <div component="$model/UI2/system/components/justep/model/model" xid="model" style="display:none" data-bind="component:{name:'$model/UI2/system/components/justep/model/model'}" data-events="onLoad:modelLoad" __cid="cayMf2i" class="cayMf2i"></div>  
+  <div xid="waitDiv" style="position:relative;height:400px;" __cid="cayMf2i" class="cayMf2i"> 
+    <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-only-icon cayMf2i" xid="button2" style="position:absolute;font-size:30px;top:42%;left:42%;" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-config="{&quot;icon&quot;:&quot;icon-loading-a&quot;,&quot;label&quot;:&quot;button&quot;}" __cid="cayMf2i"> 
+      <i xid="i6" class="icon-loading-a cayMf2i" __cid="cayMf2i"/>  
+      <span xid="span3" __cid="cayMf2i" class="cayMf2i"/>
+    </a> 
+  </div>
+  <div component="$model/UI2/system/components/justep/panel/panel" class="x-panel x-full pcayMf2i-iosstatusbar cayMf2i" data-bind="component:{name:'$model/UI2/system/components/justep/panel/panel'}" __cid="cayMf2i"> 
+    <div class="x-panel-top cayMf2i" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="cayMf2i"> 
+      <div component="$model/UI2/system/components/justep/titleBar/titleBar" class="x-titlebar cayMf2i" data-bind="component:{name:'$model/UI2/system/components/justep/titleBar/titleBar'}" data-config="{&quot;title&quot;:&quot;工作日报&quot;}" __cid="cayMf2i"> 
+        <div class="x-titlebar-left cayMf2i" __cid="cayMf2i"> 
+          <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-only-icon cayMf2i" xid="backBtn" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:{operation:'window.close'}" data-config="{&quot;icon&quot;:&quot;icon-chevron-left&quot;,&quot;label&quot;:&quot;&quot;}" __cid="cayMf2i"> 
+            <i class="icon-chevron-left cayMf2i" __cid="cayMf2i"/>  
+            <span __cid="cayMf2i" class="cayMf2i"/> 
+          </a> 
+        </div>  
+        <div class="x-titlebar-title cayMf2i" __cid="cayMf2i">工作日报</div>  
+        <div class="x-titlebar-right  cayMf2i" __cid="cayMf2i">
+          <div class="empty cayMf2i" __cid="cayMf2i"/>
+          <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-only-icon cayMf2i" xid="saveBtn" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:saveBtnClick" data-config="{&quot;icon&quot;:&quot;icon-android-checkmark&quot;,&quot;label&quot;:&quot;button&quot;}" __cid="cayMf2i"> 
+            <i xid="i1" class="icon-android-checkmark cayMf2i" __cid="cayMf2i"/>  
+            <span xid="span1" __cid="cayMf2i" class="cayMf2i"/>
+          </a>
+        </div> 
+      </div> 
+    </div>  
+    <div class="x-panel-content cayMf2i" xid="dailyContent" style="display:none;" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="cayMf2i"> 
+      <div component="$model/UI2/system/components/justep/controlGroup/controlGroup" class="x-control-group cayMf2i" data-bind="component:{name:'$model/UI2/system/components/justep/controlGroup/controlGroup'}" data-config="{&quot;title&quot;:&quot;详细信息&quot;}" __cid="cayMf2i"> 
+        <div component="$model/UI2/system/components/justep/labelEdit/labelEdit" class="x-label-edit x-label30 cayMf2i" data-bind="component:{name:'$model/UI2/system/components/justep/labelEdit/labelEdit'}" __cid="cayMf2i"> 
+          <label class="x-label left cayMf2i" bind-text="$model.mainData.label('fFinishWork')" xid="finishWorkL" style="width:100px;" __cid="cayMf2i"/>  
+          <div class="x-edit cayMf2i" __cid="cayMf2i"> 
+            <textarea class="form-control cayMf2i" component="$model/UI2/system/components/justep/textarea/textarea" data="mainData" xid="finishWork" data-bind="component:{ref:mainData.ref('fFinishWork'),name:'$model/UI2/system/components/justep/textarea/textarea'}" __cid="cayMf2i"/> 
+          </div> 
+        </div>  
+        <div component="$model/UI2/system/components/justep/labelEdit/labelEdit" class="x-label-edit x-label30 cayMf2i" data-bind="component:{name:'$model/UI2/system/components/justep/labelEdit/labelEdit'}" __cid="cayMf2i"> 
+          <label class="x-label left cayMf2i" bind-text="$model.mainData.label('fWorkPlan')" xid="workPlanL" style="width:100px;" __cid="cayMf2i"/>  
+          <div class="x-edit cayMf2i" __cid="cayMf2i"> 
+            <textarea class="form-control cayMf2i" component="$model/UI2/system/components/justep/textarea/textarea" data="mainData" xid="workPlan" data-bind="component:{ref:mainData.ref('fWorkPlan'),name:'$model/UI2/system/components/justep/textarea/textarea'}" __cid="cayMf2i"/> 
+          </div> 
+        </div>  
+        <div component="$model/UI2/system/components/justep/labelEdit/labelEdit" class="x-label-edit x-label30 cayMf2i" data-bind="component:{name:'$model/UI2/system/components/justep/labelEdit/labelEdit'}" __cid="cayMf2i"> 
+          <label class="x-label left cayMf2i" bind-text="$model.mainData.label('fNeedHelp')" xid="needHelp" style="width:100px;" __cid="cayMf2i"/>  
+          <div class="x-edit cayMf2i" __cid="cayMf2i"> 
+            <textarea class="form-control cayMf2i" component="$model/UI2/system/components/justep/textarea/textarea" data="mainData" data-bind="component:{ref:mainData.ref('fNeedHelp'),name:'$model/UI2/system/components/justep/textarea/textarea'}" __cid="cayMf2i"/> 
+          </div> 
+        </div>  
+        <div component="$model/UI2/system/components/justep/labelEdit/labelEdit" class="x-label-edit x-label20 cayMf2i" data-bind="component:{name:'$model/UI2/system/components/justep/labelEdit/labelEdit'}" __cid="cayMf2i"> 
+          <label class="x-label left cayMf2i" xid="remarkL" style="width:100px;" bind-text="$model.mainData.label(&quot;fRemark&quot;)" __cid="cayMf2i"/>  
+          <div class="x-edit cayMf2i" __cid="cayMf2i"> 
+            <textarea class="form-control cayMf2i" component="$model/UI2/system/components/justep/textarea/textarea" data="mainData" xid="remark" data-bind="component:{ref:mainData.ref('fRemark'),name:'$model/UI2/system/components/justep/textarea/textarea'}" __cid="cayMf2i"/> 
+          </div> 
+        </div>  
+        <div component="$model/UI2/system/components/justep/labelEdit/labelEdit" class="x-label-edit x-label20 cayMf2i" data-bind="component:{name:'$model/UI2/system/components/justep/labelEdit/labelEdit'}" __cid="cayMf2i"> 
+          <label class="x-label left cayMf2i" xid="imgURL" style="width:100px;" __cid="cayMf2i">图片</label>  
+          <div class="x-edit cayMf2i" __cid="cayMf2i"> 
+            <div component="$model/UI2/system/components/justep/attachment/attachmentSimple" xid="attachmentSimple1" data-bind="component:{ref:$model.mainData.ref(&quot;fImgURL&quot;),name:'$model/UI2/system/components/justep/attachment/attachmentSimple'}" data-config="{&quot;actionUrl&quot;:&quot;/baas/justep/attachment/simpleFileStore&quot;}" __cid="cayMf2i" class="cayMf2i"> 
+              <div class="x-attachment cayMf2i" xid="div7" __cid="cayMf2i"> 
+                <div class="x-attachment-content x-card-border cayMf2i" xid="div8" __cid="cayMf2i"> 
+                  <div class="x-doc-process cayMf2i" xid="div9" __cid="cayMf2i"> 
+                    <div class="progress-bar x-doc-process-bar cayMf2i" role="progressbar" style="width:0%;" xid="progressBar2" __cid="cayMf2i"/>
+                  </div>  
+                  <div data-bind="foreach:$attachmentItems" xid="div10" __cid="cayMf2i" class="cayMf2i"> 
+                    <div class="x-attachment-cell cayMf2i" xid="div11" __cid="cayMf2i"> 
+                      <div class="x-attachment-item x-item-other cayMf2i" data-bind="click:$model.previewOrRemoveItem.bind($model),style:{backgroundImage:($model.previewPicture.bind($model,$object))()}" xid="div12" __cid="cayMf2i"> 
+                        <a data-bind="visible:$model.$state.get() == 'remove'" class="x-remove-barget cayMf2i" xid="a2" __cid="cayMf2i"/>
+                      </div> 
+                    </div> 
+                  </div>  
+                  <div class="x-attachment-cell cayMf2i" data-bind="visible:$state.get() == 'upload'" xid="div13" __cid="cayMf2i"> 
+                    <div class="x-attachment-item x-item-upload cayMf2i" data-bind="visible:$state.get() == 'upload'" xid="div14" __cid="cayMf2i"/>
+                  </div>  
+                  <div class="x-attachment-cell cayMf2i" data-bind="visible:$state.get() == 'upload' &amp;&amp; $attachmentItems.get().length &gt; 0" xid="div15" __cid="cayMf2i"> 
+                    <div class="x-attachment-item x-item-remove cayMf2i" data-bind="click:changeState.bind($object,'remove')" xid="div16" __cid="cayMf2i"/>
+                  </div>  
+                  <div style="clear:both;" xid="div17" __cid="cayMf2i" class="cayMf2i"/>
+                </div> 
+              </div> 
+            </div>
+          </div> 
+        </div>  
+        <div component="$model/UI2/system/components/justep/labelEdit/labelEdit" class="x-label-edit x-label20 cayMf2i" data-bind="component:{name:'$model/UI2/system/components/justep/labelEdit/labelEdit'}" __cid="cayMf2i"> 
+          <label class="x-label left cayMf2i" bind-text="$model.mainData.label(&quot;fReleaseScope&quot;)" xid="label1" style="width:100px;" __cid="cayMf2i"/>  
+          <div class="x-edit cayMf2i" style="position:relative;height:37px;" xid="div6" __cid="cayMf2i"> 
+            <span class="x-output cayMf2i" component="$model/UI2/system/components/justep/output/output" data="mainData" xid="output1" data-bind="component:{ref:$model.mainData.ref(&quot;fReleaseScope&quot;),name:'$model/UI2/system/components/justep/output/output'}" __cid="cayMf2i"/>  
+            <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-only-icon cayMf2i" xid="findBtn" style="position:absolute;top:0px;right:0px;" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:findBtnClick" data-config="{&quot;label&quot;:&quot;button&quot;}" __cid="cayMf2i"> 
+              <i xid="i2" class="icon-android-search cayMf2i" style="color:#808080;" __cid="cayMf2i"/>  
+              <span xid="span2" __cid="cayMf2i" class="cayMf2i"/>
+            </a> 
+          </div> 
+        </div>
+      </div> 
+    </div>  
+    <style __cid="cayMf2i" class="cayMf2i">.x-panel.pcayMf2i-iosstatusbar &gt;.x-panel-top {height: 48px;}.x-panel.pcayMf2i-iosstatusbar &gt;.x-panel-content { top: 48px;bottom: nullpx;}.x-panel.pcayMf2i-iosstatusbar &gt;.x-panel-bottom {height: nullpx;}.iosstatusbar .x-panel.pcayMf2i-iosstatusbar &gt;.x-panel-top,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pcayMf2i-iosstatusbar &gt;.x-panel-top {height: 68px;}.iosstatusbar .x-panel.pcayMf2i-iosstatusbar &gt;.x-panel-content,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pcayMf2i-iosstatusbar &gt;.x-panel-content { top: 68px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pcayMf2i-iosstatusbar &gt;.x-panel-top {height: 48px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pcayMf2i-iosstatusbar &gt;.x-panel-content {top: 48px;}</style>
+  </div>  
+  <span component="$model/UI2/system/components/justep/windowDialog/windowDialog" xid="personDlg" data-bind="component:{name:'$model/UI2/system/components/justep/windowDialog/windowDialog'}" data-events="onReceive:personDlgReceive" data-config="{&quot;src&quot;:&quot;$model/UI2/work/common/process/personDlgActivity.w&quot;}" __cid="cayMf2i" class="cayMf2i">
+    <xhtml:div xmlns:xhtml="http://www.w3.org/1999/xhtml" class="x-dialog-overlay cayMf2i" __cid="cayMf2i"/>
+    <xhtml:div xmlns:xhtml="http://www.w3.org/1999/xhtml" class="x-dialog cayMf2i" style="display:none;" __cid="cayMf2i">
+      <xhtml:div class="x-dialog-title cayMf2i" __cid="cayMf2i">
+        <xhtml:button class="close cayMf2i" __cid="cayMf2i">
+          <xhtml:span __cid="cayMf2i" class="cayMf2i">×</xhtml:span>
+        </xhtml:button>
+        <xhtml:div class="x-dialog-title-text cayMf2i" __cid="cayMf2i"/>
+      </xhtml:div>
+      <xhtml:div class="x-dialog-body cayMf2i" __cid="cayMf2i"/>
+    </xhtml:div>
+  </span>
+</div>

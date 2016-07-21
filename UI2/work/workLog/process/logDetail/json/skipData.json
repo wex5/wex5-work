@@ -1,0 +1,5 @@
+[
+ {"fID":1,"fLabel":"工作日报","fUrl":"$UI/work/workLog/process/workDaily/mainActivity.m.w","fColor":"#A894C9","fIconClass":"glyphicon glyphicon-file","fProcess":"/OA/workLog/process/workDaily/workDailyProcess","fActivity":"mainActivity"},
+ {"fID":2,"fLabel":"工作周报","fUrl":"$UI/work/workLog/process/WorkWeekly/mainActivity.m.w","fColor":"#FF7C1C","fIconClass":"glyphicon glyphicon-folder-open","fProcess":"/OA/workLog/process/WorkWeekly/workWeeklyProcess","fActivity":"mainActivity"},
+ {"fID":3,"fLabel":"工作月报","fUrl":"$UI/work/workLog/process/Workmonthly/mainActivity.m.w","fColor":"#66D8E6","fIconClass":"glyphicon glyphicon-book","fProcess":"/OA/workLog/process/Workmonthly/workmonthlyProcess","fActivity":"mainActivity"}
+]

@@ -1,0 +1,19 @@
+.no-padding{
+	padding:0;
+}
+.panel-heading{
+	padding:0;
+}
+.x-cards{
+	padding-top:0px;
+}
+.panel-body{
+	padding :0px;
+	padding-left:18px;
+}
+.panel-footer{
+	padding :0px 15px;
+}
+.panel-default>.panel-heading{
+	background-image:none;
+}

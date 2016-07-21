@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<div xmlns="http://www.w3.org/1999/xhtml" component="$model/UI2/system/components/justep/window/window" design="device:m;" xid="window" class="window cJ3Ujiy" data-bind="component:{name:'$model/UI2/system/components/justep/window/window'}" __cid="cJ3Ujiy" components="$model/UI2/system/components/justep/model/model,$model/UI2/system/components/justep/loadingBar/loadingBar,$model/UI2/system/components/justep/button/button,$model/UI2/system/components/justep/input/input,$model/UI2/system/components/justep/list/list,$model/UI2/system/components/justep/panel/child,$model/UI2/system/components/justep/windowDialog/windowDialog,$model/UI2/system/components/justep/labelEdit/labelEdit,$model/UI2/system/components/justep/messageDialog/messageDialog,$model/UI2/system/components/justep/panel/panel,$model/UI2/system/components/justep/titleBar/titleBar,$model/UI2/system/components/justep/button/radio,$model/UI2/system/components/justep/data/data,$model/UI2/system/components/justep/window/window,$model/UI2/system/components/justep/data/baasData,">
+  <xhtml:style xmlns:xhtml="http://www.w3.org/1999/xhtml">null</xhtml:style>  
+  <div component="$model/UI2/system/components/justep/model/model" xid="model" style="display:none" data-bind="component:{name:'$model/UI2/system/components/justep/model/model'}" data-events="onLoad:modelLoad" __cid="cJ3Ujiy" class="cJ3Ujiy"></div>  
+  <div component="$model/UI2/system/components/justep/panel/panel" class="x-panel x-full pcJ3Ujiy-iosstatusbar cJ3Ujiy" xid="panel1" data-bind="component:{name:'$model/UI2/system/components/justep/panel/panel'}" __cid="cJ3Ujiy"> 
+    <div class="x-panel-top cJ3Ujiy" xid="top1" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="cJ3Ujiy"> 
+      <div component="$model/UI2/system/components/justep/titleBar/titleBar" class="x-titlebar cJ3Ujiy" data-bind="component:{name:'$model/UI2/system/components/justep/titleBar/titleBar'}" data-config="{&quot;title&quot;:&quot;新增考勤组&quot;}" __cid="cJ3Ujiy"> 
+        <div class="x-titlebar-left cJ3Ujiy" __cid="cJ3Ujiy"> 
+          <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-only-icon cJ3Ujiy" xid="backBtn" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:{operation:'window.close'}" data-config="{&quot;icon&quot;:&quot;icon-chevron-left&quot;,&quot;label&quot;:&quot;&quot;}" __cid="cJ3Ujiy"> 
+            <i class="icon-chevron-left cJ3Ujiy" __cid="cJ3Ujiy"/>  
+            <span __cid="cJ3Ujiy" class="cJ3Ujiy"/> 
+          </a> 
+        </div>  
+        <div class="x-titlebar-title cJ3Ujiy" __cid="cJ3Ujiy">新增考勤组</div>  
+        <div class="x-titlebar-right  cJ3Ujiy" __cid="cJ3Ujiy">
+          <div class="empty cJ3Ujiy" __cid="cJ3Ujiy"/>
+        </div> 
+      </div> 
+    </div>  
+    <div class="x-panel-content cJ3Ujiy" xid="content1" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="cJ3Ujiy">
+      <div xid="div1" style="border:1px solid #dddddd;margin:20px 0px;background-color:white;padding-left:10px;" __cid="cJ3Ujiy" class="cJ3Ujiy"> 
+        <div component="$model/UI2/system/components/justep/labelEdit/labelEdit" class="x-label-edit x-label30 cJ3Ujiy" xid="labelEdit1" data-bind="component:{name:'$model/UI2/system/components/justep/labelEdit/labelEdit'}" __cid="cJ3Ujiy"> 
+          <label class="x-label cJ3Ujiy" xid="fAttendanceGroupNameL" style="font-weight:bold;" __cid="cJ3Ujiy">考勤组名称</label>  
+          <input component="$model/UI2/system/components/justep/input/input" class="form-control x-edit cJ3Ujiy" xid="fAttendanceGroupNameInput" data-bind="component:{ref:$model.mainData.ref(&quot;fAttendanceGroupName&quot;),name:'$model/UI2/system/components/justep/input/input'}" data-config="{&quot;placeHolder&quot;:&quot;请输入考勤组名称&quot;}" __cid="cJ3Ujiy"/>
+        </div> 
+      </div>  
+      <div xid="div2" style="padding-left:10px;border:1px solid #dddddd;background-color:white;" __cid="cJ3Ujiy" class="cJ3Ujiy"> 
+        <div component="$model/UI2/system/components/justep/labelEdit/labelEdit" class="x-label-edit x-label30 cJ3Ujiy" xid="labelEdit2" data-bind="component:{name:'$model/UI2/system/components/justep/labelEdit/labelEdit'}" __cid="cJ3Ujiy"> 
+          <label class="x-label cJ3Ujiy" xid="label2" style="width:auto;font-weight:bold;" __cid="cJ3Ujiy">参与考勤人员</label>  
+          <input component="$model/UI2/system/components/justep/input/input" class="form-control x-edit x-right cJ3Ujiy" xid="AttendancePerson" bind-click="AttendancePersonClick" data-bind="component:{name:'$model/UI2/system/components/justep/input/input'}" data-config="{&quot;placeHolder&quot;:&quot;请选择&quot;,&quot;readonly&quot;:true}" __cid="cJ3Ujiy"/>
+        </div>  
+        <div component="$model/UI2/system/components/justep/labelEdit/labelEdit" class="x-label-edit x-label30 cJ3Ujiy" xid="labelEdit3" data-bind="component:{name:'$model/UI2/system/components/justep/labelEdit/labelEdit'}" __cid="cJ3Ujiy"> 
+          <label class="x-label cJ3Ujiy" xid="label3" style="width:auto;font-weight:bold;" __cid="cJ3Ujiy">考勤组负责人</label>  
+          <input component="$model/UI2/system/components/justep/input/input" class="form-control x-edit x-right cJ3Ujiy" xid="attendanceResponsiblePerson" bind-click="attendanceResponsiblePersonClick" data-bind="component:{name:'$model/UI2/system/components/justep/input/input'}" data-config="{&quot;placeHolder&quot;:&quot;请选择&quot;,&quot;readonly&quot;:true}" __cid="cJ3Ujiy"/>
+        </div> 
+      </div>  
+      <div xid="div7" style="padding:10px 15px;" __cid="cJ3Ujiy" class="cJ3Ujiy"> 
+        <p xid="p1" __cid="cJ3Ujiy" class="cJ3Ujiy">管理本考勤组的排班统计,减轻管理员的考勤工作</p>  
+        <p xid="p2" __cid="cJ3Ujiy" class="cJ3Ujiy">这些人的考勤时间都一样吗?(选择后不可修改)</p>
+      </div>  
+      <div xid="div8" style="background-color:white;border:1px solid #dddddd;" __cid="cJ3Ujiy" class="cJ3Ujiy"> 
+        <div xid="div3" style="padding:20px 10px;" __cid="cJ3Ujiy" class="cJ3Ujiy"> 
+          <span component="$model/UI2/system/components/justep/button/radio" class="x-radio cJ3Ujiy" xid="radio1" name="banzhi" label="固定班制(考勤时间固定)" value="1" checkedValue="1" checked="true" data-config="{&quot;checked&quot;:true,&quot;checkedValue&quot;:&quot;1&quot;,&quot;disabled&quot;:false,&quot;label&quot;:&quot;固定班制(考勤时间固定)&quot;,&quot;name&quot;:&quot;banzhi&quot;,&quot;value&quot;:&quot;1&quot;}" data-bind="component:{ref:$model.selectData.ref(&quot;value&quot;),name:'$model/UI2/system/components/justep/button/radio'}" __cid="cJ3Ujiy">
+            <xhtml:input xmlns:xhtml="http://www.w3.org/1999/xhtml" type="radio" name="banzhi" value="1" __cid="cJ3Ujiy" class="cJ3Ujiy"/>
+            <xhtml:label xmlns:xhtml="http://www.w3.org/1999/xhtml" __cid="cJ3Ujiy" class="cJ3Ujiy">固定班制(考勤时间固定)</xhtml:label>
+          </span>
+        </div>  
+        <div xid="div4" style="padding:20px 10px;" __cid="cJ3Ujiy" class="cJ3Ujiy"> 
+          <span component="$model/UI2/system/components/justep/button/radio" class="x-radio cJ3Ujiy" xid="radio2" name="banzhi" label="排班制(考勤时间都不固定)" value="2" checkedValue="2" data-config="{&quot;checked&quot;:false,&quot;checkedValue&quot;:&quot;2&quot;,&quot;disabled&quot;:false,&quot;label&quot;:&quot;排班制(考勤时间都不固定)&quot;,&quot;name&quot;:&quot;banzhi&quot;,&quot;value&quot;:&quot;2&quot;}" data-bind="component:{ref:$model.selectData.ref(&quot;value&quot;),name:'$model/UI2/system/components/justep/button/radio'}" __cid="cJ3Ujiy">
+            <xhtml:input xmlns:xhtml="http://www.w3.org/1999/xhtml" type="radio" name="banzhi" value="2" __cid="cJ3Ujiy" class="cJ3Ujiy"/>
+            <xhtml:label xmlns:xhtml="http://www.w3.org/1999/xhtml" __cid="cJ3Ujiy" class="cJ3Ujiy">排班制(考勤时间都不固定)</xhtml:label>
+          </span>
+        </div> 
+      </div>  
+      <div xid="div5" style="padding-top:10px;margin-top:15px;border:1px solid #dddddd;" __cid="cJ3Ujiy" class="cJ3Ujiy"> 
+        <div xid="setAttenTime" bind-click="setAttenTimeClick" __cid="cJ3Ujiy" class="cJ3Ujiy">
+          <h3 xid="h31" style="color:#262626;display:inline-block;margin-top:0px;" __cid="cJ3Ujiy" class="cJ3Ujiy">考勤时间</h3>
+          <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link pull-right cJ3Ujiy" xid="button1" style="padding-top:0px;" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-config="{&quot;icon&quot;:&quot;icon-chevron-right&quot;}" __cid="cJ3Ujiy"> 
+            <i xid="i1" class="icon-chevron-right cJ3Ujiy" __cid="cJ3Ujiy"/>  
+            <span xid="span1" __cid="cJ3Ujiy" class="cJ3Ujiy"/>
+          </a>
+        </div>  
+        <div xid="div9" __cid="cJ3Ujiy" class="cJ3Ujiy">
+          <span xid="span9" __cid="cJ3Ujiy" class="cJ3Ujiy">每周</span>
+          <span xid="span2" bind-text="$model.weekData.val(&quot;fMonday&quot;)==&quot;true&quot; ?&quot;一、&quot;:&quot;&quot;" __cid="cJ3Ujiy" class="cJ3Ujiy"/>  
+          <span xid="span3" bind-text="$model.weekData.val(&quot;fTuesday&quot;)==&quot;true&quot; ?&quot;二、&quot;:&quot;&quot;" __cid="cJ3Ujiy" class="cJ3Ujiy"/>  
+          <span xid="span4" bind-text="$model.weekData.val(&quot;fWednesday&quot;)==&quot;true&quot; ?&quot;三、&quot;:&quot;&quot;" __cid="cJ3Ujiy" class="cJ3Ujiy"/>  
+          <span xid="span5" bind-text="$model.weekData.val(&quot;fThursday&quot;)==&quot;true&quot; ?&quot;四、&quot;:&quot;&quot;" __cid="cJ3Ujiy" class="cJ3Ujiy"/>  
+          <span xid="span6" bind-text="$model.weekData.val(&quot;fFriday&quot;)==&quot;true&quot; ?&quot;五、&quot;:&quot;&quot;" __cid="cJ3Ujiy" class="cJ3Ujiy"/>  
+          <span xid="span7" bind-text="$model.weekData.val(&quot;fSaturday&quot;)==&quot;true&quot; ?&quot;六、&quot;:&quot;&quot;" __cid="cJ3Ujiy" class="cJ3Ujiy"/>  
+          <span xid="span8" bind-text="$model.weekData.val(&quot;fSunday&quot;)==&quot;true&quot; ?&quot;日、&quot;:&quot;&quot;" __cid="cJ3Ujiy" class="cJ3Ujiy"/>  
+          <span xid="span10" bind-text="&quot;班次&quot;+$model.weekData.val(&quot;fDepart&quot;)" __cid="cJ3Ujiy" class="cJ3Ujiy"/>  
+          <span xid="span11" bind-text="$model.weekData.val(&quot;fDepartTime&quot;)" __cid="cJ3Ujiy" class="cJ3Ujiy"/>
+        </div>  
+        <div xid="div11" __cid="cJ3Ujiy" class="cJ3Ujiy"> 
+          <span xid="span19" __cid="cJ3Ujiy" class="cJ3Ujiy">每周</span>  
+          <span xid="span12" bind-text="$model.weekData.val(&quot;fMonday&quot;)==&quot;false&quot; ?&quot;一、&quot;:&quot;&quot;" __cid="cJ3Ujiy" class="cJ3Ujiy"/>  
+          <span xid="span13" bind-text="$model.weekData.val(&quot;fTuesday&quot;)==&quot;false&quot; ?&quot;二、&quot;:&quot;&quot;" __cid="cJ3Ujiy" class="cJ3Ujiy"/>  
+          <span xid="span14" bind-text="$model.weekData.val(&quot;fWednesday&quot;)==&quot;false&quot; ?&quot;三、&quot;:&quot;&quot;" __cid="cJ3Ujiy" class="cJ3Ujiy"/>  
+          <span xid="span15" bind-text="$model.weekData.val(&quot;fThursday&quot;)==&quot;false&quot; ?&quot;四、&quot;:&quot;&quot;" __cid="cJ3Ujiy" class="cJ3Ujiy"/>  
+          <span xid="span16" bind-text="$model.weekData.val(&quot;fFriday&quot;)==&quot;false&quot; ?&quot;五、&quot;:&quot;&quot;" __cid="cJ3Ujiy" class="cJ3Ujiy"/>  
+          <span xid="span17" bind-text="$model.weekData.val(&quot;fSaturday&quot;)==&quot;false&quot; ?&quot;六、&quot;:&quot;&quot;" __cid="cJ3Ujiy" class="cJ3Ujiy"/>  
+          <span xid="span18" bind-text="$model.weekData.val(&quot;fSunday&quot;)==&quot;false&quot; ?&quot;日、&quot;:&quot;&quot;" __cid="cJ3Ujiy" class="cJ3Ujiy"/>  
+          <span xid="span20" __cid="cJ3Ujiy" class="cJ3Ujiy">休息</span> 
+        </div>
+      </div>  
+      <div xid="div16" __cid="cJ3Ujiy" class="cJ3Ujiy">
+        <h5 xid="h52" style="color:#808080; margin-left:15px;" __cid="cJ3Ujiy" class="cJ3Ujiy">设置符合你企业要求的考勤方式</h5>
+      </div>
+      <div xid="div15" style="background-color:white;padding-left:15px;border-top:1px solid #dbdbdb;" __cid="cJ3Ujiy" class="cJ3Ujiy"> 
+        <div xid="div14" __cid="cJ3Ujiy" class="cJ3Ujiy"> 
+          <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link cJ3Ujiy" xid="button3" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-config="{&quot;icon&quot;:&quot;round round-footprint&quot;,&quot;label&quot;:&quot;根据办公地点&quot;}" __cid="cJ3Ujiy"> 
+            <i xid="i3" class="round round-footprint cJ3Ujiy" style="display:inline-block;font-size:xx-large;" __cid="cJ3Ujiy"/>  
+            <span xid="span22" __cid="cJ3Ujiy" class="cJ3Ujiy">根据办公地点</span>
+          </a> 
+        </div>  
+        <div xid="div13" __cid="cJ3Ujiy" class="cJ3Ujiy"> 
+          <div component="$model/UI2/system/components/justep/list/list" class="x-list cJ3Ujiy" xid="list1" data-bind="component:{name:'$model/UI2/system/components/justep/list/list'}" data-config="{&quot;data&quot;:&quot;addrData&quot;,&quot;limit&quot;:20}" __cid="cJ3Ujiy"> 
+            <ul class="x-list-template hide cJ3Ujiy" xid="listTemplateUl1" bind-foreach="{data:$model.foreach_list1($element),afterRender:$model.foreach_afterRender_list1.bind($model,$element)}" __cid="cJ3Ujiy"> 
+              <li xid="li1" style="position:relative;border-bottom:1px solid #dbdbdb;" __cid="cJ3Ujiy" class="cJ3Ujiy"> 
+                <h4 xid="h43" bind-text="val(&quot;fAttenAddrName&quot;)" style="color:#000000;" __cid="cJ3Ujiy" class="cJ3Ujiy"/>  
+                <h5 xid="h53" bind-text="val(&quot;fAddressDetail&quot;)" style="color:#808080;" __cid="cJ3Ujiy" class="cJ3Ujiy"/>  
+                <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link cJ3Ujiy" xid="removeAddrBtn" style="position:absolute;top:0px;right:0px;" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:removeAddrBtnClick" data-config="{&quot;icon&quot;:&quot;icon-close-round&quot;}" __cid="cJ3Ujiy"> 
+                  <i xid="i4" class="icon-close-round cJ3Ujiy" __cid="cJ3Ujiy"/>  
+                  <span xid="span23" __cid="cJ3Ujiy" class="cJ3Ujiy"/>
+                </a> 
+              </li> 
+            </ul> 
+          </div> 
+        </div>  
+        <div xid="div12" __cid="cJ3Ujiy" class="cJ3Ujiy"> 
+          <div xid="addAddr" bind-click="addAddrClick" __cid="cJ3Ujiy" class="cJ3Ujiy"> 
+            <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link cJ3Ujiy" xid="button5" style="font-size:medium;" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-config="{&quot;icon&quot;:&quot;dataControl dataControl-plus&quot;,&quot;label&quot;:&quot;添加办公地点&quot;}" __cid="cJ3Ujiy"> 
+              <i xid="i5" class="dataControl dataControl-plus cJ3Ujiy" __cid="cJ3Ujiy"/>  
+              <span xid="span24" __cid="cJ3Ujiy" class="cJ3Ujiy">添加办公地点</span>
+            </a> 
+          </div>  
+          <div xid="EffectiveRange" style="padding:10px 15px;" __cid="cJ3Ujiy" class="cJ3Ujiy"> 
+            <div component="$model/UI2/system/components/justep/labelEdit/labelEdit" class="x-label-edit x-label30 cJ3Ujiy" xid="labelEdit6" data-bind="component:{name:'$model/UI2/system/components/justep/labelEdit/labelEdit'}" __cid="cJ3Ujiy"> 
+              <label class="x-label cJ3Ujiy" xid="label1" style="width:auto;font-weight:bold;" __cid="cJ3Ujiy">选择有效范围</label>  
+              <input component="$model/UI2/system/components/justep/input/input" class="form-control x-edit x-right cJ3Ujiy" xid="fEffectiveRange" data-bind="component:{ref:$model.mainData.ref(&quot;fEffectiveRange&quot;),name:'$model/UI2/system/components/justep/input/input'}" data-config="{&quot;dataType&quot;:&quot;Float&quot;,&quot;maxLength&quot;:&quot;3&quot;,&quot;placeHolder&quot;:&quot;请输入有效范围&quot;}" __cid="cJ3Ujiy"/>  
+              <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link cJ3Ujiy" xid="button6" style="padding:0px;font-size:large;color:#808080;" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-config="{&quot;label&quot;:&quot;米&quot;}" __cid="cJ3Ujiy"> 
+                <i xid="i6" __cid="cJ3Ujiy" class="cJ3Ujiy"/>  
+                <span xid="span25" __cid="cJ3Ujiy" class="cJ3Ujiy">米</span>
+              </a> 
+            </div> 
+          </div> 
+        </div> 
+      </div>  
+      <div xid="div17" __cid="cJ3Ujiy" class="cJ3Ujiy">
+        <a component="$model/UI2/system/components/justep/button/button" class="btn btn-default btn-block cJ3Ujiy" xid="saveBtn" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:saveBtnClick" data-config="{&quot;label&quot;:&quot;保存&quot;}" __cid="cJ3Ujiy"> 
+          <i xid="i2" __cid="cJ3Ujiy" class="cJ3Ujiy"/>  
+          <span xid="span26" __cid="cJ3Ujiy" class="cJ3Ujiy">保存</span>
+        </a>
+      </div>
+    </div>  
+    <style __cid="cJ3Ujiy" class="cJ3Ujiy">.x-panel.pcJ3Ujiy-iosstatusbar &gt;.x-panel-top {height: 48px;}.x-panel.pcJ3Ujiy-iosstatusbar &gt;.x-panel-content { top: 48px;bottom: nullpx;}.x-panel.pcJ3Ujiy-iosstatusbar &gt;.x-panel-bottom {height: nullpx;}.iosstatusbar .x-panel.pcJ3Ujiy-iosstatusbar &gt;.x-panel-top,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pcJ3Ujiy-iosstatusbar &gt;.x-panel-top {height: 68px;}.iosstatusbar .x-panel.pcJ3Ujiy-iosstatusbar &gt;.x-panel-content,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pcJ3Ujiy-iosstatusbar &gt;.x-panel-content { top: 68px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pcJ3Ujiy-iosstatusbar &gt;.x-panel-top {height: 48px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pcJ3Ujiy-iosstatusbar &gt;.x-panel-content {top: 48px;}</style>
+  </div>  
+  <span component="$model/UI2/system/components/justep/windowDialog/windowDialog" xid="mapDialog" data-bind="component:{name:'$model/UI2/system/components/justep/windowDialog/windowDialog'}" data-events="onReceive:mapDialogReceive" data-config="{&quot;height&quot;:&quot;80%&quot;,&quot;src&quot;:&quot;$model/UI2/work/sign/process/sign/signMapActivity.m.w&quot;,&quot;width&quot;:&quot;80%&quot;}" __cid="cJ3Ujiy" class="cJ3Ujiy">
+    <xhtml:div xmlns:xhtml="http://www.w3.org/1999/xhtml" class="x-dialog-overlay cJ3Ujiy" __cid="cJ3Ujiy"/>
+    <xhtml:div xmlns:xhtml="http://www.w3.org/1999/xhtml" class="x-dialog cJ3Ujiy" style="display:none;" __cid="cJ3Ujiy">
+      <xhtml:div class="x-dialog-title cJ3Ujiy" __cid="cJ3Ujiy">
+        <xhtml:button class="close cJ3Ujiy" __cid="cJ3Ujiy">
+          <xhtml:span __cid="cJ3Ujiy" class="cJ3Ujiy">×</xhtml:span>
+        </xhtml:button>
+        <xhtml:div class="x-dialog-title-text cJ3Ujiy" __cid="cJ3Ujiy"/>
+      </xhtml:div>
+      <xhtml:div class="x-dialog-body cJ3Ujiy" __cid="cJ3Ujiy"/>
+    </xhtml:div>
+  </span>  
+  <span component="$model/UI2/system/components/justep/windowDialog/windowDialog" xid="setAddrDialog" data-bind="component:{name:'$model/UI2/system/components/justep/windowDialog/windowDialog'}" data-events="onReceive:setAddrDialogReceive" data-config="{&quot;height&quot;:&quot;40%&quot;,&quot;src&quot;:&quot;$model/UI2/work/attendance/process/attendance/SetAddrActivity.m.w&quot;,&quot;status&quot;:&quot;normal&quot;,&quot;width&quot;:&quot;100%&quot;}" __cid="cJ3Ujiy" class="cJ3Ujiy">
+    <xhtml:div xmlns:xhtml="http://www.w3.org/1999/xhtml" class="x-dialog-overlay cJ3Ujiy" __cid="cJ3Ujiy"/>
+    <xhtml:div xmlns:xhtml="http://www.w3.org/1999/xhtml" class="x-dialog cJ3Ujiy" style="display:none;" __cid="cJ3Ujiy">
+      <xhtml:div class="x-dialog-title cJ3Ujiy" __cid="cJ3Ujiy">
+        <xhtml:button class="close cJ3Ujiy" __cid="cJ3Ujiy">
+          <xhtml:span __cid="cJ3Ujiy" class="cJ3Ujiy">×</xhtml:span>
+        </xhtml:button>
+        <xhtml:div class="x-dialog-title-text cJ3Ujiy" __cid="cJ3Ujiy"/>
+      </xhtml:div>
+      <xhtml:div class="x-dialog-body cJ3Ujiy" __cid="cJ3Ujiy"/>
+    </xhtml:div>
+  </span>  
+  <span component="$model/UI2/system/components/justep/windowDialog/windowDialog" xid="WeekDialog" data-bind="component:{name:'$model/UI2/system/components/justep/windowDialog/windowDialog'}" data-events="onReceive:WeekDialogReceive" data-config="{&quot;src&quot;:&quot;$model/UI2/work/attendance/process/attendance/AttendanceWeekActivity.m.w&quot;}" __cid="cJ3Ujiy" class="cJ3Ujiy">
+    <xhtml:div xmlns:xhtml="http://www.w3.org/1999/xhtml" class="x-dialog-overlay cJ3Ujiy" __cid="cJ3Ujiy"/>
+    <xhtml:div xmlns:xhtml="http://www.w3.org/1999/xhtml" class="x-dialog cJ3Ujiy" style="display:none;" __cid="cJ3Ujiy">
+      <xhtml:div class="x-dialog-title cJ3Ujiy" __cid="cJ3Ujiy">
+        <xhtml:button class="close cJ3Ujiy" __cid="cJ3Ujiy">
+          <xhtml:span __cid="cJ3Ujiy" class="cJ3Ujiy">×</xhtml:span>
+        </xhtml:button>
+        <xhtml:div class="x-dialog-title-text cJ3Ujiy" __cid="cJ3Ujiy"/>
+      </xhtml:div>
+      <xhtml:div class="x-dialog-body cJ3Ujiy" __cid="cJ3Ujiy"/>
+    </xhtml:div>
+  </span>  
+  <span component="$model/UI2/system/components/justep/windowDialog/windowDialog" xid="perDialog" data-bind="component:{name:'$model/UI2/system/components/justep/windowDialog/windowDialog'}" data-events="onReceive:perDialogReceive" data-config="{&quot;src&quot;:&quot;$model/UI2/work/common/process/personDlgActivity.w&quot;}" __cid="cJ3Ujiy" class="cJ3Ujiy">
+    <xhtml:div xmlns:xhtml="http://www.w3.org/1999/xhtml" class="x-dialog-overlay cJ3Ujiy" __cid="cJ3Ujiy"/>
+    <xhtml:div xmlns:xhtml="http://www.w3.org/1999/xhtml" class="x-dialog cJ3Ujiy" style="display:none;" __cid="cJ3Ujiy">
+      <xhtml:div class="x-dialog-title cJ3Ujiy" __cid="cJ3Ujiy">
+        <xhtml:button class="close cJ3Ujiy" __cid="cJ3Ujiy">
+          <xhtml:span __cid="cJ3Ujiy" class="cJ3Ujiy">×</xhtml:span>
+        </xhtml:button>
+        <xhtml:div class="x-dialog-title-text cJ3Ujiy" __cid="cJ3Ujiy"/>
+      </xhtml:div>
+      <xhtml:div class="x-dialog-body cJ3Ujiy" __cid="cJ3Ujiy"/>
+    </xhtml:div>
+  </span>  
+  <span component="$model/UI2/system/components/justep/windowDialog/windowDialog" xid="manDialog" data-bind="component:{name:'$model/UI2/system/components/justep/windowDialog/windowDialog'}" data-events="onReceive:manDialogReceive" data-config="{&quot;src&quot;:&quot;$model/UI2/work/common/process/personDlgActivity.w&quot;}" __cid="cJ3Ujiy" class="cJ3Ujiy">
+    <xhtml:div xmlns:xhtml="http://www.w3.org/1999/xhtml" class="x-dialog-overlay cJ3Ujiy" __cid="cJ3Ujiy"/>
+    <xhtml:div xmlns:xhtml="http://www.w3.org/1999/xhtml" class="x-dialog cJ3Ujiy" style="display:none;" __cid="cJ3Ujiy">
+      <xhtml:div class="x-dialog-title cJ3Ujiy" __cid="cJ3Ujiy">
+        <xhtml:button class="close cJ3Ujiy" __cid="cJ3Ujiy">
+          <xhtml:span __cid="cJ3Ujiy" class="cJ3Ujiy">×</xhtml:span>
+        </xhtml:button>
+        <xhtml:div class="x-dialog-title-text cJ3Ujiy" __cid="cJ3Ujiy"/>
+      </xhtml:div>
+      <xhtml:div class="x-dialog-body cJ3Ujiy" __cid="cJ3Ujiy"/>
+    </xhtml:div>
+  </span>  
+  <span component="$model/UI2/system/components/justep/messageDialog/messageDialog" xid="replaceDialog" data-bind="component:{name:'$model/UI2/system/components/justep/messageDialog/messageDialog'}" data-config="{&quot;type&quot;:&quot;OKCancel&quot;}" __cid="cJ3Ujiy" class="cJ3Ujiy">
+    <xhtml:div xmlns:xhtml="http://www.w3.org/1999/xhtml" class="x-modal-overlay cJ3Ujiy" __cid="cJ3Ujiy"/>
+    <xhtml:div xmlns:xhtml="http://www.w3.org/1999/xhtml" class="x-modal cJ3Ujiy" __cid="cJ3Ujiy">
+      <xhtml:div class="x-modal-inner cJ3Ujiy" __cid="cJ3Ujiy">
+        <xhtml:div class="x-modal-title cJ3Ujiy" __cid="cJ3Ujiy"></xhtml:div>
+        <xhtml:div class="x-modal-text cJ3Ujiy" __cid="cJ3Ujiy"></xhtml:div>
+        <xhtml:input class="x-modal-prompt-input cJ3Ujiy" type="text" __cid="cJ3Ujiy"/>
+      </xhtml:div>
+      <xhtml:div class="x-modal-buttons cJ3Ujiy" __cid="cJ3Ujiy">
+        <xhtml:a class="x-modal-button x-modal-button-bold OK cJ3Ujiy" value="ok" __cid="cJ3Ujiy">确定</xhtml:a>
+        <xhtml:a class="x-modal-button x-modal-button-bold Yes cJ3Ujiy" value="yes" __cid="cJ3Ujiy">是</xhtml:a>
+        <xhtml:a class="x-modal-button x-modal-button-bold No cJ3Ujiy" value="no" __cid="cJ3Ujiy">否</xhtml:a>
+        <xhtml:a class="x-modal-button x-modal-button-bold Cancel cJ3Ujiy" value="cancel" __cid="cJ3Ujiy">取消</xhtml:a>
+      </xhtml:div>
+    </xhtml:div>
+  </span>
+</div>

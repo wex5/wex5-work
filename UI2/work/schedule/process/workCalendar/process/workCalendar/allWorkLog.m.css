@@ -1,0 +1,48 @@
+.x-row{
+	padding:5px 5px 5px 0;
+}
+.x-col-25{
+	padding:5px 5px 5px 0;
+	font-weight:bold; 
+}
+.x-item-attachment-img{
+	margin-left:20px;
+}
+.x-label{
+	 font-weight:bold; 
+}
+.x-control-group {
+	padding:0.25em 0 0 0;
+}
+.x-control-group-title{
+	margin-bottom:0;
+	/* padding:1em; */
+	
+}
+/*.panel-body{
+	padding:0;
+}*/
+.panel{
+	border:none;
+	box-shadow:none;
+}
+ .btn.active{
+   
+ }
+ .x-card.btn-group{
+ border-top:1px solid #ddd;
+ background-color:#f8f6f7;
+ }
+ .x-card.btn-group .btn{
+line-height:17.5px;
+ }
+ 
+ .show{
+ 	display:none;
+ }
+ .x-card.btn-group .btn.active{
+	border-top:2px solid #ecca3e;
+}
+.x-card.btn-group .btn{
+	border-top:1px solid #ddd;
+}

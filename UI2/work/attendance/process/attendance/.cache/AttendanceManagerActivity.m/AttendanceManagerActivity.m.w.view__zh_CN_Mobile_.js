@@ -1,0 +1,25 @@
+window.__justep.__ResourceEngine.loadCss([{url: '/v_97a6f2533a2c42f986d493775478c5cel_zh_CNs_d_m/system/components/bootstrap.min.css', include: '$model/system/components/bootstrap/lib/css/bootstrap,$model/system/components/bootstrap/lib/css/bootstrap-theme'},{url: '/v_a134d2d8d9c245d890dfb1c859904f67l_zh_CNs_d_m/system/components/comp.min.css', include: '$model/system/components/justep/lib/css2/dataControl,$model/system/components/justep/input/css/datePickerPC,$model/system/components/justep/messageDialog/css/messageDialog,$model/system/components/justep/lib/css3/round,$model/system/components/justep/input/css/datePicker,$model/system/components/justep/row/css/row,$model/system/components/justep/attachment/css/attachment,$model/system/components/justep/barcode/css/barcodeImage,$model/system/components/bootstrap/dropdown/css/dropdown,$model/system/components/justep/dataTables/css/dataTables,$model/system/components/justep/contents/css/contents,$model/system/components/justep/common/css/forms,$model/system/components/justep/locker/css/locker,$model/system/components/justep/menu/css/menu,$model/system/components/justep/scrollView/css/scrollView,$model/system/components/justep/loadingBar/loadingBar,$model/system/components/justep/dialog/css/dialog,$model/system/components/justep/bar/css/bar,$model/system/components/justep/popMenu/css/popMenu,$model/system/components/justep/lib/css/icons,$model/system/components/justep/lib/css4/e-commerce,$model/system/components/justep/toolBar/css/toolBar,$model/system/components/justep/popOver/css/popOver,$model/system/components/justep/panel/css/panel,$model/system/components/bootstrap/carousel/css/carousel,$model/system/components/justep/wing/css/wing,$model/system/components/bootstrap/scrollSpy/css/scrollSpy,$model/system/components/justep/titleBar/css/titleBar,$model/system/components/justep/lib/css1/linear,$model/system/components/justep/numberSelect/css/numberList,$model/system/components/justep/list/css/list,$model/system/components/justep/dataTables/css/dataTables'}]);window.__justep.__ResourceEngine.loadJs(['/v_c1ce0bbf50fe403782233606d970166al_zh_CNs_d_m/system/core.min.js','/v_28c70bc97ab8411398e3f56d77a45052l_zh_CNs_d_m/system/common.min.js','/v_8fedadf592aa48d8b227ec39af18a1b2l_zh_CNs_d_m/system/components/comp.min.js']);define(function(require){
+require('$model/UI2/system/components/justep/model/model');
+require('$model/UI2/system/components/justep/loadingBar/loadingBar');
+require('$model/UI2/system/components/justep/button/button');
+require('$model/UI2/system/components/justep/list/list');
+require('$model/UI2/system/components/justep/titleBar/titleBar');
+require('$model/UI2/system/components/justep/panel/child');
+require('$model/UI2/system/components/justep/data/data');
+require('$model/UI2/system/components/justep/window/window');
+require('$model/UI2/system/components/justep/button/buttonGroup');
+require('$model/UI2/system/components/justep/messageDialog/messageDialog');
+require('$model/UI2/system/components/justep/panel/panel');
+var __parent1=require('$model/UI2/system/lib/base/modelBase'); 
+var __parent0=require('$model/UI2/work/attendance/process/attendance/AttendanceManagerActivity.m'); 
+var __result = __parent1._extend(__parent0).extend({
+	constructor:function(contextUrl){
+	this.__sysParam='true';
+	this.__contextUrl=contextUrl;
+	this.__id='';
+	this.__cid='cfmYVVn';
+	this._flag_='9e42f032a894435da96e7d087e873eb4';
+	this.callParent(contextUrl);
+ var __Data__ = require("$UI/system/components/justep/data/data");new __Data__(this,{"autoLoad":true,"confirmDelete":false,"confirmRefresh":true,"defCols":{"fAMPM":{"define":"fAMPM","label":"考勤时间","name":"fAMPM","relation":"fAMPM","type":"String"},"fAttenAddrName":{"define":"fAttenAddrName","label":"考勤地点名称","name":"fAttenAddrName","relation":"fAttenAddrName","type":"String"},"fAttendanceClass":{"define":"fAttendanceClass","label":"班次","name":"fAttendanceClass","relation":"fAttendanceClass","type":"String"},"fAttendanceGroupName":{"define":"fAttendanceGroupName","label":"考勤组名称","name":"fAttendanceGroupName","relation":"fAttendanceGroupName","type":"String"},"fAttendanceID":{"define":"fAttendanceID","label":"考勤管理ID","name":"fAttendanceID","relation":"fAttendanceID","type":"String"},"fDepart":{"define":"fDepart","label":"班制","name":"fDepart","relation":"fDepart","type":"String"},"fPersonNameJ":{"define":"fPersonNameJ","label":"参与考勤人数","name":"fPersonNameJ","relation":"fPersonNameJ","type":"String"},"fPersonNameJID":{"define":"fPersonNameJID","label":"参与考勤人数ID","name":"fPersonNameJID","relation":"fPersonNameJID","type":"String"},"fPersonNameS":{"define":"fPersonNameS","label":"考勤组负责人","name":"fPersonNameS","relation":"fPersonNameS","type":"String"},"fPersonNameSID":{"define":"fPersonNameSID","label":"考勤组负责人ID","name":"fPersonNameSID","relation":"fPersonNameSID","type":"String"},"fWeek":{"define":"fWeek","label":"考勤周","name":"fWeek","relation":"fWeek","type":"String"}},"directDelete":false,"events":{},"idColumn":"fAttendanceID","initData":"[{}]","limit":-1,"xid":"AttendanceInfo"});
+}}); 
+return __result;});

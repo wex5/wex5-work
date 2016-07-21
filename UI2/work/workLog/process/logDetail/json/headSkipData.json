@@ -1,0 +1,4 @@
+[
+ {"fID":1,"fLabel":"所有日志","fUrl":"$UI/OA/schedule/process/workCalendar/process/workCalendar/allWorkLog.m.w","fColor":"#FFFFFF","fIconClass":"icon-document-text","fProcess":"/OA/schedule/process/workCalendar/process/workCalendar/workCalendarProcess","fActivity":"allWorkLog"},
+ {"fID":2,"fLabel":"日志报表","fUrl":"$UI/OA/workLog/process/workLogReport/mainActivity.m.w","fColor":"#FFFFFF","fIconClass":"icon-stats-bars","fProcess":"/OA/workLog/process/workLogReport/workLogReportProcess","fActivity":"mainActivity"}
+]

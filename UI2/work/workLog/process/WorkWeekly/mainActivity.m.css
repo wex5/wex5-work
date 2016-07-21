@@ -1,0 +1,13 @@
+/* .form-control:focus{
+	border-color:transparent;
+	box-shadow:none;
+}
+.form-control{
+	border-color:transparent;
+} */
+.x-label{
+	font-weight:bold;
+}
+.x-label20.x-label-edit > .x-label{
+	width:30%;
+}

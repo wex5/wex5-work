@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<div xmlns="http://www.w3.org/1999/xhtml" component="$model/UI2/system/components/justep/window/window" class="x-flex x-flex-column cBzqAJn" design="device:mobile" xid="window" data-bind="component:{name:'$model/UI2/system/components/justep/window/window'}" __cid="cBzqAJn" components="$model/UI2/system/components/justep/model/model,$model/UI2/system/components/justep/loadingBar/loadingBar,$model/UI2/system/components/justep/button/button,$model/UI2/system/components/justep/tree/tree,$model/UI2/system/components/justep/scrollView/scrollView,$model/UI2/system/components/justep/panel/child,$model/UI2/system/components/justep/labelEdit/labelEdit,$model/UI2/system/components/justep/panel/panel,$model/UI2/system/components/justep/output/output,$model/UI2/system/components/justep/titleBar/titleBar,$model/UI2/system/components/justep/button/radio,$model/UI2/system/components/justep/window/window,$model/UI2/system/components/justep/data/baasData,$model/UI2/system/components/bootstrap/breadcrumb/breadcrumb,">
+  <xhtml:style xmlns:xhtml="http://www.w3.org/1999/xhtml">.curRow.cBzqAJn{background-color: rgb(255, 255, 204)} .btn.cBzqAJn{padding-bottom: 0px} .x-output.cBzqAJn{padding-top: 0px}</xhtml:style>  
+  <div component="$model/UI2/system/components/justep/model/model" xid="model" style="display:none" data-bind="component:{name:'$model/UI2/system/components/justep/model/model'}" __cid="cBzqAJn" class="cBzqAJn"></div>  
+  <div component="$model/UI2/system/components/justep/panel/panel" class="x-panel x-full pcBzqAJn-iosstatusbar cBzqAJn" xid="panel1" data-bind="component:{name:'$model/UI2/system/components/justep/panel/panel'}" __cid="cBzqAJn"> 
+    <div class="x-panel-top cBzqAJn" xid="top1" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="cBzqAJn"> 
+      <div component="$model/UI2/system/components/justep/titleBar/titleBar" class="x-titlebar cBzqAJn" xid="titleBar1" data-bind="component:{name:'$model/UI2/system/components/justep/titleBar/titleBar'}" data-config="{&quot;title&quot;:&quot;选择部门&quot;}" __cid="cBzqAJn"> 
+        <div class="x-titlebar-left cBzqAJn" xid="div2" __cid="cBzqAJn"> 
+          <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-only-icon cBzqAJn" xid="button1" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:{operation:'window.close'}" __cid="cBzqAJn"> 
+            <i xid="i1" __cid="cBzqAJn" class="cBzqAJn"/>  
+            <span xid="span3" __cid="cBzqAJn" class="cBzqAJn"/> 
+          </a> 
+        </div>  
+        <div class="x-titlebar-title cBzqAJn" xid="div3" __cid="cBzqAJn">选择部门</div>  
+        <div class="x-titlebar-right  cBzqAJn" xid="div8" __cid="cBzqAJn">
+          <div class="empty cBzqAJn" __cid="cBzqAJn"/>
+          <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link cBzqAJn" xid="okBtn" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:okBtnClick" data-config="{&quot;icon&quot;:&quot;linear linear-bubble&quot;}" __cid="cBzqAJn"> 
+            <i xid="i3" class="linear linear-bubble cBzqAJn" __cid="cBzqAJn"/>  
+            <span xid="span1" __cid="cBzqAJn" class="cBzqAJn"/>
+          </a>
+        </div> 
+      </div> 
+    </div>  
+    <div class="x-panel-content x-flex x-flex-column cBzqAJn" xid="content1" style="padding:15px;" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="cBzqAJn"> 
+      <div component="$model/UI2/system/components/justep/tree/tree" class="x-tree x-inner-scroll x-flex1 cBzqAJn" xid="tree1" labelRelation="sName" data-bind="component:{name:'$model/UI2/system/components/justep/tree/tree'}" data-config="{&quot;data&quot;:&quot;mainData&quot;,&quot;labelColumn&quot;:&quot;sName&quot;,&quot;limit&quot;:8,&quot;rootLabel&quot;:&quot;组织机构&quot;}" __cid="cBzqAJn"> 
+        <div class="x-tree-head cBzqAJn" xid="div4" __cid="cBzqAJn"> 
+          <ul component="$model/UI2/system/components/bootstrap/breadcrumb/breadcrumb" class="breadcrumb cBzqAJn" xid="breadcrumb1" data-bind="component:{name:'$model/UI2/system/components/bootstrap/breadcrumb/breadcrumb'}" __cid="cBzqAJn"/> 
+        </div>  
+        <div class="x-tree-content x-scroll-view cBzqAJn" xid="div5" __cid="cBzqAJn"> 
+          <div component="$model/UI2/system/components/justep/scrollView/scrollView" supportPullToRefresh="true" supportInfiniteLoad="true" class="x-scroll cBzqAJn" xid="scrollView1" data-bind="component:{name:'$model/UI2/system/components/justep/scrollView/scrollView'}" data-config="{&quot;bounce&quot;:true,&quot;hScroll&quot;:false,&quot;hScrollbar&quot;:false,&quot;vScroll&quot;:true,&quot;vScrollbar&quot;:true}" __cid="cBzqAJn"> 
+            <div class="x-content-center x-pull-down container cBzqAJn" xid="div9" __cid="cBzqAJn"> 
+              <i class="x-pull-down-img glyphicon x-icon-pull-down cBzqAJn" xid="i2" __cid="cBzqAJn"/>  
+              <span class="x-pull-down-label cBzqAJn" xid="span4" __cid="cBzqAJn">下拉刷新...</span>
+            </div>  
+            <ul class="x-tree-template x-scroll-content hide cBzqAJn" xid="treeTemplateUl1" bind-foreach="{data:$model.foreach_tree1($element),afterRender:$model.foreach_afterRender_tree1.bind($model,$element)}" __cid="cBzqAJn"> 
+              <li bind-css="{ currentRow: $model.mainData.currentRow.get() == $object }" xid="dptLi" __cid="cBzqAJn" class="cBzqAJn"> 
+                <span component="$model/UI2/system/components/justep/button/radio" class="x-radio cBzqAJn" xid="check" name="org" data-config="{&quot;checked&quot;:false,&quot;disabled&quot;:false,&quot;name&quot;:&quot;org&quot;}" data-bind="component:{name:'$model/UI2/system/components/justep/button/radio'}" data-events="onChange:checkChange" __cid="cBzqAJn">
+                  <xhtml:input xmlns:xhtml="http://www.w3.org/1999/xhtml" type="radio" name="org" __cid="cBzqAJn" class="cBzqAJn"/>
+                  <xhtml:label xmlns:xhtml="http://www.w3.org/1999/xhtml" __cid="cBzqAJn" class="cBzqAJn"/>
+                </span>
+                <div component="$model/UI2/system/components/justep/labelEdit/labelEdit" class="x-label-edit cBzqAJn" xid="labelOutput1" style="display:inline-block;" data-bind="component:{name:'$model/UI2/system/components/justep/labelEdit/labelEdit'}" __cid="cBzqAJn"> 
+                  <div class="x-edit cBzqAJn" xid="div1" __cid="cBzqAJn"> 
+                    <div component="$model/UI2/system/components/justep/output/output" class="x-output cBzqAJn" xid="output1" data-bind="component:{ref:ref('sName'),name:'$model/UI2/system/components/justep/output/output'}" __cid="cBzqAJn"/> 
+                  </div> 
+                </div>  
+                <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-icon-right pull-right x-tree-link cBzqAJn" xid="button3" bind-visible=" val(&quot;sOrgKindID&quot;)  != 'psm'" style="margin-top:3px;padding-left:5px;" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-config="{&quot;icon&quot;:&quot;icon-chevron-right&quot;}" __cid="cBzqAJn"> 
+                  <i xid="i5" style="font-size:medium;" class="icon-chevron-right cBzqAJn" __cid="cBzqAJn"/>  
+                  <span xid="span6" __cid="cBzqAJn" class="cBzqAJn"/>
+                </a>
+                <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-icon-right pull-right cBzqAJn" xid="button2" bind-visible="$model.getCount($object)!=0" style="padding-right:0;" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" __cid="cBzqAJn"> 
+                  <i xid="i4" __cid="cBzqAJn" class="cBzqAJn"/>  
+                  <span xid="span5" bind-text="&quot;(&quot; + $model.getCount($object) + &quot;)&quot;;" __cid="cBzqAJn" class="cBzqAJn"/>
+                </a> 
+              </li> 
+            </ul>  
+            <div class="x-content-center x-pull-up cBzqAJn" xid="div4" __cid="cBzqAJn"> 
+              <span class="x-pull-up-label cBzqAJn" xid="span2" __cid="cBzqAJn">加载更多...</span> 
+            </div> 
+          </div> 
+        </div> 
+      </div> 
+    </div>  
+    <style __cid="cBzqAJn" class="cBzqAJn">.x-panel.pcBzqAJn-iosstatusbar &gt;.x-panel-top {height: 48px;}.x-panel.pcBzqAJn-iosstatusbar &gt;.x-panel-content { top: 48px;bottom: nullpx;}.x-panel.pcBzqAJn-iosstatusbar &gt;.x-panel-bottom {height: nullpx;}.iosstatusbar .x-panel.pcBzqAJn-iosstatusbar &gt;.x-panel-top,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pcBzqAJn-iosstatusbar &gt;.x-panel-top {height: 68px;}.iosstatusbar .x-panel.pcBzqAJn-iosstatusbar &gt;.x-panel-content,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pcBzqAJn-iosstatusbar &gt;.x-panel-content { top: 68px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pcBzqAJn-iosstatusbar &gt;.x-panel-top {height: 48px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pcBzqAJn-iosstatusbar &gt;.x-panel-content {top: 48px;}</style>
+  </div> 
+</div>

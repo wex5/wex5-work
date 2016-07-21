@@ -1,0 +1,1 @@
+<?xml version="1.0" encoding="utf-8"?><model><datasource xmlns="http://www.w3.org/1999/xhtml" name="system" value="java:comp/env/system"></datasource><datasource xmlns="http://www.w3.org/1999/xhtml" name="work" value="java:comp/env/work"></datasource><datasource xmlns="http://www.w3.org/1999/xhtml" name="doc" value="java:comp/env/doc"></datasource></model>

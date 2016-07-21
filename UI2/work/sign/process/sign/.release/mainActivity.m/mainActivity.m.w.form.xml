@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<div xmlns="http://www.w3.org/1999/xhtml" component="$model/UI2/system/components/justep/window/window" design="device:m;" xid="window" class="window criqIFf" data-bind="component:{name:'$model/UI2/system/components/justep/window/window'}" __cid="criqIFf" components="$model/UI2/system/components/justep/model/model,$model/UI2/system/components/justep/loadingBar/loadingBar,$model/UI2/system/components/justep/button/button,$model/UI2/system/components/justep/row/row,$model/UI2/system/components/justep/titleBar/titleBar,$model/UI2/system/components/justep/panel/child,$model/UI2/system/components/justep/data/data,$model/UI2/system/components/justep/windowDialog/windowDialog,$model/UI2/system/components/justep/window/window,$model/UI2/system/components/justep/panel/panel,">
+  <xhtml:style xmlns:xhtml="http://www.w3.org/1999/xhtml">null</xhtml:style>  
+  <div component="$model/UI2/system/components/justep/model/model" xid="model" style="display:none" data-bind="component:{name:'$model/UI2/system/components/justep/model/model'}" data-events="onLoad:modelLoad;onParamsReceive:modelParamsReceive" __cid="criqIFf" class="criqIFf"></div>  
+  <div xid="waitDiv" style="position:relative;height:200px;" __cid="criqIFf" class="criqIFf"> 
+    <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-only-icon criqIFf" xid="button2" style="position:absolute;font-size:30px;top:42%;left:42%;" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-config="{&quot;icon&quot;:&quot;icon-loading-a&quot;,&quot;label&quot;:&quot;button&quot;}" __cid="criqIFf"> 
+      <i xid="i5" class="icon-loading-a criqIFf" __cid="criqIFf"/>  
+      <span xid="span5" __cid="criqIFf" class="criqIFf"/>
+    </a> 
+  </div>
+  <div component="$model/UI2/system/components/justep/panel/panel" class="x-panel x-full pcriqIFf-iosstatusbar criqIFf" xid="panel1" data-bind="component:{name:'$model/UI2/system/components/justep/panel/panel'}" __cid="criqIFf"> 
+    <div class="x-panel-top criqIFf" xid="top1" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="criqIFf"> 
+      <div component="$model/UI2/system/components/justep/titleBar/titleBar" class="x-titlebar criqIFf" data-bind="component:{name:'$model/UI2/system/components/justep/titleBar/titleBar'}" data-config="{&quot;title&quot;:&quot;外勤签到&quot;}" __cid="criqIFf"> 
+        <div class="x-titlebar-left criqIFf" __cid="criqIFf"> 
+          <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-only-icon criqIFf" xid="backBtn" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:{operation:'window.close'}" data-config="{&quot;icon&quot;:&quot;icon-chevron-left&quot;,&quot;label&quot;:&quot;&quot;}" __cid="criqIFf"> 
+            <i class="icon-chevron-left criqIFf" __cid="criqIFf"/>  
+            <span __cid="criqIFf" class="criqIFf"/> 
+          </a> 
+        </div>  
+        <div class="x-titlebar-title criqIFf" __cid="criqIFf">外勤签到</div>  
+        <div class="x-titlebar-right  criqIFf" __cid="criqIFf">
+          <div class="empty criqIFf" __cid="criqIFf"/>
+          <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link criqIFf" xid="statistics" style="font-weight:bold;font-size:initial;" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:statisticsClick" data-config="{&quot;label&quot;:&quot;统计&quot;}" __cid="criqIFf"> 
+            <i xid="i2" __cid="criqIFf" class="criqIFf"/>  
+            <span xid="span4" __cid="criqIFf" class="criqIFf">统计</span>
+          </a>
+        </div> 
+      </div> 
+    </div>  
+    <div class="x-panel-content criqIFf" xid="content1" style="padding:20px;" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="criqIFf"> 
+      <div xid="div1" __cid="criqIFf" class="criqIFf"> 
+        <div class="media criqIFf" xid="media1" style="border-bottom:1px solid #dbdbdb" __cid="criqIFf"> 
+          <div class="media-left criqIFf" xid="mediaLeft1" style="height:80px;width:80px;" __cid="criqIFf"> 
+            <div xid="div4" class="photoDiv criqIFf" align="center" __cid="criqIFf">
+              <span xid="mainImgSpan" __cid="criqIFf" class="criqIFf"/>
+            </div>
+          </div>  
+          <div class="media-body criqIFf" xid="mediaBody1" __cid="criqIFf"> 
+            <h4 class="media-heading criqIFf" xid="personName" style="margin-top:3px;" __cid="criqIFf"/>  
+            <p xid="signCount" __cid="criqIFf" class="criqIFf"> 
+              <span xid="span1" __cid="criqIFf" class="criqIFf">今日您已完成签到</span>  
+              <span xid="countSpan" style="font-style:normal;font-size:x-large;" bind-text="$model.mainData.count()" __cid="criqIFf" class="criqIFf"/>  
+              <span xid="span3" __cid="criqIFf" class="criqIFf">次</span> 
+            </p> 
+          </div> 
+        </div>
+      </div>  
+      <div xid="div3" __cid="criqIFf" class="criqIFf"> 
+        <div component="$model/UI2/system/components/justep/row/row" class="x-row criqIFf" xid="row1" style="padding-left:0;padding-right:0;" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="criqIFf"> 
+          <div class="x-col x-col-center criqIFf" xid="col1" style="padding:0;font-size:0.8em;" __cid="criqIFf"> 
+            <img src="$model/UI2/work/common/images/calendar.png" alt="" xid="image3" height="20px" style="width:20px;" align="middle" __cid="criqIFf" class="criqIFf"/>  
+            <span xid="weekSpan" __cid="criqIFf" class="criqIFf"/>
+            <span xid="dateSpan" __cid="criqIFf" class="criqIFf"/> 
+          </div>  
+          <div class="x-col x-col-center criqIFf" xid="col2" style="padding:0;text-align:right;font-size:0.8em;" __cid="criqIFf"> 
+            <img src="$model/UI2/work/common/images/time.png" alt="" xid="image4" height="20" style="width:20px;" align="middle" __cid="criqIFf" class="criqIFf"/>  
+            <span xid="span8" __cid="criqIFf" class="criqIFf">当前时间:</span>  
+            <span xid="timeSpan" __cid="criqIFf" class="criqIFf"/> 
+          </div> 
+        </div>  
+        <div xid="baiduMap" style="height:100px;border:1px solid #dbdbdb;" __cid="criqIFf" class="criqIFf"/>  
+        <div xid="addressDiv" style="margin-top:10px;" bind-text=" $model.statusData.val(&quot;address&quot;)" __cid="criqIFf" class="criqIFf"/>  
+        <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link criqIFf" xid="mapBtn" style="padding-left:0px;" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:mapBtnClick" data-config="{&quot;label&quot;:&quot;地点微调&quot;}" __cid="criqIFf"> 
+          <i xid="i1" __cid="criqIFf" class="criqIFf"/>  
+          <span xid="span2" __cid="criqIFf" class="criqIFf">地点微调</span>
+        </a>
+      </div>  
+      <div xid="div2" style="padding-top:50px;" __cid="criqIFf" class="criqIFf"> 
+        <img src="$model/UI2/work/common/images/sign.png" alt="" xid="signImage" style="display:block;margin:0 auto;width:50%;" bind-click="signImageClick" __cid="criqIFf" class="criqIFf"/> 
+      </div> 
+    </div>  
+    <style __cid="criqIFf" class="criqIFf">.x-panel.pcriqIFf-iosstatusbar &gt;.x-panel-top {height: 48px;}.x-panel.pcriqIFf-iosstatusbar &gt;.x-panel-content { top: 48px;bottom: nullpx;}.x-panel.pcriqIFf-iosstatusbar &gt;.x-panel-bottom {height: nullpx;}.iosstatusbar .x-panel.pcriqIFf-iosstatusbar &gt;.x-panel-top,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pcriqIFf-iosstatusbar &gt;.x-panel-top {height: 68px;}.iosstatusbar .x-panel.pcriqIFf-iosstatusbar &gt;.x-panel-content,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pcriqIFf-iosstatusbar &gt;.x-panel-content { top: 68px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pcriqIFf-iosstatusbar &gt;.x-panel-top {height: 48px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pcriqIFf-iosstatusbar &gt;.x-panel-content {top: 48px;}</style>
+  </div>  
+  <span component="$model/UI2/system/components/justep/windowDialog/windowDialog" xid="statisticsDialog" data-bind="component:{name:'$model/UI2/system/components/justep/windowDialog/windowDialog'}" data-config="{&quot;forceRefreshOnOpen&quot;:true,&quot;src&quot;:&quot;$model/UI2/work/sign/process/sign/statisticsActivity.m.w&quot;}" __cid="criqIFf" class="criqIFf">
+    <xhtml:div xmlns:xhtml="http://www.w3.org/1999/xhtml" class="x-dialog-overlay criqIFf" __cid="criqIFf"/>
+    <xhtml:div xmlns:xhtml="http://www.w3.org/1999/xhtml" class="x-dialog criqIFf" style="display:none;" __cid="criqIFf">
+      <xhtml:div class="x-dialog-title criqIFf" __cid="criqIFf">
+        <xhtml:button class="close criqIFf" __cid="criqIFf">
+          <xhtml:span __cid="criqIFf" class="criqIFf">×</xhtml:span>
+        </xhtml:button>
+        <xhtml:div class="x-dialog-title-text criqIFf" __cid="criqIFf"/>
+      </xhtml:div>
+      <xhtml:div class="x-dialog-body criqIFf" __cid="criqIFf"/>
+    </xhtml:div>
+  </span>
+  <span component="$model/UI2/system/components/justep/windowDialog/windowDialog" xid="detailDialog" style="top:5px;left:69px;" data-bind="component:{name:'$model/UI2/system/components/justep/windowDialog/windowDialog'}" data-events="onClose:detailDialogClose" data-config="{&quot;src&quot;:&quot;$model/UI2/work/sign/process/sign/signDetailActivity.m.w&quot;}" __cid="criqIFf" class="criqIFf">
+    <xhtml:div xmlns:xhtml="http://www.w3.org/1999/xhtml" class="x-dialog-overlay criqIFf" __cid="criqIFf"/>
+    <xhtml:div xmlns:xhtml="http://www.w3.org/1999/xhtml" class="x-dialog criqIFf" style="display:none;" __cid="criqIFf">
+      <xhtml:div class="x-dialog-title criqIFf" __cid="criqIFf">
+        <xhtml:button class="close criqIFf" __cid="criqIFf">
+          <xhtml:span __cid="criqIFf" class="criqIFf">×</xhtml:span>
+        </xhtml:button>
+        <xhtml:div class="x-dialog-title-text criqIFf" __cid="criqIFf"/>
+      </xhtml:div>
+      <xhtml:div class="x-dialog-body criqIFf" __cid="criqIFf"/>
+    </xhtml:div>
+  </span>  
+  <span component="$model/UI2/system/components/justep/windowDialog/windowDialog" xid="mapDialog" data-bind="component:{name:'$model/UI2/system/components/justep/windowDialog/windowDialog'}" data-events="onReceive:mapDialogReceive" data-config="{&quot;src&quot;:&quot;$model/UI2/work/sign/process/sign/signMapActivity.m.w&quot;}" __cid="criqIFf" class="criqIFf">
+    <xhtml:div xmlns:xhtml="http://www.w3.org/1999/xhtml" class="x-dialog-overlay criqIFf" __cid="criqIFf"/>
+    <xhtml:div xmlns:xhtml="http://www.w3.org/1999/xhtml" class="x-dialog criqIFf" style="display:none;" __cid="criqIFf">
+      <xhtml:div class="x-dialog-title criqIFf" __cid="criqIFf">
+        <xhtml:button class="close criqIFf" __cid="criqIFf">
+          <xhtml:span __cid="criqIFf" class="criqIFf">×</xhtml:span>
+        </xhtml:button>
+        <xhtml:div class="x-dialog-title-text criqIFf" __cid="criqIFf"/>
+      </xhtml:div>
+      <xhtml:div class="x-dialog-body criqIFf" __cid="criqIFf"/>
+    </xhtml:div>
+  </span> 
+</div>

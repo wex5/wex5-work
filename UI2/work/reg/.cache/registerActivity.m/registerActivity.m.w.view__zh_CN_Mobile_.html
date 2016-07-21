@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<div xmlns="http://www.w3.org/1999/xhtml" component="$model/UI2/system/components/justep/window/window" design="device:m;" xid="window" class="window cvUZvEj" data-bind="component:{name:'$model/UI2/system/components/justep/window/window'}" __cid="cvUZvEj" components="$model/UI2/system/components/justep/model/model,$model/UI2/system/components/justep/input/password,$model/UI2/system/components/justep/loadingBar/loadingBar,$model/UI2/system/components/justep/button/button,$model/UI2/system/components/justep/input/input,$model/UI2/system/components/justep/row/row,$model/UI2/system/components/bootstrap/row/row,$model/UI2/system/components/justep/titleBar/titleBar,$model/UI2/system/components/justep/panel/child,$model/UI2/system/components/justep/windowDialog/windowDialog,$model/UI2/system/components/justep/window/window,$model/UI2/system/components/justep/panel/panel,">  
+  <style xmlns="" xmlns:xhtml="http://www.w3.org/1999/xhtml">null</style>  
+  <div xmlns="" component="$model/UI2/system/components/justep/model/model" style="display:none" xid="model" data-bind="component:{name:'$model/UI2/system/components/justep/model/model'}" data-events="onLoad:modelLoad" __cid="cvUZvEj" class="cvUZvEj"/>  
+  <span xmlns="" component="$model/UI2/system/components/justep/windowDialog/windowDialog" xid="chooseRoleDialog" data-bind="component:{name:'$model/UI2/system/components/justep/windowDialog/windowDialog'}" data-config="{&quot;src&quot;:&quot;$model/UI2/OA/organizationalStructure/process/organizationalStructure/roleActivity.w&quot;}" __cid="cvUZvEj" class="cvUZvEj"> 
+    <div xmlns:xhtml="http://www.w3.org/1999/xhtml" class="x-dialog-overlay cvUZvEj" __cid="cvUZvEj"></div>  
+    <div xmlns:xhtml="http://www.w3.org/1999/xhtml" class="x-dialog cvUZvEj" style="display:none;" __cid="cvUZvEj">  
+      <div class="x-dialog-title cvUZvEj" __cid="cvUZvEj"> 
+        <button class="close cvUZvEj" __cid="cvUZvEj"> 
+          <span __cid="cvUZvEj" class="cvUZvEj">×</span> 
+        </button>  
+        <div class="x-dialog-title-text cvUZvEj" __cid="cvUZvEj"/> 
+      </div>  
+      <div class="x-dialog-body cvUZvEj" __cid="cvUZvEj"/> 
+    </div> 
+  </span>  
+  <div xmlns="" component="$model/UI2/system/components/justep/panel/panel" class="x-panel x-full pcvUZvEj-iosstatusbar cvUZvEj" xid="panel1" data-bind="component:{name:'$model/UI2/system/components/justep/panel/panel'}" __cid="cvUZvEj"> 
+    <div class="x-panel-top cvUZvEj" xid="top1" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="cvUZvEj"> 
+      <div component="$model/UI2/system/components/justep/titleBar/titleBar" class="x-titlebar cvUZvEj" data-bind="component:{name:'$model/UI2/system/components/justep/titleBar/titleBar'}" data-config="{&quot;title&quot;:&quot;注册&quot;}" __cid="cvUZvEj"> 
+        <div class="x-titlebar-left cvUZvEj" __cid="cvUZvEj"> 
+          <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-only-icon cvUZvEj" xid="backBtn" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:{operation:'window.close'}" data-config="{&quot;icon&quot;:&quot;icon-chevron-left&quot;,&quot;label&quot;:&quot;&quot;}" __cid="cvUZvEj"> 
+            <i class="icon-chevron-left cvUZvEj" __cid="cvUZvEj"/>  
+            <span __cid="cvUZvEj" class="cvUZvEj"/> 
+          </a> 
+        </div>  
+        <div class="x-titlebar-title cvUZvEj" __cid="cvUZvEj">注册</div>  
+        <div class="x-titlebar-right  cvUZvEj" __cid="cvUZvEj"> 
+          <div class="empty cvUZvEj" __cid="cvUZvEj"/>  
+          <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-only-icon cvUZvEj" xid="okBtn" style="font-size:medium;" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:okBtnClick" data-config="{&quot;icon&quot;:&quot;icon-android-checkmark&quot;}" __cid="cvUZvEj"> 
+            <i xid="i2" class="icon-android-checkmark cvUZvEj" __cid="cvUZvEj"/>  
+            <span xid="span2" __cid="cvUZvEj" class="cvUZvEj"/> 
+          </a> 
+        </div> 
+      </div> 
+    </div>  
+    <div class="x-panel-content cvUZvEj" xid="content1" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="cvUZvEj"> 
+      <div component="$model/UI2/system/components/bootstrap/row/row" class="row cvUZvEj" xid="inputRow" style="width:100%;margin:0 auto;" data-bind="component:{name:'$model/UI2/system/components/bootstrap/row/row'}" __cid="cvUZvEj"> 
+        <div class="col col-xs-12 cvUZvEj" xid="col1" style="padding:10px 5px;" __cid="cvUZvEj"> 
+          <input component="$model/UI2/system/components/justep/input/input" class="form-control cvUZvEj" xid="nameInput" data-bind="component:{name:'$model/UI2/system/components/justep/input/input'}" data-config="{&quot;placeHolder&quot;:&quot;请输入您的姓名&quot;}" __cid="cvUZvEj"/> 
+        </div>  
+        <div class="col col-xs-12 cvUZvEj" xid="col4" style="padding:10px 5px;" __cid="cvUZvEj"> 
+          <input component="$model/UI2/system/components/justep/input/input" class="form-control cvUZvEj" xid="phonenumber" data-bind="component:{name:'$model/UI2/system/components/justep/input/input'}" data-config="{&quot;placeHolder&quot;:&quot;请输入您的手机号&quot;}" __cid="cvUZvEj"/> 
+        </div>  
+        <div class="col col-xs-12 cvUZvEj" xid="col8" style="padding:0;" __cid="cvUZvEj"> 
+          <div component="$model/UI2/system/components/justep/row/row" class="x-row cvUZvEj" xid="row1" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="cvUZvEj"> 
+            <div class="x-col cvUZvEj" xid="col6" __cid="cvUZvEj"> 
+              <input component="$model/UI2/system/components/justep/input/input" class="form-control cvUZvEj" xid="verifyCode" data-bind="component:{name:'$model/UI2/system/components/justep/input/input'}" data-config="{&quot;placeHolder&quot;:&quot;请输入验证码&quot;}" __cid="cvUZvEj"/> 
+            </div>  
+            <div class="x-col x-col-33 cvUZvEj" xid="col7" style="text-align:center;" __cid="cvUZvEj"> 
+              <a component="$model/UI2/system/components/justep/button/button" class="btn btn-default cvUZvEj" xid="sendsmsbutton" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:sendsmsbuttonClick" data-config="{&quot;label&quot;:&quot;获取验证码&quot;}" __cid="cvUZvEj"> 
+                <i xid="i1" __cid="cvUZvEj" class="cvUZvEj"/>  
+                <span xid="span1" __cid="cvUZvEj" class="cvUZvEj">获取验证码</span> 
+              </a> 
+            </div> 
+          </div>  
+          <div component="$model/UI2/system/components/justep/row/row" class="x-row cvUZvEj" xid="row2" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="cvUZvEj"> 
+            <div class="x-col x-col-fixed cvUZvEj" xid="col3" style="text-align:left;color:#FF0000;" __cid="cvUZvEj"> 
+              <span xid="span6" style="width:340px;" __cid="cvUZvEj" class="cvUZvEj">体验版暂不提供短信验证服务，请随意输入验证码完成验证体验</span> 
+            </div> 
+          </div> 
+        </div>  
+        <div class="col col-xs-12 cvUZvEj" xid="col9" style="padding:10px 5px;" __cid="cvUZvEj"> 
+          <input component="$model/UI2/system/components/justep/input/password" class="form-control cvUZvEj" xid="userPassword" type="password" data-bind="component:{name:'$model/UI2/system/components/justep/input/password'}" data-config="{&quot;placeHolder&quot;:&quot;请输入密码（8-16位字母和数字的组合）&quot;}" __cid="cvUZvEj"/> 
+        </div>  
+        <div class="col col-xs-12 cvUZvEj" xid="col10" style="padding:10px 5px;" __cid="cvUZvEj"> 
+          <input component="$model/UI2/system/components/justep/input/password" class="form-control cvUZvEj" xid="passwordAgain" type="password" data-bind="component:{name:'$model/UI2/system/components/justep/input/password'}" data-config="{&quot;placeHolder&quot;:&quot;请确认您的密码（8-16位字母和数字的组合）&quot;}" __cid="cvUZvEj"/> 
+        </div> 
+      </div>  
+      <div xid="div1" style="text-align:center;margin-top:30px;padding:20px;" __cid="cvUZvEj" class="cvUZvEj"> 
+        <span xid="span3" __cid="cvUZvEj" class="cvUZvEj">温馨提示：登录时可直接使用手机号加密码登录。谢谢。</span> 
+      </div> 
+    </div>  
+    <style __cid="cvUZvEj" class="cvUZvEj">.x-panel.pcvUZvEj-iosstatusbar &gt;.x-panel-top {height: 48px;}.x-panel.pcvUZvEj-iosstatusbar &gt;.x-panel-content { top: 48px;bottom: nullpx;}.x-panel.pcvUZvEj-iosstatusbar &gt;.x-panel-bottom {height: nullpx;}.iosstatusbar .x-panel.pcvUZvEj-iosstatusbar &gt;.x-panel-top,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pcvUZvEj-iosstatusbar &gt;.x-panel-top {height: 68px;}.iosstatusbar .x-panel.pcvUZvEj-iosstatusbar &gt;.x-panel-content,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pcvUZvEj-iosstatusbar &gt;.x-panel-content { top: 68px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pcvUZvEj-iosstatusbar &gt;.x-panel-top {height: 48px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pcvUZvEj-iosstatusbar &gt;.x-panel-content {top: 48px;}</style> 
+  </div> 
+</div>

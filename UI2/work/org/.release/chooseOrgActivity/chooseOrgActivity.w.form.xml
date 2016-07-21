@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<div xmlns="http://www.w3.org/1999/xhtml" component="$model/UI2/system/components/justep/window/window" design="device:m;" xid="window" class="window cENvYve" data-bind="component:{name:'$model/UI2/system/components/justep/window/window'}" __cid="cENvYve" components="$model/UI2/system/components/justep/model/model,$model/UI2/system/components/justep/loadingBar/loadingBar,$model/UI2/system/components/justep/row/row,$model/UI2/system/components/bootstrap/row/row,$model/UI2/system/components/justep/titleBar/titleBar,$model/UI2/system/components/justep/panel/child,$model/UI2/system/components/justep/windowDialog/windowDialog,$model/UI2/system/components/justep/window/window,$model/UI2/system/components/justep/data/baasData,$model/UI2/system/components/justep/panel/panel,">
+  <xhtml:style xmlns:xhtml="http://www.w3.org/1999/xhtml">.btnStyle.cENvYve{height: 20rem; width: 20rem; margin-left: 12rem; border-radius: 50%}</xhtml:style>  
+  <div component="$model/UI2/system/components/justep/model/model" xid="model" style="display:none" data-bind="component:{name:'$model/UI2/system/components/justep/model/model'}" data-events="onModelConstruct:modelModelConstruct;onParamsReceive:modelParamsReceive" __cid="cENvYve" class="cENvYve"></div>  
+  <div component="$model/UI2/system/components/justep/panel/panel" class="x-panel x-full pcENvYve-iosstatusbar cENvYve" xid="panel1" data-bind="component:{name:'$model/UI2/system/components/justep/panel/panel'}" __cid="cENvYve"> 
+    <div class="x-panel-top cENvYve" xid="top1" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="cENvYve"> 
+      <div component="$model/UI2/system/components/justep/titleBar/titleBar" class="x-titlebar cENvYve" data-bind="component:{name:'$model/UI2/system/components/justep/titleBar/titleBar'}" data-config="{&quot;title&quot;:&quot;选择方式&quot;}" __cid="cENvYve"> 
+        <div class="x-titlebar-left cENvYve" __cid="cENvYve"></div>  
+        <div class="x-titlebar-title cENvYve" __cid="cENvYve">选择方式</div>  
+        <div class="x-titlebar-right  cENvYve" __cid="cENvYve">
+          <div class="empty cENvYve" __cid="cENvYve"/>
+        </div> 
+      </div> 
+    </div>  
+    <div class="x-panel-content cENvYve" xid="content1" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="cENvYve">
+      <div component="$model/UI2/system/components/justep/row/row" class="x-row cENvYve" xid="row1" style="height:100%;" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="cENvYve"> 
+        <div class="x-col cENvYve" xid="col1" style="padding:0 20px;height:100%;" __cid="cENvYve">
+          <img src="$model/UI2/work/org/img/recommend.jpg" alt="" xid="image1" style="width:100%;" height="100%" __cid="cENvYve" class="cENvYve"/>  
+          <div xid="div1" style="position:absolute;width:60%;height:35%;bottom:10%;left:20%;" __cid="cENvYve" class="cENvYve">
+            <div component="$model/UI2/system/components/bootstrap/row/row" class="row cENvYve" xid="row3" style="text-align:left;" data-bind="component:{name:'$model/UI2/system/components/bootstrap/row/row'}" __cid="cENvYve"> 
+              <div class="col col-xs-12 cENvYve" xid="col7" style="margin-bottom:10px;" __cid="cENvYve">
+                <h3 xid="h31" __cid="cENvYve" class="cENvYve">为您推荐以下方式：</h3>
+              </div>  
+              <div class="col col-xs-12 cENvYve" xid="callCol" style="margin-bottom:10px;" bind-click="callColClick" __cid="cENvYve">
+                <h4 xid="h41" __cid="cENvYve" class="cENvYve">NO.1 联系管理员创建组织</h4>
+              </div>  
+              <div class="col col-xs-12 cENvYve" xid="searchCol" bind-click="searchColClick" __cid="cENvYve">
+                <h4 xid="h42" style="width:215px;" __cid="cENvYve" class="cENvYve">NO.2 加入已有组织</h4>
+              </div>
+            </div>
+          </div>
+        </div> 
+      </div>
+    </div>  
+    <style __cid="cENvYve" class="cENvYve">.x-panel.pcENvYve-iosstatusbar &gt;.x-panel-top {height: 48px;}.x-panel.pcENvYve-iosstatusbar &gt;.x-panel-content { top: 48px;bottom: nullpx;}.x-panel.pcENvYve-iosstatusbar &gt;.x-panel-bottom {height: nullpx;}.iosstatusbar .x-panel.pcENvYve-iosstatusbar &gt;.x-panel-top,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pcENvYve-iosstatusbar &gt;.x-panel-top {height: 68px;}.iosstatusbar .x-panel.pcENvYve-iosstatusbar &gt;.x-panel-content,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pcENvYve-iosstatusbar &gt;.x-panel-content { top: 68px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pcENvYve-iosstatusbar &gt;.x-panel-top {height: 48px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pcENvYve-iosstatusbar &gt;.x-panel-content {top: 48px;}</style>
+  </div>  
+  <span component="$model/UI2/system/components/justep/windowDialog/windowDialog" xid="joinOrgDialog" data-bind="component:{name:'$model/UI2/system/components/justep/windowDialog/windowDialog'}" data-events="onReceive:joinOrgDialogReceive" data-config="{&quot;src&quot;:&quot;$model/UI2/work/common/process/orgDptDialog/index.w&quot;}" __cid="cENvYve" class="cENvYve">
+    <xhtml:div xmlns:xhtml="http://www.w3.org/1999/xhtml" class="x-dialog-overlay cENvYve" __cid="cENvYve"/>
+    <xhtml:div xmlns:xhtml="http://www.w3.org/1999/xhtml" class="x-dialog cENvYve" style="display:none;" __cid="cENvYve">
+      <xhtml:div class="x-dialog-title cENvYve" __cid="cENvYve">
+        <xhtml:button class="close cENvYve" __cid="cENvYve">
+          <xhtml:span __cid="cENvYve" class="cENvYve">×</xhtml:span>
+        </xhtml:button>
+        <xhtml:div class="x-dialog-title-text cENvYve" __cid="cENvYve"/>
+      </xhtml:div>
+      <xhtml:div class="x-dialog-body cENvYve" __cid="cENvYve"/>
+    </xhtml:div>
+  </span>
+</div>

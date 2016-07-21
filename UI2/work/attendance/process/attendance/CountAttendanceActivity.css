@@ -1,0 +1,24 @@
+.panel-body{
+	padding:0px;
+}
+.x-label{
+	padding:0px;
+}
+.progress{
+	margin-bottom:0px;
+	box-shadow:none;
+}
+.btn{
+	border-radius:0;	
+}
+.x-card.btn-group .btn.active{
+	background-color:#0E80E5;
+	color:#ffffff;
+}
+.x-card.btn-group .btn{
+	background-color:#ffffff;
+	color:#0E80E5;
+}
+.x-titlebar{
+	color:#727171;
+}

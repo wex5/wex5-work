@@ -1,0 +1,7 @@
+textarea{
+	border:none;
+}
+.form-control:focus{
+	border-color:none;
+	box-shadow:none;
+}

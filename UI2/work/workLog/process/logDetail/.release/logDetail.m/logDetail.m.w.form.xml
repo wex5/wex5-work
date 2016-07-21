@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<div xmlns="http://www.w3.org/1999/xhtml" component="$model/UI2/system/components/justep/window/window" design="device:m;" xid="window" class="window cuMjima" data-bind="component:{name:'$model/UI2/system/components/justep/window/window'}" __cid="cuMjima" components="$model/UI2/system/components/justep/model/model,$model/UI2/system/components/justep/loadingBar/loadingBar,$model/UI2/system/components/justep/button/button,$model/UI2/system/components/justep/list/list,$model/UI2/system/components/bootstrap/row/row,$model/UI2/system/components/justep/panel/child,$model/UI2/system/components/justep/windowDialog/windowDialog,$model/UI2/system/components/justep/panel/panel,$model/UI2/system/components/justep/row/row,$model/UI2/system/components/justep/titleBar/titleBar,$model/UI2/system/components/justep/data/data,$model/UI2/system/components/justep/window/window,$model/UI2/system/components/justep/button/buttonGroup,">
+  <xhtml:style xmlns:xhtml="http://www.w3.org/1999/xhtml">.btn-color.cuMjima{color: rgb(255, 255, 255)} .x-row.cuMjima{padding: 0}</xhtml:style>  
+  <div component="$model/UI2/system/components/justep/model/model" xid="model" style="display:none" data-bind="component:{name:'$model/UI2/system/components/justep/model/model'}" data-events="onLoad:modelLoad" __cid="cuMjima" class="cuMjima"></div>  
+  <div component="$model/UI2/system/components/justep/panel/panel" class="x-panel x-full pcuMjima-iosstatusbar cuMjima" xid="panel1" data-bind="component:{name:'$model/UI2/system/components/justep/panel/panel'}" __cid="cuMjima"> 
+    <div class="x-panel-top cuMjima" xid="top1" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="cuMjima"> 
+      <div component="$model/UI2/system/components/justep/titleBar/titleBar" class="x-titlebar cuMjima" data-bind="component:{name:'$model/UI2/system/components/justep/titleBar/titleBar'}" data-config="{&quot;title&quot;:&quot;工作日志&quot;}" __cid="cuMjima"> 
+        <div class="x-titlebar-left cuMjima" __cid="cuMjima"> 
+          <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-only-icon cuMjima" xid="backBtn" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:{operation:'window.close'}" data-config="{&quot;icon&quot;:&quot;icon-chevron-left&quot;,&quot;label&quot;:&quot;&quot;}" __cid="cuMjima"> 
+            <i class="icon-chevron-left cuMjima" __cid="cuMjima"/>  
+            <span __cid="cuMjima" class="cuMjima"/> 
+          </a> 
+        </div>  
+        <div class="x-titlebar-title cuMjima" __cid="cuMjima">工作日志</div>  
+        <div class="x-titlebar-right  cuMjima" __cid="cuMjima">
+          <div class="empty cuMjima" __cid="cuMjima"/>
+        </div> 
+      </div> 
+    </div>  
+    <div class="x-panel-content cuMjima" xid="content1" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="cuMjima">
+      <div xid="div2" style="background-color:#2FA4E7;" __cid="cuMjima" class="cuMjima"> 
+        <div component="$model/UI2/system/components/justep/row/row" class="x-row cuMjima" xid="row1" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="cuMjima"> 
+          <div class="x-col cuMjima" xid="col1" style="text-align:center;" __cid="cuMjima"> 
+            <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-icon-top cuMjima" xid="allWorkBtn" style="color:#FFFFFF;position:relative;" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:allWorkBtnClick" data-config="{&quot;label&quot;:&quot;所有日志&quot;}" __cid="cuMjima"> 
+              <i xid="i4" style="font-size:xx-large;display:block;border-style:solid solid solid solid;border-width:thin thin thin thin;border-color:#FFFFFF #FFFFFF #FFFFFF #FFFFFF;border-radius:40%;padding:10px 15px 10px 15px;" bind-css=" $model.headSkipData.val(&quot;fIconClass&quot;)" bind-style=" {color:$model.headSkipData.val(&quot;fColor&quot;)}" __cid="cuMjima" class="cuMjima"/>  
+              <span xid="span10" style="display:block;margin-top:5px;" bind-text="$model.headSkipData.val(&quot;fLabel&quot;)" __cid="cuMjima" class="cuMjima"/> 
+            </a> 
+          </div>  
+          <div class="x-col cuMjima" xid="col3" style="text-align:center;" __cid="cuMjima"> 
+            <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-icon-top cuMjima" xid="reportBtn" style="color:#FFFFFF;position:relative;" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:reportBtnClick" data-config="{&quot;icon&quot;:&quot;icon-stats-bars&quot;,&quot;label&quot;:&quot;日志报表&quot;}" __cid="cuMjima"> 
+              <i xid="i5" style="font-size:xx-large;display:block;border-style:solid solid solid solid;border-width:thin thin thin thin;border-color:#FFFFFF #FFFFFF #FFFFFF #FFFFFF;border-radius:40%;padding:10px 14px 10px 14px;" class="icon-stats-bars cuMjima" __cid="cuMjima"/>  
+              <span xid="span11" style="display:block;margin-top:5px;" __cid="cuMjima" class="cuMjima"/>
+            </a> 
+          </div> 
+        </div> 
+      </div>
+      <div xid="div1" __cid="cuMjima" class="cuMjima">
+        <div component="$model/UI2/system/components/justep/list/list" class="x-list cuMjima" xid="list1" data-bind="component:{name:'$model/UI2/system/components/justep/list/list'}" data-config="{&quot;data&quot;:&quot;skipData&quot;}" __cid="cuMjima"> 
+          <ul class="x-list-template hide cuMjima" xid="listTemplateUl1" bind-foreach="{data:$model.foreach_list1($element),afterRender:$model.foreach_afterRender_list1.bind($model,$element)}" __cid="cuMjima"> 
+            <li xid="li1" class="col-xs-4 cuMjima" __cid="cuMjima"> 
+              <div component="$model/UI2/system/components/bootstrap/row/row" class="row cuMjima" xid="row6" style="width:100%;margin:0 auto;" data-bind="component:{name:'$model/UI2/system/components/bootstrap/row/row'}" __cid="cuMjima"> 
+                <div class="col  cuMjima" xid="col18" style="text-align:center;" __cid="cuMjima"> 
+                  <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-icon-top cuMjima" xid="leaveBtn" style="color:#808080;margin-top:10px;" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:leaveBtnClick" __cid="cuMjima"> 
+                    <i xid="i10" style="font-size:xx-large;color:#398A42;" bind-css=" val(&quot;fIconClass&quot;)" bind-style="{color:val(&quot;fColor&quot;)}" __cid="cuMjima" class="cuMjima"/>  
+                    <span xid="span1" bind-text="val(&quot;fLabel&quot;)" __cid="cuMjima" class="cuMjima"/>
+                  </a> 
+                </div> 
+              </div> 
+            </li> 
+          </ul>
+        </div>
+        <div component="$model/UI2/system/components/justep/button/buttonGroup" class="btn-group btn-group-justified cuMjima" xid="buttonGroup3" style="padding-top:20px;padding-bottom:20px;" data-bind="component:{name:'$model/UI2/system/components/justep/button/buttonGroup'}" data-config="{&quot;tabbed&quot;:true}" __cid="cuMjima">
+          <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-icon-top cuMjima" xid="button6" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-config="{&quot;icon&quot;:&quot;icon-android-add&quot;,&quot;label&quot;:&quot;添加模板&quot;}" __cid="cuMjima"> 
+            <i xid="i6" class="icon-android-add cuMjima" __cid="cuMjima"/>  
+            <span xid="span6" __cid="cuMjima" class="cuMjima">添加模板</span>
+          </a>  
+          <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link cuMjima" xid="button7" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" __cid="cuMjima"> 
+            <i xid="i7" __cid="cuMjima" class="cuMjima"/>  
+            <span xid="span7" __cid="cuMjima" class="cuMjima"/>
+          </a>
+          <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link cuMjima" xid="button8" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" __cid="cuMjima"> 
+            <i xid="i8" __cid="cuMjima" class="cuMjima"/>  
+            <span xid="span8" __cid="cuMjima" class="cuMjima"/>
+          </a>
+        </div> 
+      </div> 
+    </div>  
+    <style __cid="cuMjima" class="cuMjima">.x-panel.pcuMjima-iosstatusbar &gt;.x-panel-top {height: 48px;}.x-panel.pcuMjima-iosstatusbar &gt;.x-panel-content { top: 48px;bottom: nullpx;}.x-panel.pcuMjima-iosstatusbar &gt;.x-panel-bottom {height: nullpx;}.iosstatusbar .x-panel.pcuMjima-iosstatusbar &gt;.x-panel-top,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pcuMjima-iosstatusbar &gt;.x-panel-top {height: 68px;}.iosstatusbar .x-panel.pcuMjima-iosstatusbar &gt;.x-panel-content,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pcuMjima-iosstatusbar &gt;.x-panel-content { top: 68px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pcuMjima-iosstatusbar &gt;.x-panel-top {height: 48px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pcuMjima-iosstatusbar &gt;.x-panel-content {top: 48px;}</style>
+  </div>  
+  <span component="$model/UI2/system/components/justep/windowDialog/windowDialog" xid="allWorkLogDialog" data-bind="component:{name:'$model/UI2/system/components/justep/windowDialog/windowDialog'}" data-config="{&quot;src&quot;:&quot;$model/UI2/OA/schedule/process/workCalendar/process/workCalendar/allWorkLog.m.w&quot;}" __cid="cuMjima" class="cuMjima">
+    <xhtml:div xmlns:xhtml="http://www.w3.org/1999/xhtml" class="x-dialog-overlay cuMjima" __cid="cuMjima"/>
+    <xhtml:div xmlns:xhtml="http://www.w3.org/1999/xhtml" class="x-dialog cuMjima" style="display:none;" __cid="cuMjima">
+      <xhtml:div class="x-dialog-title cuMjima" __cid="cuMjima">
+        <xhtml:button class="close cuMjima" __cid="cuMjima">
+          <xhtml:span __cid="cuMjima" class="cuMjima">×</xhtml:span>
+        </xhtml:button>
+        <xhtml:div class="x-dialog-title-text cuMjima" __cid="cuMjima"/>
+      </xhtml:div>
+      <xhtml:div class="x-dialog-body cuMjima" __cid="cuMjima"/>
+    </xhtml:div>
+  </span>  
+  <span component="$model/UI2/system/components/justep/windowDialog/windowDialog" xid="WorkDailyDialog" data-bind="component:{name:'$model/UI2/system/components/justep/windowDialog/windowDialog'}" data-config="{&quot;src&quot;:&quot;$model/UI2/OA/workLog/process/workDaily/mainActivity.m.w&quot;}" __cid="cuMjima" class="cuMjima">
+    <xhtml:div xmlns:xhtml="http://www.w3.org/1999/xhtml" class="x-dialog-overlay cuMjima" __cid="cuMjima"/>
+    <xhtml:div xmlns:xhtml="http://www.w3.org/1999/xhtml" class="x-dialog cuMjima" style="display:none;" __cid="cuMjima">
+      <xhtml:div class="x-dialog-title cuMjima" __cid="cuMjima">
+        <xhtml:button class="close cuMjima" __cid="cuMjima">
+          <xhtml:span __cid="cuMjima" class="cuMjima">×</xhtml:span>
+        </xhtml:button>
+        <xhtml:div class="x-dialog-title-text cuMjima" __cid="cuMjima"/>
+      </xhtml:div>
+      <xhtml:div class="x-dialog-body cuMjima" __cid="cuMjima"/>
+    </xhtml:div>
+  </span>  
+  <span component="$model/UI2/system/components/justep/windowDialog/windowDialog" xid="WorkWeeklyDialog" data-bind="component:{name:'$model/UI2/system/components/justep/windowDialog/windowDialog'}" data-config="{&quot;src&quot;:&quot;$model/UI2/OA/workLog/process/WorkWeekly/mainActivity.m.w&quot;}" __cid="cuMjima" class="cuMjima">
+    <xhtml:div xmlns:xhtml="http://www.w3.org/1999/xhtml" class="x-dialog-overlay cuMjima" __cid="cuMjima"/>
+    <xhtml:div xmlns:xhtml="http://www.w3.org/1999/xhtml" class="x-dialog cuMjima" style="display:none;" __cid="cuMjima">
+      <xhtml:div class="x-dialog-title cuMjima" __cid="cuMjima">
+        <xhtml:button class="close cuMjima" __cid="cuMjima">
+          <xhtml:span __cid="cuMjima" class="cuMjima">×</xhtml:span>
+        </xhtml:button>
+        <xhtml:div class="x-dialog-title-text cuMjima" __cid="cuMjima"/>
+      </xhtml:div>
+      <xhtml:div class="x-dialog-body cuMjima" __cid="cuMjima"/>
+    </xhtml:div>
+  </span>  
+  <span component="$model/UI2/system/components/justep/windowDialog/windowDialog" xid="WorkMonthlydialog" data-bind="component:{name:'$model/UI2/system/components/justep/windowDialog/windowDialog'}" data-config="{&quot;src&quot;:&quot;$model/UI2/OA/workLog/process/Workmonthly/mainActivity.m.w&quot;}" __cid="cuMjima" class="cuMjima">
+    <xhtml:div xmlns:xhtml="http://www.w3.org/1999/xhtml" class="x-dialog-overlay cuMjima" __cid="cuMjima"/>
+    <xhtml:div xmlns:xhtml="http://www.w3.org/1999/xhtml" class="x-dialog cuMjima" style="display:none;" __cid="cuMjima">
+      <xhtml:div class="x-dialog-title cuMjima" __cid="cuMjima">
+        <xhtml:button class="close cuMjima" __cid="cuMjima">
+          <xhtml:span __cid="cuMjima" class="cuMjima">×</xhtml:span>
+        </xhtml:button>
+        <xhtml:div class="x-dialog-title-text cuMjima" __cid="cuMjima"/>
+      </xhtml:div>
+      <xhtml:div class="x-dialog-body cuMjima" __cid="cuMjima"/>
+    </xhtml:div>
+  </span> 
+</div>

@@ -1,0 +1,6 @@
+.x-row{
+	padding:0px;
+}
+.x-row + .x-row{
+	margin-top:0px;
+}

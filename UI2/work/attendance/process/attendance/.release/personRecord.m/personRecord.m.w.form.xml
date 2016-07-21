@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<div xmlns="http://www.w3.org/1999/xhtml" xid="window" class="window cf2yEjq" component="$model/UI2/system/components/justep/window/window" design="device:m;" data-bind="component:{name:'$model/UI2/system/components/justep/window/window'}" __cid="cf2yEjq" components="$model/UI2/system/components/justep/model/model,$model/UI2/system/components/justep/loadingBar/loadingBar,$model/UI2/system/components/justep/button/button,$model/UI2/system/components/justep/row/row,$model/UI2/system/components/justep/list/list,$model/UI2/system/components/justep/panel/child,$model/UI2/system/components/justep/data/data,$model/UI2/system/components/justep/windowDialog/windowDialog,$model/UI2/system/components/justep/window/window,$model/UI2/system/components/justep/panel/panel,">
+  <xhtml:style xmlns:xhtml="http://www.w3.org/1999/xhtml">.panel-body.cf2yEjq{padding: 0px} .x-label.cf2yEjq{padding: 0px} .progress.cf2yEjq{margin-bottom: 0px; box-shadow: none} .btn.cf2yEjq{border-radius: 0}</xhtml:style>  
+  <div component="$model/UI2/system/components/justep/model/model" xid="model" style="display:none" data-bind="component:{name:'$model/UI2/system/components/justep/model/model'}" data-events="onLoad:modelLoad;onParamsReceive:modelParamsReceive" __cid="cf2yEjq" class="cf2yEjq"></div>  
+  <div xid="waitDiv" style="position:relative;height:200px;" __cid="cf2yEjq" class="cf2yEjq"> 
+    <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-only-icon cf2yEjq" xid="button2" style="position:absolute;font-size:30px;top:42%;left:42%;" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-config="{&quot;icon&quot;:&quot;icon-loading-a&quot;,&quot;label&quot;:&quot;button&quot;}" __cid="cf2yEjq"> 
+      <i xid="i4" class="icon-loading-a cf2yEjq" __cid="cf2yEjq"/>  
+      <span xid="span4" __cid="cf2yEjq" class="cf2yEjq"/>
+    </a> 
+  </div>
+  <div component="$model/UI2/system/components/justep/panel/panel" class="x-panel x-full pcf2yEjq-iosstatusbar cf2yEjq" xid="panel2" style="display:none;" data-bind="component:{name:'$model/UI2/system/components/justep/panel/panel'}" __cid="cf2yEjq"> 
+    <div class="x-panel-top cf2yEjq" xid="top2" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" data-config="{&quot;height&quot;:150}" __cid="cf2yEjq"> 
+      <div xid="statistics" style="background-color:transparent;border-style:solid solid solid solid;border-width:0px 0px 1px 0px;border-color:#808080 #808080 #808080 #808080;" __cid="cf2yEjq" class="cf2yEjq"> 
+        <div component="$model/UI2/system/components/justep/row/row" class="x-row cf2yEjq" xid="row" style="padding:0px 0px 0px 0px;margin:0px 0px 0px 0px;" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="cf2yEjq"> 
+          <div class="x-col x-col-33 cf2yEjq" style="padding-right:0px;margin-right:0px;" xid="col1" __cid="cf2yEjq"> 
+            <div component="$model/UI2/system/components/justep/row/row" class="x-row cf2yEjq" xid="dateShow" style="height:763%;" bind-click="dateShowClick" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="cf2yEjq"> 
+              <div class="x-col cf2yEjq" xid="col5" style="text-align:center;border-style:solid solid solid solid;border-width:0px 1px 1px 1px;border-color:#808080 #808080 #808080 #808080;border-radius:10px;padding:0px 0px 0px 0px;margin:0px 0px 0px 0px;height:130px;background-color:white;" __cid="cf2yEjq"> 
+                <div component="$model/UI2/system/components/justep/row/row" class="x-row cf2yEjq" xid="row5" style="padding:0px 0px 0px 0px;margin:0px 0px 0px 0px;border-radius:8px 8px 0px 0px;background-color:#3399F3;" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="cf2yEjq"> 
+                  <div class="x-col cf2yEjq" xid="col13" style="color:#FFFFFF;font-size:large;font-weight:bold;" __cid="cf2yEjq"> 
+                    <span xid="span1" __cid="cf2yEjq" class="cf2yEjq">日期</span>
+                  </div> 
+                </div>  
+                <div component="$model/UI2/system/components/justep/row/row" class="x-row cf2yEjq" xid="row9" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="cf2yEjq"> 
+                  <div class="x-col x-col-center cf2yEjq" xid="col14" style="padding-top:20%;height:100px;" __cid="cf2yEjq"> 
+                    <span xid="yearShowSpan" style="display:block;font-size:20px;" __cid="cf2yEjq" class="cf2yEjq"/>  
+                    <span xid="monthShowSpan" style="font-size:20px;" __cid="cf2yEjq" class="cf2yEjq"/>  
+                    <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-xs btn-only-icon cf2yEjq" xid="button1" style="border-radius:50%;border:1px solid #999;" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-config="{&quot;icon&quot;:&quot;linear linear-diamond&quot;,&quot;label&quot;:&quot;button&quot;}" __cid="cf2yEjq"> 
+                      <i xid="i6" class="linear linear-diamond cf2yEjq" __cid="cf2yEjq"/>  
+                      <span xid="span12" __cid="cf2yEjq" class="cf2yEjq"/>
+                    </a> 
+                  </div> 
+                </div> 
+              </div> 
+            </div> 
+          </div>  
+          <div class="x-col cf2yEjq" xid="col10" __cid="cf2yEjq"> 
+            <div component="$model/UI2/system/components/justep/row/row" class="x-row cf2yEjq" xid="detailShow" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="cf2yEjq"> 
+              <div class="x-col cf2yEjq" xid="col35" style="text-align:center;border-style:solid solid solid solid;border-width:1px 1px 1px 1px;border-color:#808080 #808080 #808080 #808080;border-radius:10px;padding:0px 0px 0px 0px;margin:0px 0px 0px 0px;background-color:white;" __cid="cf2yEjq"> 
+                <div component="$model/UI2/system/components/justep/row/row" class="x-row cf2yEjq" xid="row10" style="padding:0px 0px 0px 0px;margin:0px 0px 0px 0px;" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="cf2yEjq"> 
+                  <div class="x-col  cf2yEjq" xid="col15" style="padding:0px 0px 0px 0px;margin:0px 0px 0px 0px;" __cid="cf2yEjq"> 
+                    <div component="$model/UI2/system/components/justep/row/row" class="x-row cf2yEjq" xid="row11" style="padding:0px 0px 0px 0px;margin:0px 0px 0px 0px;" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="cf2yEjq"> 
+                      <div class="x-col  cf2yEjq" xid="col18" style="text-align:center;" __cid="cf2yEjq"> 
+                        <span style="font-size:medium;" xid="span2" __cid="cf2yEjq" class="cf2yEjq">正常考勤</span>
+                      </div> 
+                    </div>  
+                    <div component="$model/UI2/system/components/justep/row/row" class="x-row cf2yEjq" xid="row12" style="padding:0px 0px 0px 0px;margin:0px 0px 0px 0px;" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="cf2yEjq"> 
+                      <div class="x-col  cf2yEjq" xid="col19" style="text-align:center;border-style:solid solid solid solid;border-width:0px 0px 1px 0px;border-color:#808080 #808080 #808080 #808080;" __cid="cf2yEjq"> 
+                        <span xid="normalSpan" style="font-size:medium;" __cid="cf2yEjq" class="cf2yEjq"/>
+                      </div> 
+                    </div> 
+                  </div> 
+                </div>  
+                <div component="$model/UI2/system/components/justep/row/row" class="x-row cf2yEjq" xid="row13" style="padding:0px 0px 0px 0px;margin:0px 0px 0px 0px;border-color:#808080 #808080 #808080 #808080;" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="cf2yEjq"> 
+                  <div class="x-col cf2yEjq" xid="col20" style="margin:0px 0px 0px 0px;padding:0px 0px 0px 0px;border-right:1px solid #808080;" __cid="cf2yEjq"> 
+                    <div component="$model/UI2/system/components/justep/row/row" class="x-row cf2yEjq" xid="row14" style="margin:0px 0px 0px 0px;padding:0px 0px 0px 0px;" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="cf2yEjq"> 
+                      <div class="x-col cf2yEjq" xid="col27" __cid="cf2yEjq"> 
+                        <span xid="span6" __cid="cf2yEjq" class="cf2yEjq">迟到</span>
+                      </div> 
+                    </div>  
+                    <div component="$model/UI2/system/components/justep/row/row" class="x-row cf2yEjq" xid="row15" style="margin:0px 0px 0px 0px;padding:0px 0px 0px 0px;" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="cf2yEjq"> 
+                      <div class="x-col cf2yEjq" xid="col28" __cid="cf2yEjq"> 
+                        <span xid="lateSpan" style="font-size:medium;" __cid="cf2yEjq" class="cf2yEjq"/>
+                      </div> 
+                    </div> 
+                  </div>  
+                  <div class="x-col cf2yEjq" xid="col22" style="margin:0px 0px 0px 0px;padding:0px 0px 0px 0px;border-style:solid solid solid solid;border-width:0px 1px 0px 0px;border-color:#808080 #808080 #808080 #808080;" __cid="cf2yEjq"> 
+                    <div component="$model/UI2/system/components/justep/row/row" class="x-row cf2yEjq" xid="row17" style="margin:0px 0px 0px 0px;padding:0px 0px 0px 0px;" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="cf2yEjq"> 
+                      <div class="x-col cf2yEjq" xid="col30" __cid="cf2yEjq"> 
+                        <span xid="span8" __cid="cf2yEjq" class="cf2yEjq">早退</span>
+                      </div> 
+                    </div>  
+                    <div component="$model/UI2/system/components/justep/row/row" class="x-row cf2yEjq" xid="row16" style="margin:0px 0px 0px 0px;padding:0px 0px 0px 0px;" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="cf2yEjq"> 
+                      <div class="x-col cf2yEjq" xid="col29" __cid="cf2yEjq"> 
+                        <span xid="earlySpan" style="font-size:medium;" __cid="cf2yEjq" class="cf2yEjq"/>
+                      </div> 
+                    </div> 
+                  </div>  
+                  <div class="x-col cf2yEjq" xid="col24" style="margin:0px 0px 0px 0px;padding:0px 0px 0px 0px;" __cid="cf2yEjq"> 
+                    <div component="$model/UI2/system/components/justep/row/row" class="x-row cf2yEjq" xid="row19" style="margin:0px 0px 0px 0px;padding:0px 0px 0px 0px;" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="cf2yEjq"> 
+                      <div class="x-col cf2yEjq" xid="col32" __cid="cf2yEjq"> 
+                        <span xid="span10" __cid="cf2yEjq" class="cf2yEjq">未打卡</span>
+                      </div> 
+                    </div>  
+                    <div component="$model/UI2/system/components/justep/row/row" class="x-row cf2yEjq" xid="row18" style="margin:0px 0px 0px 0px;padding:0px 0px 0px 0px;" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="cf2yEjq"> 
+                      <div class="x-col cf2yEjq" xid="col31" __cid="cf2yEjq"> 
+                        <span xid="absentSpan" style="font-size:medium;" __cid="cf2yEjq" class="cf2yEjq"/>
+                      </div> 
+                    </div> 
+                  </div> 
+                </div> 
+              </div> 
+            </div> 
+          </div> 
+        </div> 
+      </div> 
+    </div>  
+    <div class="x-panel-content cf2yEjq" xid="content4" style="margin-top:10px;" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="cf2yEjq"> 
+      <div xid="div1" style="margin-left:10px;margin-top:10px;" __cid="cf2yEjq" class="cf2yEjq"> 
+        <div component="$model/UI2/system/components/justep/list/list" class="x-list cf2yEjq" xid="list1" data-bind="component:{name:'$model/UI2/system/components/justep/list/list'}" data-config="{&quot;data&quot;:&quot;statusData&quot;}" __cid="cf2yEjq"> 
+          <ul class="x-list-template hide cf2yEjq" xid="listTemplateUl1" bind-foreach="{data:$model.foreach_list1($element),afterRender:$model.foreach_afterRender_list1.bind($model,$element)}" __cid="cf2yEjq"> 
+            <li xid="li1" __cid="cf2yEjq" class="cf2yEjq"> 
+              <div component="$model/UI2/system/components/justep/row/row" class="x-row cf2yEjq" xid="row4" bind-visible=" val(&quot;isHide&quot;)" style="padding:0px 0px 0px 0px;margin:0px 0px 0px 0px;" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="cf2yEjq"> 
+                <div class="x-col x-col-fixed x-col-center cf2yEjq" xid="col2" style="width:auto;margin:auto auto auto auto;" __cid="cf2yEjq"> 
+                  <div xid="div4" style="height:10px;width:10px;border-radius:50%;background-color:#FF8000;" __cid="cf2yEjq" class="cf2yEjq"/>
+                </div>  
+                <div class="x-col cf2yEjq" xid="col16" style="padding:0px 0px 0px 0px;margin:0px 0px 0px 0px;" __cid="cf2yEjq"> 
+                  <span xid="span3" bind-text="val(&quot;value&quot;)" style="font-size:small;font-weight:bold;" __cid="cf2yEjq" class="cf2yEjq"/>
+                </div> 
+              </div>  
+              <div xid="div7" style="border-style:groove groove groove groove;border-width:0px 0px 0px 2px;margin-left:10px;border-color:#FDFDFD #FDFDFD #FDFDFD #FDFDFD;" __cid="cf2yEjq" class="cf2yEjq"> 
+                <div component="$model/UI2/system/components/justep/list/list" class="x-list cf2yEjq" xid="list3" data-bind="component:{name:'$model/UI2/system/components/justep/list/list'}" data-config="{&quot;data&quot;:&quot;mianData&quot;,&quot;filter&quot;:&quot; $row.val(\&quot;fStatus\&quot;) == val(\&quot;value\&quot;)&quot;}" __cid="cf2yEjq"> 
+                  <ul class="x-list-template hide cf2yEjq" xid="listTemplateUl3" bind-foreach="{data:$model.foreach_list3($element),afterRender:$model.foreach_afterRender_list3.bind($model,$element)}" __cid="cf2yEjq"> 
+                    <li xid="li3" style="padding-left:15px;margin-top:5px;margin-bottom:5px;" __cid="cf2yEjq" class="cf2yEjq"> 
+                      <span xid="span14" bind-text="val(&quot;fCheckTime&quot;)" style="display:block;" __cid="cf2yEjq" class="cf2yEjq"/>  
+                      <span xid="span5" bind-visible=" val(&quot;fStatus&quot;) =='迟到' ||'早退'" bind-text="val(&quot;fUnusualMistiming&quot;)" style="border-radius:3px;font-size:x-small;color:#FFFFFF;background-color:#FF8040;" __cid="cf2yEjq" class="cf2yEjq"/>
+                    </li> 
+                  </ul> 
+                </div> 
+              </div> 
+            </li> 
+          </ul> 
+        </div> 
+      </div> 
+    </div>  
+    <style __cid="cf2yEjq" class="cf2yEjq">.x-panel.pcf2yEjq-iosstatusbar &gt;.x-panel-top {height: 150px;}.x-panel.pcf2yEjq-iosstatusbar &gt;.x-panel-content { top: 150px;bottom: nullpx;}.x-panel.pcf2yEjq-iosstatusbar &gt;.x-panel-bottom {height: nullpx;}.iosstatusbar .x-panel.pcf2yEjq-iosstatusbar &gt;.x-panel-top,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pcf2yEjq-iosstatusbar &gt;.x-panel-top {height: 170px;}.iosstatusbar .x-panel.pcf2yEjq-iosstatusbar &gt;.x-panel-content,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pcf2yEjq-iosstatusbar &gt;.x-panel-content { top: 170px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pcf2yEjq-iosstatusbar &gt;.x-panel-top {height: 150px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pcf2yEjq-iosstatusbar &gt;.x-panel-content {top: 150px;}</style>
+  </div>  
+  <span component="$model/UI2/system/components/justep/windowDialog/windowDialog" xid="dateChooseDlg" style="top:10px;left:79px;" data-bind="component:{name:'$model/UI2/system/components/justep/windowDialog/windowDialog'}" data-events="onReceived:dateChooseDlgReceived;onReceive:dateChooseDlgReceive" data-config="{&quot;showTitle&quot;:false,&quot;status&quot;:&quot;normal&quot;}" __cid="cf2yEjq" class="cf2yEjq">
+    <xhtml:div xmlns:xhtml="http://www.w3.org/1999/xhtml" class="x-dialog-overlay cf2yEjq" __cid="cf2yEjq"/>
+    <xhtml:div xmlns:xhtml="http://www.w3.org/1999/xhtml" class="x-dialog cf2yEjq" style="display:none;" showTitle="false" __cid="cf2yEjq">
+      <xhtml:div class="x-dialog-title cf2yEjq" __cid="cf2yEjq">
+        <xhtml:button class="close cf2yEjq" __cid="cf2yEjq">
+          <xhtml:span __cid="cf2yEjq" class="cf2yEjq">×</xhtml:span>
+        </xhtml:button>
+        <xhtml:div class="x-dialog-title-text cf2yEjq" __cid="cf2yEjq"/>
+      </xhtml:div>
+      <xhtml:div class="x-dialog-body cf2yEjq" __cid="cf2yEjq"/>
+    </xhtml:div>
+  </span>
+</div>

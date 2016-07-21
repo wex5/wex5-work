@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<div xmlns="http://www.w3.org/1999/xhtml" component="$model/UI2/system/components/justep/window/window" design="device:m;" xid="window" class="window cfmYVVn" data-bind="component:{name:'$model/UI2/system/components/justep/window/window'}" __cid="cfmYVVn" components="$model/UI2/system/components/justep/model/model,$model/UI2/system/components/justep/loadingBar/loadingBar,$model/UI2/system/components/justep/button/button,$model/UI2/system/components/justep/list/list,$model/UI2/system/components/justep/titleBar/titleBar,$model/UI2/system/components/justep/panel/child,$model/UI2/system/components/justep/data/data,$model/UI2/system/components/justep/window/window,$model/UI2/system/components/justep/button/buttonGroup,$model/UI2/system/components/justep/messageDialog/messageDialog,$model/UI2/system/components/justep/panel/panel,">
+  <xhtml:style xmlns:xhtml="http://www.w3.org/1999/xhtml">.btn-padding.cfmYVVn{padding: 0px; padding-right: 10px} .x-panel.cfmYVVn .x-panel-content.cfmYVVn{overflow-x: hidden} .text-overflow.cfmYVVn{display: block; width: 26em; word-break: keep-all; white-space: nowrap; overflow: hidden; text-overflow: ellipsis} .samBtn.cfmYVVn{padding-left: 0px}</xhtml:style>  
+  <div component="$model/UI2/system/components/justep/model/model" xid="model" style="display:none" data-bind="component:{name:'$model/UI2/system/components/justep/model/model'}" data-events="onActive:modelActive;onParamsReceive:modelParamsReceive" __cid="cfmYVVn" class="cfmYVVn"></div>  
+  <div component="$model/UI2/system/components/justep/panel/panel" class="x-panel x-full pcfmYVVn-iosstatusbar cfmYVVn" xid="panel1" data-bind="component:{name:'$model/UI2/system/components/justep/panel/panel'}" __cid="cfmYVVn"> 
+    <div class="x-panel-top cfmYVVn" xid="top1" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="cfmYVVn"> 
+      <div component="$model/UI2/system/components/justep/titleBar/titleBar" class="x-titlebar cfmYVVn" data-bind="component:{name:'$model/UI2/system/components/justep/titleBar/titleBar'}" data-config="{&quot;title&quot;:&quot;考勤组管理&quot;}" __cid="cfmYVVn"> 
+        <div class="x-titlebar-left cfmYVVn" __cid="cfmYVVn"> 
+          <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-only-icon cfmYVVn" xid="backBtn" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:{operation:'window.close'}" data-config="{&quot;icon&quot;:&quot;icon-chevron-left&quot;,&quot;label&quot;:&quot;&quot;}" __cid="cfmYVVn"> 
+            <i class="icon-chevron-left cfmYVVn" __cid="cfmYVVn"/>  
+            <span __cid="cfmYVVn" class="cfmYVVn"/> 
+          </a> 
+        </div>  
+        <div class="x-titlebar-title cfmYVVn" __cid="cfmYVVn">考勤组管理</div>  
+        <div class="x-titlebar-right  cfmYVVn" __cid="cfmYVVn">
+          <div class="empty cfmYVVn" __cid="cfmYVVn"/>
+          <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link samBtn cfmYVVn" xid="advancedSetting" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:advancedSettingClick" data-config="{&quot;label&quot;:&quot;高级设置&quot;}" __cid="cfmYVVn"> 
+            <i xid="i7" __cid="cfmYVVn" class="cfmYVVn"/>  
+            <span xid="span4" __cid="cfmYVVn" class="cfmYVVn">高级设置</span>
+          </a>
+        </div> 
+      </div> 
+    </div>  
+    <div class="x-panel-content cfmYVVn" xid="content1" style="background-color:#ededed;" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="cfmYVVn">
+      <div xid="div4" style="background-color:white;" __cid="cfmYVVn" class="cfmYVVn">
+        <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-block cfmYVVn" xid="addAttenGroup" style="font-size:large;" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:addAttenGroupClick" data-config="{&quot;icon&quot;:&quot;linear linear-shirt&quot;,&quot;label&quot;:&quot;新增考勤组&quot;}" __cid="cfmYVVn"> 
+          <i xid="i4" class="linear linear-shirt cfmYVVn" __cid="cfmYVVn"/>  
+          <span xid="span5" __cid="cfmYVVn" class="cfmYVVn">新增考勤组</span>
+        </a>
+      </div>
+      <p xid="p1" style="padding:5px 15px 20px 20px;" __cid="cfmYVVn" class="cfmYVVn">考勤规则相同的人设置到同一考勤组,方便统计</p>  
+      <div xid="div2" __cid="cfmYVVn" class="cfmYVVn">
+        <div component="$model/UI2/system/components/justep/list/list" class="x-list cfmYVVn" xid="list2" style="background-color:#ededed;" data-bind="component:{name:'$model/UI2/system/components/justep/list/list'}" data-config="{&quot;data&quot;:&quot;AttendanceInfo&quot;}" __cid="cfmYVVn"> 
+          <ul class="x-list-template hide cfmYVVn" xid="listTemplateUl2" bind-foreach="{data:$model.foreach_list2($element),afterRender:$model.foreach_afterRender_list2.bind($model,$element)}" __cid="cfmYVVn"> 
+            <li xid="li2" style="margin-bottom:15px;border-top:1px solid #ddd;border-bottom:1px solid #ddd;padding:10px 20px;position:relative;background-color:white;" __cid="cfmYVVn" class="cfmYVVn">
+              <div xid="div5" __cid="cfmYVVn" class="cfmYVVn">
+                <span xid="fAttendanceGroupName" bind-text="val(&quot;fAttendanceGroupName&quot;)" style="font-weight:bold;font-size:large;" __cid="cfmYVVn" class="cfmYVVn"/>  
+                <span xid="fPersonName" bind-text="val(&quot;fPersonNameJ&quot;)" style="padding-right:10px;padding-left:10px;" __cid="cfmYVVn" class="cfmYVVn"/>  
+                <span xid="fAttendanceClass" bind-text="val(&quot;fAttendanceClass&quot;)==1?&quot;固定班制&quot;:&quot;阶段考勤班制&quot;" __cid="cfmYVVn" class="cfmYVVn"/>
+              </div>  
+              <div xid="div1" __cid="cfmYVVn" class="cfmYVVn">
+                <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-padding cfmYVVn" xid="button3" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-config="{&quot;icon&quot;:&quot;linear linear-chevronrightcircle&quot;}" __cid="cfmYVVn"> 
+                  <i xid="i3" class="linear linear-chevronrightcircle cfmYVVn" __cid="cfmYVVn"/>  
+                  <span xid="span2" __cid="cfmYVVn" class="cfmYVVn"/>
+                </a>  
+                <span xid="span3" bind-text="&quot;负责人：&quot;+val(&quot;fPersonNameS&quot;)" __cid="cfmYVVn" class="cfmYVVn"/>
+              </div>
+              <div xid="div3" class="text-overflow cfmYVVn" __cid="cfmYVVn">
+                <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-padding cfmYVVn" xid="button2" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-config="{&quot;icon&quot;:&quot;linear linear-cloudsync&quot;}" __cid="cfmYVVn"> 
+                  <i xid="i2" class="linear linear-cloudsync cfmYVVn" __cid="cfmYVVn"/>  
+                  <span xid="span1" __cid="cfmYVVn" class="cfmYVVn"/>
+                </a>
+                <span xid="fWeek" bind-text="val(&quot;fWeek&quot;)" __cid="cfmYVVn" class="cfmYVVn"/>  
+                <span xid="fDepart" style="margin-left:10px;margin-right:10px;" bind-text="&quot;班次&quot;+val(&quot;fDepart&quot;)" __cid="cfmYVVn" class="cfmYVVn"/>  
+                <span xid="fAMPM" bind-text="val(&quot;fAMPM&quot;)" __cid="cfmYVVn" class="cfmYVVn"/> 
+              </div>  
+              <div xid="div6" __cid="cfmYVVn" class="cfmYVVn">
+                <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-padding cfmYVVn" xid="button1" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-config="{&quot;icon&quot;:&quot;linear linear-mapmarker&quot;}" __cid="cfmYVVn"> 
+                  <i xid="i1" class="linear linear-mapmarker cfmYVVn" __cid="cfmYVVn"/>  
+                  <span xid="span7" __cid="cfmYVVn" class="cfmYVVn"/>
+                </a>  
+                <span xid="fAttenAddrName" bind-text="val(&quot;fAttenAddrName&quot;)" __cid="cfmYVVn" class="cfmYVVn"/>
+              </div>  
+              <div xid="div7" __cid="cfmYVVn" class="cfmYVVn">
+                <div component="$model/UI2/system/components/justep/button/buttonGroup" class="btn-group btn-group-justified cfmYVVn" xid="buttonGroup1" data-bind="component:{name:'$model/UI2/system/components/justep/button/buttonGroup'}" data-config="{&quot;tabbed&quot;:true}" __cid="cfmYVVn">
+                  <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link cfmYVVn" xid="undataPerson" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:undataPersonClick" data-config="{&quot;label&quot;:&quot;修改成员及负责人&quot;}" __cid="cfmYVVn"> 
+                    <i xid="i5" __cid="cfmYVVn" class="cfmYVVn"/>  
+                    <span xid="span8" __cid="cfmYVVn" class="cfmYVVn">修改成员及负责人</span>
+                  </a>  
+                  <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link cfmYVVn" xid="updataRule" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:updataRuleClick" data-config="{&quot;label&quot;:&quot;修改规则&quot;}" __cid="cfmYVVn"> 
+                    <i xid="i6" __cid="cfmYVVn" class="cfmYVVn"/>  
+                    <span xid="span9" __cid="cfmYVVn" class="cfmYVVn">修改规则</span>
+                  </a>
+                </div> 
+              </div>
+              <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link cfmYVVn" xid="deleteBtn" style="position:absolute;right:-5px;top:0px;" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:deleteBtnClick" data-config="{&quot;icon&quot;:&quot;linear linear-cart&quot;}" __cid="cfmYVVn"> 
+                <i xid="i9" class="linear linear-cart cfmYVVn" __cid="cfmYVVn"/>  
+                <span xid="span12" __cid="cfmYVVn" class="cfmYVVn"/>
+              </a> 
+            </li>
+          </ul> 
+        </div>
+      </div> 
+    </div>  
+    <style __cid="cfmYVVn" class="cfmYVVn">.x-panel.pcfmYVVn-iosstatusbar &gt;.x-panel-top {height: 48px;}.x-panel.pcfmYVVn-iosstatusbar &gt;.x-panel-content { top: 48px;bottom: nullpx;}.x-panel.pcfmYVVn-iosstatusbar &gt;.x-panel-bottom {height: nullpx;}.iosstatusbar .x-panel.pcfmYVVn-iosstatusbar &gt;.x-panel-top,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pcfmYVVn-iosstatusbar &gt;.x-panel-top {height: 68px;}.iosstatusbar .x-panel.pcfmYVVn-iosstatusbar &gt;.x-panel-content,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pcfmYVVn-iosstatusbar &gt;.x-panel-content { top: 68px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pcfmYVVn-iosstatusbar &gt;.x-panel-top {height: 48px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pcfmYVVn-iosstatusbar &gt;.x-panel-content {top: 48px;}</style>
+  </div>  
+  <span component="$model/UI2/system/components/justep/messageDialog/messageDialog" xid="delMessageDialog" data-bind="component:{name:'$model/UI2/system/components/justep/messageDialog/messageDialog'}" data-events="onOK:delMessageDialogOK" data-config="{&quot;message&quot;:&quot;确定删除该考勤组吗？&quot;,&quot;type&quot;:&quot;OKCancel&quot;}" __cid="cfmYVVn" class="cfmYVVn">
+    <xhtml:div xmlns:xhtml="http://www.w3.org/1999/xhtml" class="x-modal-overlay cfmYVVn" __cid="cfmYVVn"/>
+    <xhtml:div xmlns:xhtml="http://www.w3.org/1999/xhtml" class="x-modal cfmYVVn" __cid="cfmYVVn">
+      <xhtml:div class="x-modal-inner cfmYVVn" __cid="cfmYVVn">
+        <xhtml:div class="x-modal-title cfmYVVn" __cid="cfmYVVn"></xhtml:div>
+        <xhtml:div class="x-modal-text cfmYVVn" __cid="cfmYVVn">确定删除该考勤组吗？</xhtml:div>
+        <xhtml:input class="x-modal-prompt-input cfmYVVn" type="text" __cid="cfmYVVn"/>
+      </xhtml:div>
+      <xhtml:div class="x-modal-buttons cfmYVVn" __cid="cfmYVVn">
+        <xhtml:a class="x-modal-button x-modal-button-bold OK cfmYVVn" value="ok" __cid="cfmYVVn">确定</xhtml:a>
+        <xhtml:a class="x-modal-button x-modal-button-bold Yes cfmYVVn" value="yes" __cid="cfmYVVn">是</xhtml:a>
+        <xhtml:a class="x-modal-button x-modal-button-bold No cfmYVVn" value="no" __cid="cfmYVVn">否</xhtml:a>
+        <xhtml:a class="x-modal-button x-modal-button-bold Cancel cfmYVVn" value="cancel" __cid="cfmYVVn">取消</xhtml:a>
+      </xhtml:div>
+    </xhtml:div>
+  </span> 
+</div>

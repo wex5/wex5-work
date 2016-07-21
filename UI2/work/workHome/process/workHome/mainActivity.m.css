@@ -1,0 +1,9 @@
+.img_p{
+	text-align:left;color:#ffffff;font-size:small;margin-top:-25%;padding-left:10px;
+}
+.listRow_btn{
+	font-size:large;color:#ffffff;display:inline-block;width:30px;height:30px;background-color:blue;border-radius:6px;line-height:30px;
+}
+.btn{
+	padding:4px 12px;
+}

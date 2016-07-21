@@ -1,0 +1,76 @@
+.oa .oa-title-data {
+	color: black;
+	font-weight: bold;
+}
+
+.oa .smart-filter .oa-input-group-addon {
+	background-color: white;
+	border: none;
+}
+
+.oa .smart-filter .form-control {
+	border: none;
+	box-shadow: none;
+	height: 32px
+}
+
+.oa .x-card.panel>.panel-heading .oa-title-heading,.oa-title-heading {
+	padding: 0px;
+	font-size: 13px;
+	color: #778c99;
+	font-weight: normal
+}
+.oa .media img.media-object{
+	height:44px;
+	width:44px;
+}
+.oa .x-panel.x-card .x-panel-content>.media,
+.oa .x-panel.x-card .x-panel-content.x-cards .panel.x-card>.media{
+	padding:10px;
+}
+.oa .x-card.panel .x-list .list-group,
+.oa .x-card.panel .x-list ul
+{
+	margin-bottom:0px
+}
+
+.oa .x-scroll-content>.x-card.panel .x-list ul>li:last-child{
+	border-bottom : 0px
+}
+
+.oa .oa-input-group-row{
+	border-bottom: 1px solid #f3f3f3;
+	padding-right: 10px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+}
+ .oa .form-control{
+	border: none;
+	box-shadow: none;
+	padding:8px 0px;
+}
+
+.oa .datetime.form-control,
+.oa .date.form-control,
+.oa .time.form-control {
+	padding-right: 22px;
+}
+
+.oa .oa-input-group-row .x-label{
+	font-weight:bold;
+	padding: 8px 12px;
+}
+.oa .media>.media-body .oa-input-group-row .x-label{
+	padding:0px
+}
+.oa .oa-input-row {
+	border-bottom: 1px solid #f3f3f3 !important;
+	padding-left: 10px !important;
+	padding-right: 10px !important;
+}
+.photoDiv{
+	height:50px;width:50px;border-radius:50%;background:#88C3D9;text-align:center;color:#fff;font-size:16px;
+}
+.photoDiv span{
+	line-height:50px;
+}
